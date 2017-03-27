@@ -91,12 +91,12 @@
 															</xs:attribute>
 															<xs:attribute name="drugInvoiceNo" type="xs:string" use="optional">
 																<xs:annotation>
-																	<xs:documentation>Seria şi numărul facturii</xs:documentation>
+																	<xs:documentation xml:lang="ro">Seria şi numărul facturii</xs:documentation>
 																</xs:annotation>
 															</xs:attribute>
 															<xs:attribute name="drugInvoiceDate" type="xs:date" use="optional">
 																<xs:annotation>
-																	<xs:documentation>Data facturii</xs:documentation>
+																	<xs:documentation xml:lang="ro">Data facturii</xs:documentation>
 																</xs:annotation>
 															</xs:attribute>
 															<xs:attribute name="issuedQuantity" type="xs:double" use="optional">

@@ -106,7 +106,8 @@
 											<xs:annotation>
 												<xs:documentation xml:lang="ro">
 													Semnătura digitală a pacientului in format Base64, utilizând certificatul de pe card. Cardul poate fi al asiguratului sau al împuternicitului, după caz.
-													Se completează numai dacă este completat şi numărul de card şi cuprinde atributele "eval(authorizedPersonCid!=null?authorizedPersonCid:personCID)|cardNo|issueDate|series/no".
+													Se completează numai dacă este completat şi numărul de card şi cuprinde atributele "personCID|cardNo|issueDate|series/no".
+													Dacă este completat câmpul authorizedPersonCid, atributele devin: "authorizedPersonCid|cardNo|issueDate|series/no".
 												</xs:documentation>
 											</xs:annotation>
 										</xs:attribute>

@@ -75,6 +75,16 @@
 														<xs:documentation xml:lang="ro">Reţetă electronică</xs:documentation>
 													</xs:annotation>
 												</xs:enumeration>
+												<xs:enumeration value="EV">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Reţetă electronică cost/volum</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="ER">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Reţetă electronică cost/volum/rezultat</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>

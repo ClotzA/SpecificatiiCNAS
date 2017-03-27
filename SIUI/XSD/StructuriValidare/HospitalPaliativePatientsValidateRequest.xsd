@@ -618,7 +618,7 @@
 											                </xs:restriction>
 										                </xs:simpleType>
 													</xs:attribute>
-													<xs:attribute name="at72hDiagCode" type="xs:string" use="optional">
+													<xs:attribute name="at72hDiagCode" use="optional">
 														<xs:annotation>
 															<xs:documentation xml:lang="ro">Codul diagnosticului la 72 de ore. Acest cod este preluat din nomenclatorul COM10S.</xs:documentation>
 														</xs:annotation>
