@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <xs:schema targetNamespace="http://www.cnas.ro/siui/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.cnas.ro/siui/2.0" elementFormDefault="qualified" id="NomenclaturesPHM">
 	<xs:element name="Catalogues">
 		<xs:annotation>
@@ -1734,7 +1734,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="500" />
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>

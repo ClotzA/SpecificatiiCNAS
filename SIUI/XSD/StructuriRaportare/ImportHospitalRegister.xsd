@@ -123,8 +123,8 @@
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">
 												Semnătura digitală a pacientului in format Base64, utilizând certificatul de pe card.
-												Se completează doar pentru rețete (isPrescription=true), şi numai dacă este completat şi numărul de card şi cuprinde atributele "personCID|cardNo|prescIssueDate|prescSeries/prescNo"
-												În cazul în care semnătura aparține imputernicitului atributele devin: "authorizedPersonCid|cardNo|prescIssueDate|prescSeries/prescNo"
+												Se completează doar pentru rețete (isPrescription=true), numai dacă este completat şi numărul de card, şi cuprinde atributele "personCID|cardNo|prescIssueDate|prescSeries/prescNo".
+												Dacă este completat authorizedPersonCid, atributele devin: "authorizedPersonCid|cardNo|prescIssueDate|prescSeries/prescNo".
 											</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>

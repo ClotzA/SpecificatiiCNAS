@@ -72,6 +72,7 @@
 																	<xs:documentation xml:lang="ro">
 																		Semnătura digitală a pacientului in format Base64, utilizând certificatul de pe card.
 																		Se completează numai dacă este completat şi numărul de card şi cuprinde atributele "cid|cardNo|eval(hospRegDate??prescIssueDate)|eval(hospregNo??prescSeries/prescNo)".
+																		Dacă este completat authorizedPersonCid, atributele devin: "authorizedPersonCid|cardNo|eval(hospRegDate??prescIssueDate)|eval(hospregNo??prescSeries/prescNo)".
 																	</xs:documentation>
 																</xs:annotation>
 															</xs:attribute>

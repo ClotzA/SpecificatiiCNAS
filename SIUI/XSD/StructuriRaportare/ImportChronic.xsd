@@ -215,6 +215,11 @@
 													</xs:annotation>
 												</xs:element>
 												<xs:element name="ForeignExpenses" type="ForeignExpenses" minOccurs="0"/>
+												<xs:element name="ForeignTransfers" type="IntrahospitalTransferType" minOccurs="0" maxOccurs="unbounded">
+													<xs:annotation>
+														<xs:documentation>Transferuri între secții</xs:documentation>
+													</xs:annotation>
+												</xs:element>
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -243,6 +248,11 @@
 													</xs:annotation>
 												</xs:element>
 												<xs:element name="Expenses" type="Expenses" minOccurs="0"/>
+												<xs:element name="IntrahospitalTransfers" type="IntrahospitalTransferType" minOccurs="0" maxOccurs="unbounded">
+													<xs:annotation>
+														<xs:documentation>Transferuri între secții</xs:documentation>
+													</xs:annotation>
+												</xs:element>
 											</xs:sequence>
 											<xs:attribute name="prematureDegree" type="xs:boolean" use="optional"/>
 											<xs:attribute name="prematureDate" type="xs:date" use="optional"/>

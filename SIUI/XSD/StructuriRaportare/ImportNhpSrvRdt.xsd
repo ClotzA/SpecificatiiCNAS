@@ -115,6 +115,16 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:attribute>
+									            <xs:attribute name="authorizedCid" use="optional">
+										           <xs:annotation>
+											         <xs:documentation xml:lang="ro">Numărul de asigurat al reprezentantului legal</xs:documentation>
+										           </xs:annotation>
+										           <xs:simpleType>
+											          <xs:restriction base="xs:string">
+												           <xs:maxLength value="30"/>
+											          </xs:restriction>
+										           </xs:simpleType>
+									            </xs:attribute>													
 												<xs:attribute name="signature" type="xs:base64Binary" use="optional">
 													<xs:annotation>
 														<xs:documentation xml:lang="ro">

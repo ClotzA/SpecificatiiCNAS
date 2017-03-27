@@ -58,6 +58,7 @@
 												<xs:documentation xml:lang="ro">
 													Semnătura digitală a pacientului in format Base64, utilizând certificatul de pe card.
 													Se completează numai dacă este completat şi numărul de card şi cuprinde atributele "cid|cardNo|serviceDate|reportedService".
+													Dacă este completat authorizedPersonCid, atributele devin: "authorizedPersonCid|cardNo|serviceDate|reportedService".
 												</xs:documentation>
 											</xs:annotation>
 										</xs:attribute>
@@ -70,6 +71,36 @@
 											<xs:annotation>
 												<xs:documentation xml:lang="ro">Nu se mai foloseşte!</xs:documentation>
 											</xs:annotation>
+										</xs:attribute>
+										<xs:attribute name="exceptedFromCard" use="optional">
+											<xs:annotation>
+												<xs:documentation xml:lang="ro">Serviciu/consultatie exceptat/a de la semnarea cu cardul pacientului</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:length value="1"/>
+													<xs:enumeration value="1">
+														<xs:annotation>
+															<xs:documentation xml:lang="ro">pacientul executa o pedeapsa privativa de libertate sau se afla în arest preventiv</xs:documentation>
+														</xs:annotation>
+													</xs:enumeration>
+													<xs:enumeration value="2">
+														<xs:annotation>
+															<xs:documentation xml:lang="ro">persoane cu tulburari psihice prevazute în Legea sanata?ii mintale</xs:documentation>
+														</xs:annotation>
+													</xs:enumeration>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:attribute>
+										<xs:attribute name="authorizedPersonCid" use="optional">
+											<xs:annotation>
+												<xs:documentation xml:lang="ro">Codul de identificare al reprezentantului legal</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:length value="20"/>
+												</xs:restriction>
+											</xs:simpleType>
 										</xs:attribute>
 										<xs:attribute name="patientInsuranceHouse" type="xs:string" use="optional">
 											<xs:annotation>

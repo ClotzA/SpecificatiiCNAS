@@ -965,7 +965,7 @@
 				<xs:documentation xml:lang="ro">Luna in care a avut loc procedura.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="internmentHour" type="xs:unsignedInt" use="optional">
+		<xs:attribute name="internmentHour" type="xs:unsignedInt" use="required">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">Ora la care a fost efectuat serviciu</xs:documentation>
 			</xs:annotation>
@@ -1295,6 +1295,7 @@
 				<xs:documentation xml:lang="ro">
 					Semnătura digitală a pacientului in format Base64, utilizând certificatul de pe card.
 					Se completează numai dacă este completat şi numărul de card şi cuprinde atributele "cid|cardNo|eval(internmentDate+internmentHour)|eval(releaseDate+releaseHour)|sheetNo".
+					Dacă este completat authorizedPersonCid, atributele devin: "authorizedPersonCid|cardNo|eval(internmentDate+internmentHour)|eval(releaseDate+releaseHour)|sheetNo".
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -1411,6 +1412,7 @@
 				<xs:documentation xml:lang="ro">
 					Semnătura digitală a pacientului in format Base64, utilizând certificatul de pe card.
 					Se completează la internare şi cuprinde atributele "cid|cardNo|eval(internmentDate+internmentHour)|sheetNo".
+					Dacă este completat authorizedPersonCid, atributele devin: "authorizedPersonCid|cardNo|eval(internmentDate+internmentHour)|sheetNo".
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -1418,6 +1420,36 @@
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">Data eliberarii adeverinței de asigurat</xs:documentation>
 			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="exceptedFromCard" use="optional">
+			<xs:annotation>
+				<xs:documentation xml:lang="ro">Internarea este exceptata de la semnarea cu cardul pacientului</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length value="1"/>
+					<xs:enumeration value="1">
+						<xs:annotation>
+							<xs:documentation xml:lang="ro">pacientul executa o pedeapsa privativa de libertate sau se afla în arest preventiv</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="2">
+						<xs:annotation>
+							<xs:documentation xml:lang="ro">persoane cu tulburari psihice prevazute în Legea sanatatii mintale</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="authorizedPersonCid" use="optional">
+			<xs:annotation>
+				<xs:documentation xml:lang="ro">Codul de identificare al reprezentantului legal</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length value="20"/>
+				</xs:restriction>
+			</xs:simpleType>
 		</xs:attribute>
 	</xs:complexType>
 	<xs:complexType name="Procedure">
@@ -1566,9 +1598,9 @@
 		<xs:attribute name="signature" type="xs:base64Binary" use="optional">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">
-				Semnătura digitală a pacientului in format Base64, utilizând certificatul de pe card.
-				Se completează numai dacă este completat şi numărul de card şi cuprinde atributele "cid|cardNo|serviceData|serviceCode".
-			</xs:documentation>
+					Semnătura digitală a pacientului in format Base64, utilizând certificatul de pe card.
+					Se completează numai dacă este completat şi numărul de card şi cuprinde atributele "cid|cardNo|serviceData|serviceCode".
+				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="signHash" type="xs:hexBinary" use="optional">
@@ -1578,5 +1610,25 @@
 		</xs:attribute>
 		<xs:attribute name="noKm" type="xs:decimal" use="optional"/>
 		<xs:attribute name="personType" type="personType" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="IntrahospitalTransferType">
+		<xs:annotation>
+			<xs:documentation> Tip de date folosit pentru raportarea transferurilor între secții din cadrul aceluiași spital</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="internmentDeptCode" type="xs:string" use="required">
+			<xs:annotation>
+				<xs:documentation xml:lang="ro">Codul secției de unde a fost transferat</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="internmentDate" type="xs:dateTime" use="required">
+			<xs:annotation>
+				<xs:documentation xml:lang="ro">Data și ora intrării pe secție</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="releaseDate" type="xs:dateTime" use="required">
+			<xs:annotation>
+				<xs:documentation xml:lang="ro">Data și ora ieșirii de pe secție</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
 	</xs:complexType>
 </xs:schema>

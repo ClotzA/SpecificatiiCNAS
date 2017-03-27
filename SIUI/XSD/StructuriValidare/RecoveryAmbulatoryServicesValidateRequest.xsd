@@ -95,11 +95,42 @@
 																							<xs:attribute name="signature" type="xs:base64Binary" use="optional">
 																								<xs:annotation>
 																									<xs:documentation xml:lang="ro">
-																					Semnătura digitală a pacientului in format Base64, utilizând certificatul de pe card.
-																					Se completează numai pentru sedinte dacă este completat şi numărul de card şi cuprinde atributele "cid|cardNo|date|code".
-																				</xs:documentation>
+																										Semnătura digitală a pacientului in format Base64, utilizând certificatul de pe card.
+																										Se completează numai pentru sedinte dacă este completat şi numărul de card şi cuprinde atributele "cid|cardNo|date|code".
+																										Dacă este completat authorizedPersonCid, atributele devin: "authorizedPersonCid|cardNo|date|code".
+																									</xs:documentation>
 																								</xs:annotation>
 																							</xs:attribute>
+																							<xs:attribute name="exceptedFromCard" use="optional">
+																								<xs:annotation>
+																									<xs:documentation xml:lang="ro">Serviciul este exceptat de la semnarea cu cardul pacientului</xs:documentation>
+																								</xs:annotation>
+																								<xs:simpleType>
+																									<xs:restriction base="xs:string">
+																										<xs:length value="1"/>
+																										<xs:enumeration value="1">
+																											<xs:annotation>
+																												<xs:documentation xml:lang="ro">pacientul executa o pedeapsa privativa de libertate sau se afla în arest preventiv</xs:documentation>
+																											</xs:annotation>
+																										</xs:enumeration>
+																										<xs:enumeration value="2">
+																											<xs:annotation>
+																												<xs:documentation xml:lang="ro">persoane cu tulburari psihice prevazute în Legea sanatatii mintale</xs:documentation>
+																											</xs:annotation>
+																										</xs:enumeration>
+																									</xs:restriction>
+																								</xs:simpleType>
+																							</xs:attribute>
+																							<xs:attribute name="authorizedPersonCid" use="optional">
+																								<xs:annotation>
+																									<xs:documentation xml:lang="ro">Codul de identificare al reprezentantului legal</xs:documentation>
+																								</xs:annotation>
+																								<xs:simpleType>
+																									<xs:restriction base="xs:string">
+																										<xs:length value="20"/>
+																									</xs:restriction>
+																								</xs:simpleType>
+																							</xs:attribute>																							
 																							<xs:attribute name="signHash" type="xs:hexBinary" use="optional">
 																								<xs:annotation>
 																									<xs:documentation xml:lang="ro">Nu se mai foloseşte!</xs:documentation>
@@ -143,12 +174,43 @@
 																		</xs:attribute>
 																		<xs:attribute name="signature" type="xs:base64Binary" use="optional">
 																			<xs:annotation>
-																				<xs:documentation>
-                                          Semnătura digitală a pacientului in format Base64, utilizând certificatul de pe card.
-                                          Se completează numai pentru consultatii si dacă este completat şi numărul de card şi cuprinde atributele "cid|cardNo|date|code".
-                                        </xs:documentation>
+																				<xs:documentation xml:lang="ro">
+																					Semnătura digitală a pacientului in format Base64, utilizând certificatul de pe card.
+																					Se completează numai pentru consultatii si dacă este completat şi numărul de card şi cuprinde atributele "cid|cardNo|date|code".
+																					Dacă este completat authorizedPersonCid, atributele devin: "authorizedPersonCid|cardNo|date|code".
+																				</xs:documentation>
 																			</xs:annotation>
 																		</xs:attribute>
+																			<xs:attribute name="exceptedFromCard" use="optional">
+																		<xs:annotation>
+																			<xs:documentation xml:lang="ro">Serviciul este exceptat de la semnarea cu cardul pacientului</xs:documentation>
+																		</xs:annotation>
+																		<xs:simpleType>
+																			<xs:restriction base="xs:string">
+																				<xs:length value="1"/>
+																				<xs:enumeration value="1">
+																					<xs:annotation>
+																						<xs:documentation xml:lang="ro">pacientul executa o pedeapsa privativa de libertate sau se afla în arest preventiv</xs:documentation>
+																					</xs:annotation>
+																				</xs:enumeration>
+																				<xs:enumeration value="2">
+																					<xs:annotation>
+																						<xs:documentation xml:lang="ro">persoane cu tulburari psihice prevazute în Legea sanatatii mintale</xs:documentation>
+																					</xs:annotation>
+																				</xs:enumeration>
+																			</xs:restriction>
+																		</xs:simpleType>
+																		</xs:attribute>
+																		<xs:attribute name="authorizedPersonCid" use="optional">
+																			<xs:annotation>
+																				<xs:documentation xml:lang="ro">Codul de identificare al reprezentantului legal</xs:documentation>
+																			</xs:annotation>
+																			<xs:simpleType>
+																				<xs:restriction base="xs:string">
+																					<xs:length value="20"/>
+																				</xs:restriction>
+																			</xs:simpleType>
+																		</xs:attribute>																		
 																		<xs:attribute name="signHash" type="xs:hexBinary" use="optional">
 																			<xs:annotation>
 																				<xs:documentation xml:lang="ro">Nu se mai foloseşte!</xs:documentation>

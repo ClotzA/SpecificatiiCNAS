@@ -368,7 +368,8 @@
 											<xs:annotation>
 												<xs:documentation xml:lang="ro">
 													Semnătura digitală a pacientului in format Base64, utilizând certificatul de pe card.
-													Se completează numai dacă este completat şi numărul de card şi cuprinde atributele "eval(authorizedPersonCid??cid)|cardNo|releaseDate|series/no".
+													Se completează numai dacă este completat şi numărul de card şi cuprinde atributele "cid|cardNo|releaseDate|series/no".
+													Dacă este completat authorizedPersonCid, atributele devin: "authorizedPersonCid|cardNo|releaseDate|series/no".
 												</xs:documentation>
 											</xs:annotation>
 										</xs:attribute>

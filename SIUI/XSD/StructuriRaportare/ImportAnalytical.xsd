@@ -82,6 +82,7 @@
 														<xs:documentation xml:lang="ro">
 															Semnătura digitală a pacientului in format Base64, utilizând certificatul de pe card.
 															Se completează numai dacă este completat şi numărul de card şi cuprinde atributele "cid|cardNo|serviceDate|service".
+															Dacă este completat authorizedPersonCid, atributele devin: "authorizedPersonCid|cardNo|internmentDate|serviceDate|service".
 														</xs:documentation>
 													</xs:annotation>
 												</xs:attribute>
@@ -279,7 +280,7 @@
 											<xs:documentation xml:lang="ro">Numele bolnavului</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
-									<xs:attribute name="birthDate" type="xs:date" use="optional">
+									<xs:attribute name="birthDate" type="xs:date" use="required">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Data nasterii bolnavului</xs:documentation>
 										</xs:annotation>
@@ -466,6 +467,7 @@
                         1 -&gt; URGENŢĂ
                         2 -&gt; TRIMITERE MEDIC DE FAMILIE
                         3 -&gt; TRIMITERE MEDIC SPECIALIST AMBULATORIU
+                        4 -&gt; TRANSFER INTERSPITALICESC
                         5 -&gt; LA CERERE
                         9 -&gt; ALTE
                       </xs:documentation>
@@ -658,6 +660,36 @@
 									<xs:attribute name="cid" use="optional">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Numărul de asigurat al persoanei</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:length value="20"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="exceptedFromCard" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Internarea este exceptata de la semnarea cu cardul pacientului</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:length value="1"/>
+												<xs:enumeration value="1">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">pacientul executa o pedeapsa privativa de libertate sau se afla în arest preventiv</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="2">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">persoane cu tulburari psihice prevazute în Legea sanatatii mintale</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="authorizedPersonCid" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Codul de identificare al reprezentantului legal</xs:documentation>
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">

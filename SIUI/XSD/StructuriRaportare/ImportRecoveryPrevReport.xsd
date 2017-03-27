@@ -111,8 +111,39 @@
 											<xs:documentation xml:lang="ro">
 												Semnătura digitală a pacientului in format Base64, utilizând certificatul de pe card.
 												Se completează numai dacă este completat şi numărul de card şi cuprinde atributele "cid|cardNo|hospitalizationEnterDate|hospitalizationExitDate|sectionCode".
+												Dacă este completat authorizedPersonCid, atributele devin: "authorizedPersonCid|cardNo|hospitalizationEnterDate|hospitalizationExitDate|sectionCode".
 											</xs:documentation>
 										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="exceptedFromCard" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Serviciul este exceptat de la semnarea cu cardul pacientului</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:length value="1"/>
+												<xs:enumeration value="1">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">pacientul executa o pedeapsa privativa de libertate sau se afla în arest preventiv</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="2">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">persoane cu tulburari psihice prevazute în Legea sanatatii mintale</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="authorizedPersonCid" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Codul de identificare al reprezentantului legal</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:length value="20"/>
+											</xs:restriction>
+										</xs:simpleType>
 									</xs:attribute>
 									<xs:attribute name="signHash" type="xs:hexBinary" use="optional">
 										<xs:annotation>
@@ -122,9 +153,10 @@
 									<xs:attribute name="internmentSignature" type="xs:base64Binary" use="optional">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">
-																Semnătura digitală a pacientului in format Base64, utilizând certificatul de pe card.
-																Se completează la internare şi cuprinde atributele "cid|cardNo|internmentDate|sheetNo".
-															</xs:documentation>
+												Semnătura digitală a pacientului in format Base64, utilizând certificatul de pe card.
+												Se completează la internare şi cuprinde atributele "cid|cardNo|hospitalizationEnterDate|sectionCode".
+												Dacă este completat authorizedPersonCid, atributele devin: "authorizedPersonCid|cardNo|hospitalizationEnterDate|sectionCode".
+											</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
 									<xs:attribute name="certificateDate" type="xs:date" use="optional">
@@ -324,11 +356,11 @@
 									<xs:attribute name="refferedByOrgUnitCode" use="optional">
 										<xs:annotation>
 											<xs:documentation xml:lang="en">
-											Insurance house that the referring medic has a contract with.
-										</xs:documentation>
+												Insurance house that the referring medic has a contract with.
+											</xs:documentation>
 											<xs:documentation xml:lang="ro">
-											Codul casei judetene cu care are contract medicul care a emis biletul de trimitere.
-										</xs:documentation>
+												Codul casei judetene cu care are contract medicul care a emis biletul de trimitere.
+											</xs:documentation>
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">

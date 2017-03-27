@@ -155,11 +155,22 @@
 						</xs:restriction>
 					</xs:simpleType>
 				</xs:attribute>
+				<xs:attribute name="authorizedPersonCid" use="optional">
+					<xs:annotation>
+						<xs:documentation xml:lang="ro">Codul de identificare al reprezentantului legal</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:length value="20"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>	
 				<xs:attribute name="signature" type="xs:base64Binary" use="optional">
 					<xs:annotation>
 						<xs:documentation xml:lang="ro">
 							Semnătura digitală a pacientului in format Base64, utilizând certificatul de pe card.
 							Se completează numai dacă este completat şi numărul de card şi cuprinde atributele "cid|cardNo|date|code".
+							Dacă este completat authorizedPersonCid, atributele devin: "authorizedPersonCid|cardNo|date|code".
 						</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
