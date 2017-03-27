@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://www.cnas.ro/siui/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.cnas.ro/siui/2.0" elementFormDefault="qualified" id="ImportAcut">
+	<xs:element name="report">
+		<xs:annotation>
+			<xs:documentation xml:lang="ro">Definitia unui fisier de raportare pentru acute.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:element name="Acute" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation xml:lang="ro">
+              Lista informatiilor despre cazurile acute.
+            </xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Acut" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation xml:lang="ro">Definitia rand de acute raportat.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:attribute name="AppID" type="xs:string" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">
+                        Identificator unic in aplicatia de raportare.
+                        Acest atribut este folosit la identificarea randului raportat.
+                      </xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="hospitalDeptCode" type="xs:string" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">
+                        Codul sectiei de spital.
+                      </xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="realisedCasesNo" type="xs:integer" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">
+                        Numarul de cazuri externate si raportate catre SNSPMS.
+                      </xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="invalidatedCasesNo" type="xs:integer" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">
+                        Numarul de cazuri externate, raportate si invalidate de SNSPMS.
+                      </xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="fromDate" type="xs:date" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Data de inceput a perioadei raportate</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="toDate" type="xs:date" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Data de sfarsit a perioadei raportate</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="transferredCasesNo" type="xs:integer" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Nr. cazuri externate (reinternate şi transferate)</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="transferredCasesApproved" type="xs:integer" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Nr. cazuri externate (reinternate şi transferate) aprobate</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="personType" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Codul tipului de persoana pentru care sunt valabile informatiile raportate (Asigurata, Boli profesionale, Vatamari corporale, Card European, Asigurari internationale.)</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="ASIGURAT">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Asigurati</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="ACCI_PROF">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Accidente de munca sau boli profesionale</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="PREJ_DAUN">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Accidente rutiere sau vatamari corporale</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="CARD_EURO">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Persoane titulare ale cardului european</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="CETA_CONV">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Cetatenii statelor cu care Romania a incheiat intelegeri, conventii sau protocoale internationale</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="FORM_CEE">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Beneficiari de regulament cee 1408/1971</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Chronics" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation xml:lang="ro">Colectia de cronici raportata.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Chronic" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation xml:lang="ro">Definitia unui rand de cronici raportat.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:attribute name="AppID" type="xs:string" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Identificatorul unic al înregistrării</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="hospitalDeptCode" type="xs:string" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Codul sectiei de spital.</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="realisedCasesNo" type="xs:integer" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Numarul de cazuri externate si raportate catre SNSPMS.</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="invalidatedCasesNo" type="xs:integer" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Numarul de cazuri invalidate de SNSPMS.</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="optimalDuration" type="xs:decimal" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Durata optima de spitalizare.</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="hospitalizationDays" type="xs:integer" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Numarul de zile de spitalizare efectuate.</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="fromDate" type="xs:date" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Data de inceput a perioadei raportate</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="toDate" type="xs:date" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Data de sfarsit a perioadei raportate</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="personType" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Codul tipului de persoana pentru care sunt valabile informatiile raportate (Asigurata, Boli profesionale, Vatamari corporale, Card European, Asigurari internationale.)</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="ASIGURAT">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Asigurati</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="ACCI_PROF">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Accidente de munca sau boli profesionale</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="PREJ_DAUN">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Accidente rutiere sau vatamari corporale</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="CARD_EURO">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Persoane titulare ale cardului european</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="CETA_CONV">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Cetatenii statelor cu care Romania a incheiat intelegeri, conventii sau protocoale internationale</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="FORM_CEE">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Beneficiari de regulament cee 1408/1971</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="invalidatedDays" type="xs:integer" use="optional"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="DRGs" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation xml:lang="ro">
+              Lista serviciilor DRG.
+            </xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DRG" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation xml:lang="ro">Definitia unui serviciu DRG raportat.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:attribute name="AppID" type="xs:string" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Identificatorul unic al înregistrării</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="hospitalDeptCode" type="xs:string" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">
+                        Codul sectie de spital.
+                      </xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="coefK" type="xs:double" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">
+                        Valoarea coeficientului K al cazurilor extreme.
+                      </xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="icmRealizat" type="xs:double" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">
+                        Valoarea ICM (Indice case-mix) realizat.
+                      </xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="invalidatedCasesNo" type="xs:integer" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">
+                        Numarul de cazuri raportate si ne-validate de catre SNSPMS.
+                      </xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="realisedCasesNo" type="xs:integer" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">
+                        Numarul de cazuri externate si raportate catre SNSPMS.
+                      </xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="fromDate" type="xs:date" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Data de inceput a perioadei raportate</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="toDate" type="xs:date" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Data de sfarsit a perioadei raportate</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="transferredCasesNo" type="xs:integer" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Nr. cazuri externate (reinternate şi transferate)</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="transferredCasesApproved" type="xs:integer" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Nr. cazuri externate (reinternate şi transferate) aprobate</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="personType" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Codul tipului de persoana pentru care sunt valabile informatiile raportate (Asigurata, Boli profesionale, Vatamari corporale, Card European, Asigurari internationale.)</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="ASIGURAT">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Asigurati</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="ACCI_PROF">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Accidente de munca sau boli profesionale</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="PREJ_DAUN">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Accidente rutiere sau vatamari corporale</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="CARD_EURO">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Persoane titulare ale cardului european</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="CETA_CONV">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Cetatenii statelor cu care Romania a incheiat intelegeri, conventii sau protocoale internationale</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="FORM_CEE">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Beneficiari de regulament cee 1408/1971</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Paliatives" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation xml:lang="ro">Colectia de servicii paliative raportata.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Paliativ" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation xml:lang="ro">Definitia unui rand de paliative raportat.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:attribute name="AppID" type="xs:string" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Identificatorul unic al înregistrării</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="hospitalDeptCode" type="xs:string" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Codul sectiei de spital.</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="realisedCasesNo" type="xs:integer" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Numarul de cazuri externate si raportate catre SNSPMS.</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="invalidatedCasesNo" type="xs:integer" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Numarul de cazuri invalidate de SNSPMS.</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="hospitalizationDays" type="xs:integer" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Numarul de zile de spitalizare efectuate.</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="fromDate" type="xs:date" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Data de inceput a perioadei raportate</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="toDate" type="xs:date" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Data de sfarsit a perioadei raportate</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="personType" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Codul tipului de persoana pentru care sunt valabile informatiile raportate (Asigurata, Boli profesionale, Vatamari corporale, Card European, Asigurari internationale.)</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="ASIGURAT">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Asigurati</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="ACCI_PROF">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Accidente de munca sau boli profesionale</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="PREJ_DAUN">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Accidente rutiere sau vatamari corporale</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="CARD_EURO">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Persoane titulare ale cardului european</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="CETA_CONV">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Cetatenii statelor cu care Romania a incheiat intelegeri, conventii sau protocoale internationale</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="FORM_CEE">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Beneficiari de regulament cee 1408/1971</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="DailyHospitalizations" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DailyHospitalization" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="AppId" type="xs:string" use="required"/>
+									<xs:attribute name="hospitalDeptCode" type="xs:string" use="optional"/>
+									<xs:attribute name="realisedServicesNo" type="xs:integer" use="required"/>
+									<xs:attribute name="serviceCode" type="xs:string" use="required"/>
+									<xs:attribute name="fromDate" type="xs:date" use="optional"/>
+									<xs:attribute name="toDate" type="xs:date" use="optional"/>
+									<xs:attribute name="personType" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Codul tipului de persoana pentru care sunt valabile informatiile raportate (Asigurata, Boli profesionale, Vatamari corporale, Card European, Asigurari internationale.)</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="ASIGURAT">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Asigurati</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="ACCI_PROF">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Accidente de munca sau boli profesionale</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="PREJ_DAUN">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Accidente rutiere sau vatamari corporale</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="CARD_EURO">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Persoane titulare ale cardului european</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="CETA_CONV">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Cetatenii statelor cu care Romania a incheiat intelegeri, conventii sau protocoale internationale</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="FORM_CEE">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Beneficiari de regulament cee 1408/1971</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="tariffType" use="required">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:length value="1"/>
+												<xs:enumeration value="0"/>
+												<xs:enumeration value="1"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+			<xs:attribute name="AppKey" type="xs:string" use="optional">
+				<xs:annotation>
+					<xs:documentation xml:lang="ro">Cheia de identificare a aplicaţiei de raportare (producator de software 3rd partry)</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="AppID" type="xs:string" use="required">
+				<xs:annotation>
+					<xs:documentation xml:lang="ro">
+            Identificator unic in aplicatia de raportare.
+            Acest atribut este folosit la identificarea raportarii.
+          </xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="hospitalCode" type="xs:string" use="required">
+				<xs:annotation>
+					<xs:documentation xml:lang="ro">
+            Codul unitatii care face raportarea.
+          </xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="fiscalCode" type="xs:string" use="required">
+				<xs:annotation>
+					<xs:documentation xml:lang="ro">
+            Codul fiscal al unitatii care face raportarea.
+          </xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="insuranceHouse" type="xs:string" use="required">
+				<xs:annotation>
+					<xs:documentation xml:lang="ro">
+            Codul casei de asigurari cu care este contractul. Acest atribut este preluat din nomenclatorul OrgUnits.
+          </xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="contractNo" type="xs:string" use="required">
+				<xs:annotation>
+					<xs:documentation xml:lang="ro">
+            Numarul contractului pentru care se face raportarea.
+          </xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="reportingDate" type="xs:date" use="required">
+				<xs:annotation>
+					<xs:documentation xml:lang="ro">
+            Data raportarii.
+          </xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="startFrom" type="xs:date" use="required">
+				<xs:annotation>
+					<xs:documentation xml:lang="ro">
+            Data de inceput a perioadei raportate.
+          </xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="endTo" type="xs:date" use="required">
+				<xs:annotation>
+					<xs:documentation xml:lang="ro">
+            Data de sfarsit a perioadei raportate.
+          </xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="invoiceNo" use="optional">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">Invoice number</xs:documentation>
+					<xs:documentation xml:lang="ro">Numar factura</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="invoiceDate" type="xs:date" use="optional">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">Invoice date</xs:documentation>
+					<xs:documentation xml:lang="ro">Data factura</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="invoiceValue" type="xs:decimal" use="optional">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">Invoice amount</xs:documentation>
+					<xs:documentation xml:lang="ro">Valoare factura</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="reportType" use="required">
+				<xs:annotation>
+					<xs:documentation xml:lang="ro">1|DRG;2|acuti;3|cronici; 5|paliative;6|spitalizare de zi</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+						<xs:enumeration value="1"/>
+						<xs:enumeration value="2"/>
+						<xs:enumeration value="3"/>
+						<xs:enumeration value="5"/>
+						<xs:enumeration value="6"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

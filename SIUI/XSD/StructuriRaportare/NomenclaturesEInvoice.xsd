@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NomenclaturesEInvoice" targetNamespace="http://www.cnas.ro/siui/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.cnas.ro/siui/2.0" elementFormDefault="qualified">
+	<xs:element name="Catalogues">
+		<xs:annotation>
+			<xs:documentation xml:lang="ro">Structura nomenclatoarelor pentru factura electronică</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="InvoiceItems" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation xml:lang="ro">Catalogul de tipuri de articole care pot fi facturate</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="InvoiceItem" minOccurs="0" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation xml:lang="ro">Definiţia unei tip de articol facturat</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:attribute name="code" use="required">
+									<xs:annotation>
+										<xs:documentation xml:lang="ro">Codul tipului de articol</xs:documentation>
+									</xs:annotation>
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:attribute>
+								<xs:attribute name="description" use="required">
+									<xs:annotation>
+										<xs:documentation xml:lang="ro">Denumirea tipului de articol</xs:documentation>
+									</xs:annotation>
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="100" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:attribute>
+								<xs:attribute name="providerCategory" use="required">
+									<xs:annotation>
+										<xs:documentation xml:lang="ro">Categoria de furnizor pentru care este valabil tipul de articol</xs:documentation>
+									</xs:annotation>
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:attribute>
+								<xs:attribute name="contractType" use="required">
+									<xs:annotation>
+										<xs:documentation xml:lang="ro">Tipul de contract de pentru care este valabil tipul de articol</xs:documentation>
+									</xs:annotation>
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="20" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:attribute>
+								<xs:attribute name="validFrom" type="xs:date" use="required">
+									<xs:annotation>
+										<xs:documentation xml:lang="ro">Data de început a valabilităţii tipului de articol</xs:documentation>
+									</xs:annotation>
+								</xs:attribute>
+								<xs:attribute name="validTo" type="xs:date" use="optional">
+									<xs:annotation>
+										<xs:documentation xml:lang="ro">Data de sfârşit a valabilităţii tipului de articol</xs:documentation>
+									</xs:annotation>
+								</xs:attribute>
+							</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
