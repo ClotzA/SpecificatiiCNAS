@@ -146,7 +146,7 @@
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:attribute>
-        <xs:attribute name="providerCategory" use="required">
+		<xs:attribute name="providerCategory" use="required">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">Categoria furnizorului emitent al facturii</xs:documentation>
 			</xs:annotation>
@@ -193,7 +193,13 @@
 		</xs:attribute>
 		<xs:attribute name="isFinal" type="xs:boolean" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">Factură finală</xs:documentation>
+				<xs:documentation xml:lang="ro">Factura este finală (nu se mai poate modifica)</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="isSigned" type="xs:boolean" use="optional">
+			<xs:annotation>
+				<xs:appinfo><xml:spec edit="added" /></xs:appinfo>
+				<xs:documentation xml:lang="ro">Factura este semnată electronic (se foloseşte doar pe răspuns)</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="cancellationDate" type="xs:date" use="optional">

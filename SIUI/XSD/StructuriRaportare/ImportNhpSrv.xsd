@@ -130,15 +130,15 @@
 										</xs:simpleType>
 									</xs:attribute>
 									<xs:attribute name="authorizedCid" use="optional">
-									    <xs:annotation>
-									        <xs:documentation xml:lang="ro">Numărul de asigurat al reprezentantului legal</xs:documentation>
-									    </xs:annotation>
-									    <xs:simpleType>
-									        <xs:restriction base="xs:string">
-									            <xs:maxLength value="30"/>
-									        </xs:restriction>
-								        </xs:simpleType>
-									</xs:attribute>										
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Numărul de asigurat al reprezentantului legal</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="30"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
 									<xs:attribute name="signature" type="xs:base64Binary" use="optional">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">
@@ -176,11 +176,11 @@
 										<xs:annotation>
 											 <xs:documentation xml:lang="ro">Identificatorul unic al înregistrării</xs:documentation>
 										</xs:annotation>
-	                                    <xs:simpleType>
-					                        <xs:restriction base="xs:string">
-						                        <xs:maxLength value="20"/>
-				                            </xs:restriction>
-			                            </xs:simpleType>												   
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="20"/>
+											</xs:restriction>
+										</xs:simpleType>
 									</xs:attribute>
 				                    <xs:attribute name="personType" use="optional">
 					                  <xs:annotation>
@@ -211,6 +211,12 @@
 						                </xs:restriction>
 					                 </xs:simpleType>
 					              </xs:attribute>
+									<xs:attribute name="exceptedFromCard" type="xs:boolean" use="optional">
+										<xs:annotation>
+											<xs:appinfo><xml:spec edit="added" /></xs:appinfo>
+											<xs:documentation xml:lang="ro">Indica daca serviciul este insotit sau nu de referatul de solicitare. Pentru serviciile insotite de referatul de solicitare nu este necesara prezentarea cardului national de asigurari sociale de sanatate. </xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
 								</xs:complexType>
 							</xs:element>
 						</xs:sequence>

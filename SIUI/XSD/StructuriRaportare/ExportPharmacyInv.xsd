@@ -106,7 +106,8 @@
 						<xs:attribute name="reportingDate" type="xs:date" use="required"/>
 						<xs:attribute name="isEprescReporting" use="required">
 							<xs:annotation>
-								<xs:documentation xml:lang="ro">Tipul raportarii: 0-retete stupefiante; 1-retete electronice din PEL; 2-electronice trimise direct de FARMACIE</xs:documentation>
+								<xs:appinfo><xml:spec edit="changed" /></xs:appinfo>
+								<xs:documentation xml:lang="ro">Tipul raportarii: 0-Retete tipizate stupefiante(P,S); 1,3-Retete electronice din PEL(E,ER); 2,4-Retete electronice trimise direct de FARMACIE(E,ER)</xs:documentation>
 							</xs:annotation>
 							<xs:simpleType>
 								<xs:restriction base="xs:string">
@@ -114,6 +115,8 @@
 									<xs:enumeration value="0"/>
 									<xs:enumeration value="1"/>
 									<xs:enumeration value="2"/>
+									<xs:enumeration value="3"/>
+									<xs:enumeration value="4"/>
 								</xs:restriction>
 							</xs:simpleType>
 						</xs:attribute>

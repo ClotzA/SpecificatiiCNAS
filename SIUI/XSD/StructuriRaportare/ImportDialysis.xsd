@@ -147,6 +147,28 @@
 											<xs:documentation xml:lang="ro">Tipul pacientului. Dacă nu e completat se consideră implicit ASIGURAT.</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
+									<xs:attribute name="insuranceHouseConst" use="optional">
+										<xs:annotation>
+											<xs:appinfo><xml:spec edit="added" /></xs:appinfo>
+											<xs:documentation xml:lang="ro">Codul casei de asigurari cu care este incheiat contractul de dializa de catre centrul unde pacientul este constant in evidenta. Acest atribut este preluat din nomenclatorul InsuranceHouses.</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="20" />
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="contractNoConst" use="optional">
+										<xs:annotation>
+											<xs:appinfo><xml:spec edit="added" /></xs:appinfo>
+											<xs:documentation xml:lang="ro">Numarul de contract incheiat cu casa judeteana de catre centrul de dializa unde bolnavul este constant in evidenta.</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="40" />
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
 								</xs:complexType>
 							</xs:element>
 						</xs:sequence>
@@ -421,6 +443,28 @@
 											<xs:documentation xml:lang="ro">Tipul pacientului. Dacă nu e completat se consideră implicit ASIGURAT.</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
+									<xs:attribute name="insuranceHouseConst" use="optional">
+										<xs:annotation>
+											<xs:appinfo><xml:spec edit="added" /></xs:appinfo>
+											<xs:documentation xml:lang="ro">Codul casei de asigurari cu care este incheiat contractul de dializa de catre centrul unde pacientul este constant in evidenta. Acest atribut este preluat din nomenclatorul InsuranceHouses.</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="20" />
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="contractNoConst" use="optional">
+										<xs:annotation>
+											<xs:appinfo><xml:spec edit="added" /></xs:appinfo>
+											<xs:documentation xml:lang="ro">Numarul de contract incheiat cu casa judeteana de catre centrul de dializa unde bolnavul este constant in evidenta.</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="40" />
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
 								</xs:complexType>
 							</xs:element>
 						</xs:sequence>
@@ -635,7 +679,7 @@
 			</xs:attribute>
 		</xs:complexType>
 	</xs:element>
-
+	
 	<xs:complexType name="foreignPersonType">
 		<xs:annotation>
 			<xs:documentation xml:lang="ro">Tipul de date folosit pentru datele cetăţeni străini</xs:documentation>
@@ -758,5 +802,5 @@
 				</xs:annotation>
 			</xs:enumeration>
 		</xs:restriction>
-	</xs:simpleType>
+	</xs:simpleType>	
 </xs:schema>

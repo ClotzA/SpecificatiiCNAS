@@ -797,6 +797,7 @@
 									</xs:attribute>
 									<xs:attribute name="exceptedFromBi" use="optional">
 										<xs:annotation>
+											<xs:appinfo><xml:spec edit="changed" /></xs:appinfo>
 											<xs:documentation xml:lang="ro">Internarea este exceptata de la bilet de internare</xs:documentation>
 										</xs:annotation>
 										<xs:simpleType>
@@ -809,6 +810,11 @@
 												<xs:enumeration value="3">
 													<xs:annotation>
 														<xs:documentation xml:lang="ro">autorizatie prealabila a institutiilor competente din statele UE</xs:documentation>
+													</xs:annotation>
+												</xs:enumeration>
+												<xs:enumeration value="4">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">scrisoare medicala acordata la externare cu indicatie de revenire pentru internare</xs:documentation>
 													</xs:annotation>
 												</xs:enumeration>
 											</xs:restriction>
@@ -843,6 +849,12 @@
 												<xs:maxLength value="10"/>
 											</xs:restriction>
 										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="recommendationDate" type="xs:date" use="optional">
+										<xs:annotation>
+											<xs:appinfo><xml:spec edit="added" /></xs:appinfo>
+											<xs:documentation xml:lang="ro">Data scrisorii medicale acordate la externare cu indicatie de revenire pentru internare</xs:documentation>
+										</xs:annotation>
 									</xs:attribute>
 								</xs:complexType>
 							</xs:element>

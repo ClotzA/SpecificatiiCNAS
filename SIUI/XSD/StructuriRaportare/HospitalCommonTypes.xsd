@@ -101,11 +101,11 @@
 		<xs:attribute name="diagnosticType" type="xs:string" use="required">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">
-				    Codul tipului de diagnostic. Acest atribut poate avea urmatoarele valori:
-					    1 -&gt; ACUT
-					    2 -&gt; SUBACUT
-				        3 -&gt; CRONIC
-	             </xs:documentation>
+					Codul tipului de diagnostic. Acest atribut poate avea urmatoarele valori:
+					1 -&gt; ACUT
+					2 -&gt; SUBACUT
+					3 -&gt; CRONIC
+				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
@@ -354,19 +354,19 @@
 		<xs:attribute name="deviceType" type="xs:string" use="optional">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">
-                     Tipul de dispozitiv prescris. Acest atribut poate avea urmatoarele valori:
-                     0 -&gt; DREPT
-                     1 -&gt; STANG
-                </xs:documentation>
+					Tipul de dispozitiv prescris. Acest atribut poate avea urmatoarele valori:
+					0 -&gt; DREPT
+					1 -&gt; STANG
+				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="prothesysType" type="xs:string" use="optional">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">
-                     Tipul de proteza. Acest atribut poate avea urmatoarele valori:
-                     0 -&gt; DEFINITIVA
-                     1 -&gt; TEMPORARA
-                </xs:documentation>
+					Tipul de proteza. Acest atribut poate avea urmatoarele valori:
+					0 -&gt; DEFINITIVA
+					1 -&gt; TEMPORARA
+				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="deviceCode" type="xs:string" use="required">
@@ -509,9 +509,9 @@
 		<xs:attribute name="ticketType" type="xs:string" use="required">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">
-				    Tipul de trimitere. Acest atribut poate avea urmatoarele valori:
-				        1 -&gt; CLINIC (DE SPECIALITATE)
-				        2 -&gt; PARACLINIC (DE LABORATOR)
+					Tipul de trimitere. Acest atribut poate avea urmatoarele valori:
+					1 -&gt; CLINIC (DE SPECIALITATE)
+					2 -&gt; PARACLINIC (DE LABORATOR)
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -545,7 +545,7 @@
 					<xs:maxLength value="20" />
 				</xs:restriction>
 			</xs:simpleType>
-		</xs:attribute>		
+		</xs:attribute>
 		<xs:attribute name="personIdentifier" use="required">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">Codul de identificare al persoanei staine.</xs:documentation>
@@ -825,14 +825,14 @@
 		<xs:attribute name="internmentType" use="optional">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">
-	                        Tipul internarii. Acest atribut poate avea urmatoarele valori:
-	                        1 -&gt; FARA BILET
-	                        2 -&gt; BILET MEDIC DE FAMILIE
-	                        3 -&gt; BILET MEDIC SPECIALIST AMBULATORIU
-	                        4 -&gt; TRANSFER INTERSPITALICESC
-	                        5 -&gt; LA CERERE
-	                        9 -&gt; ALTE
-	            </xs:documentation>
+					Tipul internarii. Acest atribut poate avea urmatoarele valori:
+					1 -&gt; FARA BILET
+					2 -&gt; BILET MEDIC DE FAMILIE
+					3 -&gt; BILET MEDIC SPECIALIST AMBULATORIU
+					4 -&gt; TRANSFER INTERSPITALICESC
+					5 -&gt; LA CERERE
+					9 -&gt; ALTE
+				</xs:documentation>
 			</xs:annotation>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
@@ -982,7 +982,7 @@
 				<xs:restriction base="xs:string">
 					<xs:maxLength value="100"/>
 				</xs:restriction>
-			</xs:simpleType>			
+			</xs:simpleType>
 		</xs:attribute>
 		<xs:attribute name="lastName" use="optional">
 			<xs:annotation>
@@ -992,17 +992,17 @@
 				<xs:restriction base="xs:string">
 					<xs:maxLength value="100"/>
 				</xs:restriction>
-			</xs:simpleType>			
+			</xs:simpleType>
 		</xs:attribute>
 		<xs:attribute name="sex" use="optional">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">Sexul pacientului.</xs:documentation>
 			</xs:annotation>
-		    <xs:simpleType>
+			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:maxLength value="1"/>
 				</xs:restriction>
-			</xs:simpleType>			
+			</xs:simpleType>
 		</xs:attribute>
 		<xs:attribute name="insuranceType" use="optional">
 			<xs:annotation>
@@ -1066,7 +1066,7 @@
 				<xs:restriction base="xs:string">
 					<xs:maxLength value="50"/>
 				</xs:restriction>
-			</xs:simpleType>			
+			</xs:simpleType>
 		</xs:attribute>
 		<xs:attribute name="categAsig" use="optional">
 			<xs:annotation>
@@ -1147,14 +1147,14 @@
 		<xs:attribute name="internmentType" use="required">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">
-                        Tipul internarii. Acest atribut poate avea urmatoarele valori:
-                        1 -&gt; FARA BILET
-                        2 -&gt; BILET MEDIC DE FAMILIE
-                        3 -&gt; BILET MEDIC SPECIALIST AMBULATORIU
-                        4 -&gt; TRANSFER INTERSPITALICESC
-                        5 -&gt; LA CERERE
-                        9 -&gt; ALTE
-                      </xs:documentation>
+					Tipul internarii. Acest atribut poate avea urmatoarele valori:
+					1 -&gt; FARA BILET
+					2 -&gt; BILET MEDIC DE FAMILIE
+					3 -&gt; BILET MEDIC SPECIALIST AMBULATORIU
+					4 -&gt; TRANSFER INTERSPITALICESC
+					5 -&gt; LA CERERE
+					9 -&gt; ALTE
+				</xs:documentation>
 			</xs:annotation>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
@@ -1171,30 +1171,30 @@
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">Codul diagnosticului la internare. Acest cod este preluat din nomenclatorul COM10S.</xs:documentation>
 			</xs:annotation>
-		    <xs:simpleType>
-                <xs:restriction base="xs:string">
-				    <xs:maxLength value="20"/>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="20"/>
 				</xs:restriction>
-		    </xs:simpleType>
+			</xs:simpleType>
 		</xs:attribute>
 		<xs:attribute name="mainDiagCode" use="optional">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">Codul diagnosticului principal. Acest cod este preluat din nomenclatorul COM10S.</xs:documentation>
 			</xs:annotation>
-		    <xs:simpleType>
-			    <xs:restriction base="xs:string">
-			         <xs:maxLength value="20"/>
-			    </xs:restriction>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="20"/>
+				</xs:restriction>
 			</xs:simpleType>
 		</xs:attribute>
 		<xs:attribute name="at72hDiagCode" use="optional">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">Codul diagnosticului la 72 de ore. Acest cod este preluat din nomenclatorul COM10S.</xs:documentation>
 			</xs:annotation>
-		    <xs:simpleType>
-			    <xs:restriction base="xs:string">
-			         <xs:maxLength value="20"/>
-			    </xs:restriction>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="20"/>
+				</xs:restriction>
 			</xs:simpleType>
 		</xs:attribute>
 		<xs:attribute name="surgeonStencilNo" type="stencilType" use="optional">
@@ -1205,13 +1205,13 @@
 		<xs:attribute name="releaseState" use="optional">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">
-                  Codul starii la externare. Acest atribut poate avea urmatoarele valori:
-                  1 -&gt; VINDECAT
-                  2 -&gt; AMELIORAT
-                  3 -&gt; STATIONAR
-                  4 -&gt; AGRAVAT
-                  5 -&gt; DECEDAT
-                </xs:documentation>
+					Codul starii la externare. Acest atribut poate avea urmatoarele valori:
+					1 -&gt; VINDECAT
+					2 -&gt; AMELIORAT
+					3 -&gt; STATIONAR
+					4 -&gt; AGRAVAT
+					5 -&gt; DECEDAT
+				</xs:documentation>
 			</xs:annotation>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
@@ -1222,12 +1222,12 @@
 		<xs:attribute name="releaseType" type="xs:string" use="optional">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">
-		                  Tipul externarii. Acest atribut poate avea urmatoarele valori:
-		                  1 -&gt; EXTERNAT
-		                  2 -&gt; EXTERNAT LA CERERE
-		                  3 -&gt; TRANSFER INTERSPITALICESC
-		                  4 -&gt; DECEDAT
-		        </xs:documentation>
+					Tipul externarii. Acest atribut poate avea urmatoarele valori:
+					1 -&gt; EXTERNAT
+					2 -&gt; EXTERNAT LA CERERE
+					3 -&gt; TRANSFER INTERSPITALICESC
+					4 -&gt; DECEDAT
+				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="weightOnBirth" type="xs:double" use="optional">
@@ -1244,10 +1244,10 @@
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">Codul casei judetene de asigurari de care apartine pacientul.</xs:documentation>
 			</xs:annotation>
-		    <xs:simpleType>
-			    <xs:restriction base="xs:string">
-			        <xs:maxLength value="20"/>
-			    </xs:restriction>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="20"/>
+				</xs:restriction>
 			</xs:simpleType>
 		</xs:attribute>
 		<xs:attribute name="cid" use="optional">
@@ -1335,6 +1335,7 @@
 		</xs:attribute>
 		<xs:attribute name="exceptedFromBi" use="optional">
 			<xs:annotation>
+				<xs:appinfo><xml:spec edit="changed" /></xs:appinfo>
 				<xs:documentation xml:lang="ro">Internarea este exceptata de la bilet de internare</xs:documentation>
 			</xs:annotation>
 			<xs:simpleType>
@@ -1352,6 +1353,16 @@
 					<xs:enumeration value="2">
 						<xs:annotation>
 							<xs:documentation xml:lang="ro">monitorizare HIV/SIDA</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="4">
+						<xs:annotation>
+							<xs:documentation xml:lang="ro">scrisoare medicala acordata la externare cu indicatie de revenire pentru internare</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="5">
+						<xs:annotation>
+							<xs:documentation xml:lang="ro">pacienti cu hemofilie aflati in programul national de hemofilie</xs:documentation>
 						</xs:annotation>
 					</xs:enumeration>
 				</xs:restriction>
@@ -1386,6 +1397,12 @@
 					<xs:maxLength value="10"/>
 				</xs:restriction>
 			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="recommendationDate" type="xs:date" use="optional">
+			<xs:annotation>
+				<xs:appinfo><xml:spec edit="added" /></xs:appinfo>
+				<xs:documentation xml:lang="ro">Data scrisorii medicale acordate la externare cu indicatie de revenire pentru internare</xs:documentation>
+			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="internmentSignature" type="xs:base64Binary" use="optional">
 			<xs:annotation>
@@ -1476,11 +1493,11 @@
 		<xs:attribute name="serviceCode" use="required">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">
-                        Codul serviciului, care se va completa astfel:
-                        Daca serviceType = C - se va completa codul din nomenclatorul de servicii clinice;
-                        Daca serviceType = P - se va completa codul din nomenclatorul de servicii paraclinice;
-                        Daca serviceType = A - se va completa cu "TC" daca e transport pt clinice; "TP" daca e transport pt paraclinice si "TA" daca e transport pentru paraclinice si clinice.
-                      </xs:documentation>
+					Codul serviciului, care se va completa astfel:
+					Daca serviceType = C - se va completa codul din nomenclatorul de servicii clinice;
+					Daca serviceType = P - se va completa codul din nomenclatorul de servicii paraclinice;
+					Daca serviceType = A - se va completa cu "TC" daca e transport pt clinice; "TP" daca e transport pt paraclinice si "TA" daca e transport pentru paraclinice si clinice.
+				</xs:documentation>
 			</xs:annotation>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
@@ -1516,11 +1533,11 @@
 		<xs:attribute name="serviceType" use="required">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">
-	                        Tipul de serviciu:
-	                        - C = clinic
-	                        - P = paraclinic
-	                        - A = ambulanta
-	            </xs:documentation>
+					Tipul de serviciu:
+					- C = clinic
+					- P = paraclinic
+					- A = ambulanta
+				</xs:documentation>
 			</xs:annotation>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
