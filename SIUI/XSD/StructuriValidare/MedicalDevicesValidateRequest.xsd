@@ -231,7 +231,7 @@
 												</xs:restriction>
 											</xs:simpleType>
 										</xs:attribute>
-										<xs:attribute name="grantDate" type="xs:date" use="optional">
+										<xs:attribute name="grantDate" type="xs:dateTime" use="optional">
 											<xs:annotation>
 												<xs:documentation xml:lang="en">Grant date</xs:documentation>
 												<xs:documentation xml:lang="ro">Data acordare</xs:documentation>
