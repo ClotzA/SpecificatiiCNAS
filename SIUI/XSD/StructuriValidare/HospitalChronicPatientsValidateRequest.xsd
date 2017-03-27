@@ -349,6 +349,7 @@
 														<xs:simpleType>
 															<xs:restriction base="xs:string">
 																<xs:maxLength value="100"/>
+																<xs:pattern value="\+?[0-9]{10,}"/>
 															</xs:restriction>
 														</xs:simpleType>
 													</xs:attribute>	
@@ -360,6 +361,7 @@
 														<xs:simpleType>
 															<xs:restriction base="xs:string">
 																<xs:maxLength value="250"/>
+																<xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
 															</xs:restriction>
 														</xs:simpleType>
 													</xs:attribute>
@@ -858,6 +860,7 @@
 														<xs:simpleType>
 															<xs:restriction base="xs:string">
 																<xs:maxLength value="100"/>
+																<xs:pattern value="\+?[0-9]{10,}"/>
 															</xs:restriction>
 														</xs:simpleType>
 													</xs:attribute>	
@@ -869,6 +872,7 @@
 														<xs:simpleType>
 															<xs:restriction base="xs:string">
 																<xs:maxLength value="250"/>
+																<xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
 															</xs:restriction>
 														</xs:simpleType>
 													</xs:attribute>
