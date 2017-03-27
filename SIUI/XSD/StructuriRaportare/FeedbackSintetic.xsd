@@ -28,6 +28,25 @@
                             <xs:documentation xml:lang="ro">Codul erorii de raportare</xs:documentation>
                           </xs:annotation>
                         </xs:attribute>
+                        <xs:attribute name="errorType" use="optional">
+                           <xs:annotation>
+                               <xs:documentation xml:lang="ro">Tip de eroare in functie de severitate.</xs:documentation>
+                           </xs:annotation>
+                           <xs:simpleType>
+                              <xs:restriction base="xs:unsignedInt">
+                                 <xs:enumeration value="0">
+                                    <xs:annotation>
+                                        <xs:documentation xml:lang="ro">Avertizare</xs:documentation>
+                                    </xs:annotation>
+                                 </xs:enumeration>
+                                 <xs:enumeration value="1">
+                                    <xs:annotation>
+                                        <xs:documentation xml:lang="ro">Eroare</xs:documentation>
+                                    </xs:annotation>
+                                 </xs:enumeration>
+                              </xs:restriction>
+                           </xs:simpleType>
+                        </xs:attribute>	
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
@@ -165,20 +184,11 @@
           </xs:annotation>
           <xs:complexType>
             <xs:sequence>
-              <!--<xs:element name="errors">
-								<xs:annotation>
-									<xs:documentation xml:lang="ro">Lista erorilor pentru care fisa de spitalizare a fost ne-validata</xs:documentation>
-								</xs:annotation>
-								<xs:complexType>
-									<xs:sequence>-->
               <xs:element ref="error" minOccurs="0" maxOccurs="unbounded">
                 <xs:annotation>
                   <xs:documentation xml:lang="ro">Definitia unei erori de raportare.</xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <!-- </xs:sequence>
-								</xs:complexType>
-							</xs:element>-->
             </xs:sequence>
             <xs:attribute name="appID" type="xs:long" use="required">
               <xs:annotation>
@@ -239,6 +249,25 @@
         <xs:annotation>
           <xs:documentation xml:lang="ro">Codul erorii</xs:documentation>
         </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="errorType" use="optional">
+        <xs:annotation>
+            <xs:documentation xml:lang="ro">Tip de eroare in functie de severitate.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:unsignedInt">
+                <xs:enumeration value="0">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="ro">Avertizare</xs:documentation>
+                    </xs:annotation>
+                </xs:enumeration>
+                <xs:enumeration value="1">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="ro">Eroare</xs:documentation>
+                    </xs:annotation>
+                </xs:enumeration>
+            </xs:restriction>
+        </xs:simpleType>
       </xs:attribute>
     </xs:complexType>
   </xs:element>

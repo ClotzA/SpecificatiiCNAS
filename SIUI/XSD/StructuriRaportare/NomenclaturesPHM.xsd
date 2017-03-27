@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema targetNamespace="http://www.cnas.ro/siui/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.cnas.ro/siui/2.0" elementFormDefault="qualified" id="NomenclaturesPHM">
 	<xs:element name="Catalogues">
 		<xs:annotation>
@@ -23,7 +23,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -33,7 +33,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="100"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -59,7 +59,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -95,7 +95,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -131,7 +131,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -141,7 +141,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="100"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -151,7 +151,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -177,7 +177,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="30" />
+												<xs:maxLength value="30"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -187,7 +187,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="150" />
+												<xs:maxLength value="150"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -218,7 +218,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="30" />
+												<xs:maxLength value="30"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -228,7 +228,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="150" />
+												<xs:maxLength value="150"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -238,7 +238,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -248,7 +248,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="30" />
+												<xs:maxLength value="30"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -258,7 +258,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="30" />
+												<xs:maxLength value="30"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -284,7 +284,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="30" />
+												<xs:maxLength value="30"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -294,7 +294,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="150" />
+												<xs:maxLength value="150"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -320,7 +320,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="60" />
+												<xs:maxLength value="60"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -330,7 +330,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="255" />
+												<xs:maxLength value="255"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -340,7 +340,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="30" />
+												<xs:maxLength value="30"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -350,7 +350,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="30" />
+												<xs:maxLength value="30"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -376,7 +376,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -386,7 +386,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="100"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -412,7 +412,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -422,7 +422,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="100"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -432,7 +432,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -468,7 +468,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="100"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -504,7 +504,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="100"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -540,7 +540,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="200" />
+												<xs:maxLength value="200"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -550,7 +550,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="100"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -586,7 +586,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -596,7 +596,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="255" />
+												<xs:maxLength value="255"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -632,7 +632,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -642,7 +642,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="255" />
+												<xs:maxLength value="255"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -693,7 +693,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -703,7 +703,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="100"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -739,7 +739,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -749,7 +749,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="500" />
+												<xs:maxLength value="500"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -769,7 +769,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:decimal">
-												<xs:totalDigits value="18" />
+												<xs:totalDigits value="18"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -779,7 +779,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:decimal">
-												<xs:totalDigits value="18" />
+												<xs:totalDigits value="18"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -799,7 +799,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:decimal">
-												<xs:totalDigits value="18" />
+												<xs:totalDigits value="18"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -862,7 +862,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -887,7 +887,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -913,7 +913,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="30" />
+												<xs:maxLength value="30"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -923,7 +923,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="150" />
+												<xs:maxLength value="150"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -964,7 +964,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -974,7 +974,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="200" />
+												<xs:maxLength value="200"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1034,7 +1034,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="200" />
+												<xs:maxLength value="200"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1044,7 +1044,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="6" />
+												<xs:maxLength value="6"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1080,7 +1080,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1090,7 +1090,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="40" />
+												<xs:maxLength value="40"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1100,7 +1100,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1110,7 +1110,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="3" />
+												<xs:maxLength value="3"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1164,7 +1164,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1200,7 +1200,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1210,7 +1210,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="100"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1250,7 +1250,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1276,7 +1276,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1286,7 +1286,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="100"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1332,7 +1332,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1342,7 +1342,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="100"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1352,7 +1352,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1388,7 +1388,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="50" />
+												<xs:maxLength value="50"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1398,7 +1398,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="250" />
+												<xs:maxLength value="250"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1413,7 +1413,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="50" />
+												<xs:maxLength value="50"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1439,7 +1439,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="150" />
+												<xs:maxLength value="150"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1475,7 +1475,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="150" />
+												<xs:maxLength value="150"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1485,7 +1485,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1521,7 +1521,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1531,7 +1531,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="100"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1541,8 +1541,8 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:decimal">
-												<xs:totalDigits value="18" />
-												<xs:fractionDigits value="0" />
+												<xs:totalDigits value="18"/>
+												<xs:fractionDigits value="0"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1552,8 +1552,8 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:decimal">
-												<xs:totalDigits value="18" />
-												<xs:fractionDigits value="0" />
+												<xs:totalDigits value="18"/>
+												<xs:fractionDigits value="0"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1563,8 +1563,8 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:decimal">
-												<xs:totalDigits value="18" />
-												<xs:fractionDigits value="0" />
+												<xs:totalDigits value="18"/>
+												<xs:fractionDigits value="0"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1574,8 +1574,8 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:decimal">
-												<xs:totalDigits value="18" />
-												<xs:fractionDigits value="0" />
+												<xs:totalDigits value="18"/>
+												<xs:fractionDigits value="0"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1611,7 +1611,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1621,7 +1621,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1631,8 +1631,8 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:decimal">
-												<xs:totalDigits value="18" />
-												<xs:fractionDigits value="0" />
+												<xs:totalDigits value="18"/>
+												<xs:fractionDigits value="0"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1668,7 +1668,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1678,7 +1678,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="100"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1698,7 +1698,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1724,7 +1724,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1734,7 +1734,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="500" />
+												<xs:maxLength value="500"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1770,7 +1770,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1780,7 +1780,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="100"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1816,7 +1816,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1826,7 +1826,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="100"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1862,7 +1862,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="250" />
+												<xs:maxLength value="250"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1898,7 +1898,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1908,7 +1908,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="100"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1918,7 +1918,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="1" />
+												<xs:maxLength value="1"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1944,7 +1944,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1954,7 +1954,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="100"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1964,7 +1964,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="250" />
+												<xs:maxLength value="250"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1999,8 +1999,8 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:decimal">
-												<xs:totalDigits value="18" />
-												<xs:fractionDigits value="0" />
+												<xs:totalDigits value="18"/>
+												<xs:fractionDigits value="0"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2010,8 +2010,8 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:decimal">
-												<xs:totalDigits value="18" />
-												<xs:fractionDigits value="2" />
+												<xs:totalDigits value="18"/>
+												<xs:fractionDigits value="2"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2021,8 +2021,8 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:decimal">
-												<xs:totalDigits value="18" />
-												<xs:fractionDigits value="2" />
+												<xs:totalDigits value="18"/>
+												<xs:fractionDigits value="2"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2032,7 +2032,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="30" />
+												<xs:maxLength value="30"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2052,7 +2052,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="150" />
+												<xs:maxLength value="150"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2062,7 +2062,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="30" />
+												<xs:maxLength value="30"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2072,7 +2072,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="100"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2082,7 +2082,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2092,7 +2092,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2102,7 +2102,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2128,7 +2128,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2138,7 +2138,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2148,7 +2148,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2158,7 +2158,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2168,8 +2168,8 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:decimal">
-												<xs:totalDigits value="20" />
-												<xs:fractionDigits value="6" />
+												<xs:totalDigits value="20"/>
+												<xs:fractionDigits value="6"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2179,8 +2179,8 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:decimal">
-												<xs:totalDigits value="20" />
-												<xs:fractionDigits value="6" />
+												<xs:totalDigits value="20"/>
+												<xs:fractionDigits value="6"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2190,8 +2190,8 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:decimal">
-												<xs:totalDigits value="20" />
-												<xs:fractionDigits value="6" />
+												<xs:totalDigits value="20"/>
+												<xs:fractionDigits value="6"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2201,8 +2201,8 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:decimal">
-												<xs:totalDigits value="20" />
-												<xs:fractionDigits value="6" />
+												<xs:totalDigits value="20"/>
+												<xs:fractionDigits value="6"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2212,8 +2212,8 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:decimal">
-												<xs:totalDigits value="20" />
-												<xs:fractionDigits value="6" />
+												<xs:totalDigits value="20"/>
+												<xs:fractionDigits value="6"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2223,8 +2223,8 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:decimal">
-												<xs:totalDigits value="20" />
-												<xs:fractionDigits value="6" />
+												<xs:totalDigits value="20"/>
+												<xs:fractionDigits value="6"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2243,6 +2243,16 @@
 												J = C.J.A.S.,
 												A = A.N.T. (Agentia Nationala a Transplantului),
 												0 = Fără aprobare
+											</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="contractCv" type="xs:string" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">
+												Precizează dacă medicamentul se supune conditiilor specificate in aditionalul la contract de tip CV/CVR. Poate lua urmatoarele valori:
+												R = Cost Volum Rezultat,
+												V = Cost Volum,
+												0 = Fără contract
 											</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
@@ -2317,18 +2327,33 @@
 											<xs:documentation xml:lang="ro">Categoria de boală (valoarea codului din nomenclatoruld e categorii de boală)</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
+									<xs:attribute name="nhpCode" type="xs:string" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Numărul programului naţional de sănătate (valoare din catalogul de PNS-uri)</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
 									<xs:attribute name="needApproval" type="xs:string" use="required">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">
-												Precizează dacă medicamentul poate fi prescris numai cu aprobare specială. Poate lua urmatoarele valori:
-												M = Ministerul Sănătăţii,
+												Precizează dacă medicamentul poate fi prescris numai cu aprobare speciala. Poate lua urmatoarele valori:
+												M = Ministerul Sanatatii,
 												N = C.N.A.S.,
 												J = C.J.A.S.,
 												A = A.N.T. (Agentia Nationala a Transplantului),
-												0 = Fără aprobare
+												0 = Fara aprobare
 											</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
+									<xs:attribute name="contractCv" type="xs:string" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">
+												Precizează dacă medicamentul se supune conditiilor specificate in aditionalul la contract de tip CV/CVR. Poate lua urmatoarele valori:
+												R = Cost Volum Rezultat,
+												V = Cost Volum,
+												0 = Fără contract
+											</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>									
 									<xs:attribute name="validFrom" type="xs:date" use="required">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Data de început a valabilităţii</xs:documentation>
@@ -2355,7 +2380,7 @@
 									<xs:documentation xml:lang="ro">Definiţia tipului de departament de sănătate</xs:documentation>
 								</xs:annotation>
 								<xs:complexType>
-									<xs:sequence />
+									<xs:sequence/>
 									<xs:attribute name="code" type="xs:string" use="required">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Codul tipului de departament de sănătate</xs:documentation>
@@ -2398,7 +2423,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2408,7 +2433,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="100"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2439,13 +2464,13 @@
 											<xs:documentation xml:lang="ro">Tipul departamentului de sănătate (valoare din catalogul de tipuri de departamente de sănătate)</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
-									<xs:attribute name="medicalType" type="xs:string" use="optional" />
+									<xs:attribute name="medicalType" type="xs:string" use="optional"/>
 									<xs:attribute name="optimalDuration" type="xs:decimal" use="optional">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Durata optima de internare a departamentului de sănătate.</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
-									<xs:attribute name="tariff" type="xs:double" use="optional" />
+									<xs:attribute name="tariff" type="xs:double" use="optional"/>
 									<xs:attribute name="validFrom" type="xs:date" use="required">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Data de început a valabilităţii</xs:documentation>
@@ -2457,7 +2482,7 @@
 										</xs:annotation>
 									</xs:attribute>
 									<xs:attribute name="withOptimalDuration" type="xs:string" use="optional">
-									<xs:annotation>
+										<xs:annotation>
 											<xs:documentation xml:lang="ro">Flag care specifica daca sectia se deconteaza cu durata optima sau cu zile.
 											Daca acest atribut are valoarea 1, in această secţie se deconteaza la nivel de minim intre durata medie realizata si durata din norme.
 											Daca acest atribut are valoarea 0, in această secţie se deconteaza la nivel de zile efective.</xs:documentation>
@@ -2485,8 +2510,8 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:minLength value="13" />
-												<xs:maxLength value="13" />
+												<xs:minLength value="13"/>
+												<xs:maxLength value="13"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2567,7 +2592,7 @@
 									<xs:documentation xml:lang="ro">Definiţia unei zile libere (sărbătoare legală)</xs:documentation>
 								</xs:annotation>
 								<xs:complexType>
-									<xs:sequence />
+									<xs:sequence/>
 									<xs:attribute name="holiday" type="xs:date" use="required">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Data calendaristică declarată sărbătoare legală</xs:documentation>
@@ -2594,7 +2619,7 @@
 									<xs:documentation xml:lang="ro">Definiţia unei categorii de programe naţionale de sănătate</xs:documentation>
 								</xs:annotation>
 								<xs:complexType>
-									<xs:sequence />
+									<xs:sequence/>
 									<xs:attribute name="code" type="xs:string" use="required">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Codul categoriei de PNS</xs:documentation>
@@ -2817,7 +2842,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2827,7 +2852,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="100" />
+												<xs:maxLength value="100"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2837,7 +2862,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -2847,7 +2872,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>

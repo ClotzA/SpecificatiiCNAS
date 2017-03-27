@@ -80,6 +80,25 @@
 						<xs:documentation xml:lang="ro">Comentariul operatorului SIUI</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
+                <xs:attribute name="errorType" use="optional">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="ro">Tip de eroare in functie de severitate.</xs:documentation>
+                    </xs:annotation>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:unsignedInt">
+                            <xs:enumeration value="0">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="ro">Avertizare</xs:documentation>
+                                </xs:annotation>
+                            </xs:enumeration>
+                            <xs:enumeration value="1">
+                                <xs:annotation>
+                                    <xs:documentation xml:lang="ro">Eroare</xs:documentation>
+                                </xs:annotation>
+                            </xs:enumeration>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>

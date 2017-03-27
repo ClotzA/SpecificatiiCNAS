@@ -34,6 +34,25 @@
                                   <xs:documentation xml:lang="ro">Codul de eroare (valoare din nomenclatorul de erori)</xs:documentation>
                                 </xs:annotation>
                               </xs:attribute>
+                              <xs:attribute name="errorType" use="optional">
+                                <xs:annotation>
+                                  <xs:documentation xml:lang="ro">Tip de eroare in functie de severitate.</xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                  <xs:restriction base="xs:unsignedInt">
+                                    <xs:enumeration value="0">
+                                      <xs:annotation>
+                                        <xs:documentation xml:lang="ro">Averizare</xs:documentation>
+                                      </xs:annotation>
+                                    </xs:enumeration>
+                                    <xs:enumeration value="1">
+                                      <xs:annotation>
+                                        <xs:documentation xml:lang="ro">Eroare</xs:documentation>
+                                      </xs:annotation>
+                                    </xs:enumeration>
+                                  </xs:restriction>
+                                </xs:simpleType>
+                              </xs:attribute>
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
@@ -47,7 +66,7 @@
                   </xs:attribute>
                   <xs:attribute name="state" type="xs:string" use="required">
                     <xs:annotation>
-											<xs:documentation xml:lang="ro">Statusul serviciului care a fost raportat (0- serviciu a fost decontat fără erori; 1-serviciu nu a fost decontat) </xs:documentation>
+						<xs:documentation xml:lang="ro">Statusul serviciului care a fost raportat (0- serviciu a fost decontat fără erori; 1-serviciu nu a fost decontat) </xs:documentation>
                     </xs:annotation>
                   </xs:attribute>
                 </xs:complexType>

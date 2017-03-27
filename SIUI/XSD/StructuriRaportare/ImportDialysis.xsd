@@ -18,7 +18,7 @@
 								</xs:annotation>
 								<xs:complexType>
 									<xs:sequence>
-                                       <xs:element name="ForeignPerson" type="foreignPersonType" minOccurs="0">
+										<xs:element name="ForeignPerson" type="foreignPersonType" minOccurs="0">
 											<xs:annotation>
 												<xs:documentation xml:lang="ro">Detalii legate de persoana străină.</xs:documentation>
 											</xs:annotation>
@@ -39,16 +39,16 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:attribute>
-									            <xs:attribute name="authorizedCid" use="optional">
-										           <xs:annotation>
-											         <xs:documentation xml:lang="ro">Numărul de asigurat al reprezentantului legal</xs:documentation>
-										           </xs:annotation>
-										           <xs:simpleType>
-											          <xs:restriction base="xs:string">
-												           <xs:maxLength value="30"/>
-											          </xs:restriction>
-										           </xs:simpleType>
-									            </xs:attribute>												
+												<xs:attribute name="authorizedCid" use="optional">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Numărul de asigurat al reprezentantului legal</xs:documentation>
+													</xs:annotation>
+													<xs:simpleType>
+														<xs:restriction base="xs:string">
+															<xs:maxLength value="30"/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
 												<xs:attribute name="signature" type="xs:base64Binary" use="optional">
 													<xs:annotation>
 														<xs:documentation xml:lang="ro">
@@ -126,11 +126,11 @@
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Observaţii</xs:documentation>
 										</xs:annotation>
-							           <xs:simpleType>
-								          <xs:restriction base="xs:string">
-									         <xs:maxLength value="255"/>
-								          </xs:restriction>
-							           </xs:simpleType>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="255"/>
+											</xs:restriction>
+										</xs:simpleType>
 									</xs:attribute>
 									<xs:attribute name="temporaryTransfer" type="xs:boolean" use="required">
 										<xs:annotation>
@@ -203,15 +203,15 @@
 										</xs:simpleType>
 									</xs:attribute>
 									<xs:attribute name="authorizedCid" use="optional">
-									    <xs:annotation>
-						 		            <xs:documentation xml:lang="ro">Numărul de asigurat al reprezentantului legal</xs:documentation>
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Numărul de asigurat al reprezentantului legal</xs:documentation>
 										</xs:annotation>
 										<xs:simpleType>
-										    <xs:restriction base="xs:string">
-										        <xs:maxLength value="30"/>
-										    </xs:restriction>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="30"/>
+											</xs:restriction>
 										</xs:simpleType>
-									</xs:attribute>										
+									</xs:attribute>
 									<xs:attribute name="signature" type="xs:base64Binary" use="optional">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">
@@ -259,11 +259,11 @@
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Observaţii</xs:documentation>
 										</xs:annotation>
-										<xs:simpleType> 
-								           <xs:restriction base="xs:string">
-									           <xs:maxLength value="255"/>
-								           </xs:restriction>	
-                                        </xs:simpleType>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="255"/>
+											</xs:restriction>
+										</xs:simpleType>
 									</xs:attribute>
 									<xs:attribute name="AppID" type="xs:string" use="required">
 										<xs:annotation>
@@ -313,16 +313,16 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:attribute>
-									            <xs:attribute name="authorizedCid" use="optional">
-										           <xs:annotation>
-											         <xs:documentation xml:lang="ro">Numărul de asigurat al reprezentantului legal</xs:documentation>
-										           </xs:annotation>
-										           <xs:simpleType>
-											          <xs:restriction base="xs:string">
-												           <xs:maxLength value="30"/>
-											          </xs:restriction>
-										           </xs:simpleType>
-									            </xs:attribute>													
+												<xs:attribute name="authorizedCid" use="optional">
+													<xs:annotation>
+														<xs:documentation xml:lang="ro">Numărul de asigurat al reprezentantului legal</xs:documentation>
+													</xs:annotation>
+													<xs:simpleType>
+														<xs:restriction base="xs:string">
+															<xs:maxLength value="30"/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
 												<xs:attribute name="signature" type="xs:base64Binary" use="optional">
 													<xs:annotation>
 														<xs:documentation xml:lang="ro">
@@ -330,7 +330,7 @@
 															Se completează numai dacă este completat şi numărul de card şi cuprinde atributele "cid|cardNo|date|serviceCode", unde serviceCode = HDO.
 														</xs:documentation>
 													</xs:annotation>
-												</xs:attribute>	
+												</xs:attribute>
 												<xs:attribute name="signHash" type="xs:hexBinary" use="optional">
 													<xs:annotation>
 														<xs:documentation xml:lang="ro">Nu se mai foloseşte!</xs:documentation>
@@ -400,11 +400,11 @@
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Observaţii</xs:documentation>
 										</xs:annotation>
-										<xs:simpleType> 
-								           <xs:restriction base="xs:string">
-									           <xs:maxLength value="255"/>
-								           </xs:restriction>
-                                        </xs:simpleType>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="255"/>
+											</xs:restriction>
+										</xs:simpleType>
 									</xs:attribute>
 									<xs:attribute name="temporaryTransfer" type="xs:boolean" use="required">
 										<xs:annotation>
@@ -477,15 +477,15 @@
 										</xs:simpleType>
 									</xs:attribute>
 									<xs:attribute name="authorizedCid" use="optional">
-									    <xs:annotation>
-									        <xs:documentation xml:lang="ro">Numărul de asigurat al reprezentantului legal</xs:documentation>
-									    </xs:annotation>
-									    <xs:simpleType>
-									        <xs:restriction base="xs:string">
-									            <xs:maxLength value="30"/>
-										    </xs:restriction>
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Numărul de asigurat al reprezentantului legal</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="30"/>
+											</xs:restriction>
 										</xs:simpleType>
-									</xs:attribute>										
+									</xs:attribute>
 									<xs:attribute name="signature" type="xs:base64Binary" use="optional">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">
@@ -497,7 +497,7 @@
 									<xs:attribute name="signHash" type="xs:hexBinary" use="optional">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Nu se mai foloseşte!</xs:documentation>
-									    </xs:annotation>
+										</xs:annotation>
 									</xs:attribute>
 									<xs:attribute name="noHospitalFileDay" use="required">
 										<xs:annotation>
@@ -533,11 +533,11 @@
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Observaţii</xs:documentation>
 										</xs:annotation>
-										<xs:simpleType> 
-								           <xs:restriction base="xs:string">
-									           <xs:maxLength value="255"/>
-								           </xs:restriction>	
-                                        </xs:simpleType>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="255"/>
+											</xs:restriction>
+										</xs:simpleType>
 									</xs:attribute>
 									<xs:attribute name="AppID" type="xs:string" use="required">
 										<xs:annotation>
@@ -635,7 +635,7 @@
 			</xs:attribute>
 		</xs:complexType>
 	</xs:element>
-	
+
 	<xs:complexType name="foreignPersonType">
 		<xs:annotation>
 			<xs:documentation xml:lang="ro">Tipul de date folosit pentru datele cetăţeni străini</xs:documentation>
@@ -758,5 +758,5 @@
 				</xs:annotation>
 			</xs:enumeration>
 		</xs:restriction>
-	</xs:simpleType>	
+	</xs:simpleType>
 </xs:schema>

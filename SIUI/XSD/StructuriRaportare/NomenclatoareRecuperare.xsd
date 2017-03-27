@@ -2004,6 +2004,16 @@
 											</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
+									<xs:attribute name="contractCv" type="xs:string" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">
+												Precizează dacă medicamentul se supune conditiilor specificate in aditionalul la contract de tip CV/CVR. Poate lua urmatoarele valori:
+												R = Cost Volum Rezultat,
+												V = Cost Volum,
+												0 = Fără contract
+											</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
 									<xs:attribute name="overValue" type="xs:string" use="optional">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Precizează dacă medicamentul poate depaşi plafonul de valoare al listei, dar numai dacă este singur pe reţetă. Poate avea valorile 1 sau 0.</xs:documentation>

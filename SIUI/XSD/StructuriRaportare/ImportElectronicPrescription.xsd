@@ -60,6 +60,27 @@
 					<xs:documentation xml:lang="ro">Data raportării</xs:documentation>
 				</xs:annotation>
 			</xs:attribute>
+			<xs:attribute name="isEprescReporting" use="optional">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">Reporting Electronic Prescriptions</xs:documentation>
+					<xs:documentation xml:lang="ro">Raportare de retete electronice</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+						<xs:enumeration value="1">
+							<xs:annotation>
+								<xs:documentation xml:lang="ro">Raportare de retete electronice (excluse fiind CVR); Valoarea de DEFAULT, atunci cand isEprescReporting este necompletat</xs:documentation>
+							</xs:annotation>
+						</xs:enumeration>
+						<xs:enumeration value="3">
+							<xs:annotation>
+								<xs:documentation xml:lang="ro">Raportare de retete electronice CVR</xs:documentation>
+							</xs:annotation>
+						</xs:enumeration>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
 			<xs:attribute name="startFrom" type="xs:date" use="required">
 				<xs:annotation>
 					<xs:documentation xml:lang="en">Reporting start date</xs:documentation>

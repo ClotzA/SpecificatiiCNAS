@@ -926,7 +926,7 @@
 	</xs:complexType>
 	<xs:complexType name="ForeignExpenses">
 		<xs:annotation>
-			<xs:documentation> Cheltuieli spitalizare persoane straine</xs:documentation>
+			<xs:documentation xml:lang="ro"> Cheltuieli spitalizare persoane straine</xs:documentation>
 		</xs:annotation>
 		<xs:attribute name="foodExpenses" type="xs:double" use="optional"/>
 		<xs:attribute name="drugsExpenses" type="xs:double" use="optional"/>
@@ -1423,23 +1423,13 @@
 		</xs:attribute>
 		<xs:attribute name="exceptedFromCard" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">Internarea este exceptata de la semnarea cu cardul pacientului</xs:documentation>
+				<xs:documentation xml:lang="ro">Codul excepţiei de la utilizarea cardului naţional de asigurări sociale de sănătate. Valoarea acestui atribut este preluată din nomenclatorul CardExceptions.</xs:documentation>
 			</xs:annotation>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
-					<xs:length value="1"/>
-					<xs:enumeration value="1">
-						<xs:annotation>
-							<xs:documentation xml:lang="ro">pacientul executa o pedeapsa privativa de libertate sau se afla în arest preventiv</xs:documentation>
-						</xs:annotation>
-					</xs:enumeration>
-					<xs:enumeration value="2">
-						<xs:annotation>
-							<xs:documentation xml:lang="ro">persoane cu tulburari psihice prevazute în Legea sanatatii mintale</xs:documentation>
-						</xs:annotation>
-					</xs:enumeration>
+					<xs:maxLength value="20"/>
 				</xs:restriction>
-			</xs:simpleType>
+			</xs:simpleType>						
 		</xs:attribute>
 		<xs:attribute name="authorizedPersonCid" use="optional">
 			<xs:annotation>
@@ -1484,7 +1474,7 @@
 	</xs:complexType>
 	<xs:complexType name="Expenses">
 		<xs:annotation>
-			<xs:documentation>Cheltuieli spitalizare romani</xs:documentation>
+			<xs:documentation xml:lang="ro">Cheltuieli spitalizare romani</xs:documentation>
 		</xs:annotation>
 		<xs:attribute name="foodExpenses" type="xs:double" use="optional"/>
 		<xs:attribute name="drugsExpenses" type="xs:double" use="optional"/>
@@ -1613,7 +1603,7 @@
 	</xs:complexType>
 	<xs:complexType name="IntrahospitalTransferType">
 		<xs:annotation>
-			<xs:documentation> Tip de date folosit pentru raportarea transferurilor între secții din cadrul aceluiași spital</xs:documentation>
+			<xs:documentation xml:lang="ro"> Tip de date folosit pentru raportarea transferurilor între secții din cadrul aceluiași spital</xs:documentation>
 		</xs:annotation>
 		<xs:attribute name="internmentDeptCode" type="xs:string" use="required">
 			<xs:annotation>

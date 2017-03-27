@@ -82,7 +82,7 @@
 														<xs:documentation xml:lang="ro">
 															Semnătura digitală a pacientului in format Base64, utilizând certificatul de pe card.
 															Se completează numai dacă este completat şi numărul de card şi cuprinde atributele "cid|cardNo|serviceDate|service".
-															Dacă este completat authorizedPersonCid, atributele devin: "authorizedPersonCid|cardNo|internmentDate|serviceDate|service".
+															Dacă este completat authorizedPersonCid, atributele devin: "authorizedPersonCid|cardNo|serviceDate|service".
 														</xs:documentation>
 													</xs:annotation>
 												</xs:attribute>
@@ -809,8 +809,7 @@
 											<xs:sequence>
 												<xs:element name="AnalyticalPrescDrug" type="PrescDrug" maxOccurs="unbounded">
 													<xs:annotation>
-														<xs:documentation>Medicament prescris pe reteta.
-  </xs:documentation>
+														<xs:documentation xml:lang="ro">Medicament prescris pe reteta</xs:documentation>
 													</xs:annotation>
 												</xs:element>
 											</xs:sequence>
@@ -833,8 +832,7 @@
 								<xs:sequence>
 									<xs:element name="AnalyticalServices" type="Services" maxOccurs="unbounded">
 										<xs:annotation>
-											<xs:documentation>Recomandare de ingrijire la domiciliu.
-</xs:documentation>
+											<xs:documentation xml:lang="ro">Recomandare de ingrijire la domiciliu</xs:documentation>
 										</xs:annotation>
 									</xs:element>
 								</xs:sequence>

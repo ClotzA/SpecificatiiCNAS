@@ -468,22 +468,22 @@
 								<xs:documentation xml:lang="ro">Numărul Cardului European al persoanei (se completeaza pentru categoria CE)</xs:documentation>
 							</xs:annotation>
 							<xs:simpleType>
-							<xs:restriction base="xs:string">
-								<xs:minLength value="1"/>
-								<xs:maxLength value="20"/>
-							</xs:restriction>
-						</xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+									<xs:maxLength value="20"/>
+								</xs:restriction>
+							</xs:simpleType>
 						</xs:attribute>
 						<xs:attribute name="passportNo" use="optional">
 							<xs:annotation>
 								<xs:documentation xml:lang="ro">Numărul Pasaportului persoanei (se completeaza pentru categoria ACORD sau ALTE3-Formulare Europene)</xs:documentation>
 							</xs:annotation>
 							<xs:simpleType>
-							<xs:restriction base="xs:string">
-								<xs:minLength value="1"/>
-								<xs:maxLength value="20"/>
-							</xs:restriction>
-						</xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+									<xs:maxLength value="20"/>
+								</xs:restriction>
+							</xs:simpleType>
 						</xs:attribute>
 						<xs:attribute name="cardNo" use="optional">
 							<xs:annotation>
@@ -641,12 +641,17 @@
 						<xs:length value="1"/>
 						<xs:enumeration value="0">
 							<xs:annotation>
-								<xs:documentation xml:lang="ro">Raportare de retete tipizate</xs:documentation>
+								<xs:documentation xml:lang="ro">Raportare de retete tipizate; Valoarea de DEFAULT, atunci cand isEprescReporting este necompletat</xs:documentation>
 							</xs:annotation>
 						</xs:enumeration>
 						<xs:enumeration value="2">
 							<xs:annotation>
-								<xs:documentation xml:lang="ro">Raportare de retete electronice</xs:documentation>
+								<xs:documentation xml:lang="ro">Raportare de retete electronice (excluse fiind CVR)</xs:documentation>
+							</xs:annotation>
+						</xs:enumeration>
+						<xs:enumeration value="4">
+							<xs:annotation>
+								<xs:documentation xml:lang="ro">Raportare de retete electronice CVR</xs:documentation>
 							</xs:annotation>
 						</xs:enumeration>
 					</xs:restriction>

@@ -1660,9 +1660,14 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:attribute>
+			<xs:attribute name="AppAuth" type="xs:base64Binary" use="optional">
+				<xs:annotation>
+					<xs:documentation xml:lang="ro">Semnătura de verificare a aplicaţiei de raportare</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
 			<xs:attribute name="AppID" use="required">
 				<xs:annotation>
-					<xs:documentation xml:lang="ro">Identificatorul unic al înregistrării</xs:documentation>
+					<xs:documentation xml:lang="ro">Identificatorul unic al raportării (la nivelul aplicaţiei de raportare)</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="xs:string">

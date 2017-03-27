@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema id="NomenclaturesCBRET" targetNamespace="http://www.cnas.ro/siui/2.0" xmlns="http://www.cnas.ro/siui/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 	<xs:element name="Catalogues">
 		<xs:annotation>
@@ -658,12 +658,12 @@
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
-									<xs:attribute name="supportsOverlapping" use="optional" type="xs:boolean">
+									<xs:attribute name="supportsOverlapping" type="xs:boolean" use="optional">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Indică dacă categoria de asigurat se poate suprapune cu alte categorii pe aceeaşi perioadă de timp</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
-									<xs:attribute name="definedByAge" use="optional" type="xs:boolean">
+									<xs:attribute name="definedByAge" type="xs:boolean" use="optional">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Indică dacă categoria de asigurat este definită de limitele de vârstă</xs:documentation>
 										</xs:annotation>
@@ -762,7 +762,7 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
 									</xs:attribute>
@@ -1169,7 +1169,7 @@
 										</xs:annotation>
 									</xs:attribute>
 									<xs:attribute name="hasGoodsBudget" type="xs:boolean" use="optional">
-										<xs:annotation >
+										<xs:annotation>
 											<xs:documentation xml:lang="ro">Flag care indica daca exista buget pe indicatorul bugetar de materiale sanitare specifice utilizate in programele nationale cu scop curativ.</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
@@ -1179,10 +1179,10 @@
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
-												<xs:maxLength value="20" />
+												<xs:maxLength value="20"/>
 											</xs:restriction>
 										</xs:simpleType>
-									</xs:attribute>									
+									</xs:attribute>
 								</xs:complexType>
 							</xs:element>
 						</xs:sequence>
@@ -1391,57 +1391,57 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-        <xs:element name="Cim10s" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation xml:lang="ro">Catalogul de diagnostice din Clasificarea Internationala a Maladiilor si a problemelor de sanatate conexe.</xs:documentation>
-          </xs:annotation>
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="Cim10" minOccurs="0" maxOccurs="unbounded">
-                <xs:annotation>
-                  <xs:documentation xml:lang="ro">Definitia unui diagnostic din Clasificarea Internationala a Maladiilor si a problemelor de sanatate conexe.</xs:documentation>
-                </xs:annotation>
-                <xs:complexType>
-                  <xs:attribute name="code" use="required">
-                    <xs:annotation>
-                      <xs:documentation xml:lang="ro">Codul unui diagnostic din Clasificarea Internationala a Maladiilor si a problemelor de sanatate conexe.</xs:documentation>
-                    </xs:annotation>
-                    <xs:simpleType>
-                      <xs:restriction base="xs:string">
-                        <xs:maxLength value="50"/>
-                      </xs:restriction>
-                    </xs:simpleType>
-                  </xs:attribute>
-                  <xs:attribute name="name" use="optional">
-                    <xs:annotation>
-                      <xs:documentation xml:lang="ro">Numele unui diagnostic din Clasificarea Internationala a Maladiilor si a problemelor de sanatate conexe.</xs:documentation>
-                    </xs:annotation>
-                    <xs:simpleType>
-                      <xs:restriction base="xs:string">
-                        <xs:maxLength value="250"/>
-                      </xs:restriction>
-                    </xs:simpleType>
-                  </xs:attribute>
-                  <xs:attribute name="entityLevel" type="xs:integer" use="optional">
-                    <xs:annotation>
-                      <xs:documentation xml:lang="ro">Nivelul ierarhic al entitatii reprezentate de diagnostic.</xs:documentation>
-                    </xs:annotation>
-                  </xs:attribute>
-                  <xs:attribute name="parentCode" use="optional">
-                    <xs:annotation>
-                      <xs:documentation xml:lang="ro">Codul diagnosticului parinte (de pe nivelul ierarhic superior).</xs:documentation>
-                    </xs:annotation>
-                    <xs:simpleType>
-                      <xs:restriction base="xs:string">
-                        <xs:maxLength value="50"/>
-                      </xs:restriction>
-                    </xs:simpleType>
-                  </xs:attribute>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
+				<xs:element name="Cim10s" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation xml:lang="ro">Catalogul de diagnostice din Clasificarea Internationala a Maladiilor si a problemelor de sanatate conexe.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Cim10" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation xml:lang="ro">Definitia unui diagnostic din Clasificarea Internationala a Maladiilor si a problemelor de sanatate conexe.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:attribute name="code" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Codul unui diagnostic din Clasificarea Internationala a Maladiilor si a problemelor de sanatate conexe.</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="50"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="name" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Numele unui diagnostic din Clasificarea Internationala a Maladiilor si a problemelor de sanatate conexe.</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="250"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="entityLevel" type="xs:integer" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Nivelul ierarhic al entitatii reprezentate de diagnostic.</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="parentCode" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Codul diagnosticului parinte (de pe nivelul ierarhic superior).</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="50"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
 				<xs:element name="ATCS" minOccurs="0">
 					<xs:annotation>
 						<xs:documentation xml:lang="ro">Catalogul de clasificări anatomico-terapeuico-chimice (ATC)</xs:documentation>
@@ -1874,6 +1874,16 @@
 											</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
+									<xs:attribute name="contractCv" type="xs:string" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">
+												Precizează dacă medicamentul se supune conditiilor specificate in aditionalul la contract de tip CV/CVR. Poate lua urmatoarele valori:
+												R = Cost Volum Rezultat,
+												V = Cost Volum,
+												0 = Fără contract
+											</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>																		
 									<xs:attribute name="overValue" type="xs:string" use="optional">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Precizează dacă medicamentul poate depăşi plafonul de valoare al listei, dar numai dacă este singur pe reţetă. Poate avea valorile 1 sau 0.</xs:documentation>
@@ -2002,6 +2012,11 @@
 											<xs:documentation xml:lang="ro">Codul categoriei de boală.</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
+									<xs:attribute name="nhpCode" type="xs:string" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Numărul programului naţional de sănătate (valoare din catalogul de PNS-uri)</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
 									<xs:attribute name="needApproval" type="xs:string" use="required">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">
@@ -2011,6 +2026,16 @@
 												J = C.J.A.S.,
 												A = A.N.T. (Agentia Nationala a Transplantului),
 												0 = Fara aprobare
+											</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="contractCv" type="xs:string" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">
+												Precizează dacă medicamentul se supune conditiilor specificate in aditionalul la contract de tip CV/CVR. Poate lua urmatoarele valori:
+												R = Cost Volum Rezultat,
+												V = Cost Volum,
+												0 = Fără contract
 											</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>

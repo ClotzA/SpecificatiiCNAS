@@ -166,9 +166,7 @@
 											<xs:sequence>
 												<xs:element name="DRGPrescDrug" type="PrescDrug" maxOccurs="unbounded">
 													<xs:annotation>
-														<xs:documentation>
-                          Medicament prescris pe reteta.
-      </xs:documentation>
+														<xs:documentation xml:lang="ro">Medicament prescris pe reteta</xs:documentation>
 													</xs:annotation>
 												</xs:element>
 											</xs:sequence>
@@ -191,8 +189,7 @@
 								<xs:sequence>
 									<xs:element name="DRGServices" type="Services" minOccurs="0" maxOccurs="unbounded">
 										<xs:annotation>
-											<xs:documentation>                  Recomandare de ingrijire la domiciliu.
-                  </xs:documentation>
+											<xs:documentation xml:lang="ro">Recomandare de ingrijire la domiciliu</xs:documentation>
 										</xs:annotation>
 									</xs:element>
 								</xs:sequence>
@@ -256,7 +253,7 @@
 											<xs:sequence>
 												<xs:element name="ForeignProcedure" type="ForeignProcedure" minOccurs="0" maxOccurs="unbounded">
 													<xs:annotation>
-														<xs:documentation>Serviciile medicale efectuate persoanei staine</xs:documentation>
+														<xs:documentation xml:lang="ro">Serviciile medicale efectuate persoanei staine</xs:documentation>
 													</xs:annotation>
 												</xs:element>
 												<xs:element name="ForeignExpenses" type="ForeignExpenses" minOccurs="0"/>
@@ -284,7 +281,7 @@
 											<xs:sequence>
 												<xs:element name="Procedure" type="Procedure" minOccurs="0" maxOccurs="unbounded">
 													<xs:annotation>
-														<xs:documentation>Serviciile medicale efectuate </xs:documentation>
+														<xs:documentation xml:lang="ro">Serviciile medicale efectuate</xs:documentation>
 													</xs:annotation>
 												</xs:element>
 												<xs:element name="Expenses" type="Expenses" minOccurs="0"/>
