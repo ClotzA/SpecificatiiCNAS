@@ -662,26 +662,17 @@
 															<xs:documentation xml:lang="ro">Data eliberarii adeverinței de asigurat</xs:documentation>
 														</xs:annotation>
 													</xs:attribute>
-													<xs:attribute name="exceptedFromCard" use="optional">
-														<xs:annotation>
-															<xs:documentation xml:lang="ro">Internarea este exceptata de la semnarea cu cardul pacientului</xs:documentation>
-														</xs:annotation>
-														<xs:simpleType>
-															<xs:restriction base="xs:string">
-																<xs:length value="1"/>
-																<xs:enumeration value="1">
-																	<xs:annotation>
-																		<xs:documentation xml:lang="ro">pacientul executa o pedeapsa privativa de libertate sau se afla în arest preventiv</xs:documentation>
-																	</xs:annotation>
-																</xs:enumeration>
-																<xs:enumeration value="2">
-																	<xs:annotation>
-																		<xs:documentation xml:lang="ro">persoane cu tulburari psihice prevazute în Legea sanatatii mintale</xs:documentation>
-																	</xs:annotation>
-																</xs:enumeration>
-															</xs:restriction>
-														</xs:simpleType>
-													</xs:attribute>
+		                                            <xs:attribute name="exceptedFromCard" use="optional">
+			                                           <xs:annotation>
+				                                           <xs:documentation xml:lang="ro">Codul excepţiei de la utilizarea cardului naţional de asigurări sociale de sănătate. Valoarea acestui atribut este preluată din nomenclatorul CardExceptions.
+														   </xs:documentation>
+			                                           </xs:annotation>
+			                                           <xs:simpleType>
+				                                          <xs:restriction base="xs:string">
+					                                         <xs:maxLength value="20"/>
+				                                          </xs:restriction>
+			                                           </xs:simpleType>
+		                                            </xs:attribute>
 													<xs:attribute name="authorizedPersonCid" use="optional">
 														<xs:annotation>
 															<xs:documentation xml:lang="ro">Codul de identificare al reprezentantului legal</xs:documentation>

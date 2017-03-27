@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema id="PharmacyDrugsValidateRequest"
     elementFormDefault="qualified"
     targetNamespace="http://www.cnas.ro/siui/2.0"
@@ -150,47 +150,47 @@
 												<xs:complexType>
 													<xs:complexContent>
 														<xs:extension base="claimItemType">
-													<xs:attribute name="testName" use="optional">
-														<xs:annotation>
-															<xs:documentation xml:lang="ro">Denumire test medical</xs:documentation>
-														</xs:annotation>
-														<xs:simpleType>
-															<xs:restriction base="xs:string">
-																<xs:maxLength value="200"/>
-															</xs:restriction>
-														</xs:simpleType>
-													</xs:attribute>
-													<xs:attribute name="monthsNo" type="xs:int" use="required">
-														<xs:annotation>
-															<xs:documentation xml:lang="ro">Număr de luni prescrise</xs:documentation>
-														</xs:annotation>
-													</xs:attribute>
-													<xs:attribute name="quantity" type="xs:int" use="required">
-														<xs:annotation>
-															<xs:documentation xml:lang="ro">Număr de teste medicale eliberate</xs:documentation>
-														</xs:annotation>
-													</xs:attribute>
-													<xs:attribute name="testValue" type="xs:double" use="required">
-														<xs:annotation>
-															<xs:documentation xml:lang="ro">Valoarea unui test medical</xs:documentation>
-														</xs:annotation>
-													</xs:attribute>
-													<xs:attribute name="copayedValue" type="xs:double" use="required">
-														<xs:annotation>
-															<xs:documentation xml:lang="ro">Valoarea totală compensată a testelor medicale</xs:documentation>
-														</xs:annotation>
-													</xs:attribute>
-													<xs:attribute name="patientType" use="required">
-														<xs:annotation>
-															<xs:documentation xml:lang="ro">Tip pacient</xs:documentation>
-														</xs:annotation>
-														<xs:simpleType>
-															<xs:restriction base="xs:string">
-																<xs:enumeration value="COPIL"/>
-																<xs:enumeration value="ADULT"/>
-															</xs:restriction>
-														</xs:simpleType>
-													</xs:attribute>
+															<xs:attribute name="testName" use="optional">
+																<xs:annotation>
+																	<xs:documentation xml:lang="ro">Denumire test medical</xs:documentation>
+																</xs:annotation>
+																<xs:simpleType>
+																	<xs:restriction base="xs:string">
+																		<xs:maxLength value="200"/>
+																	</xs:restriction>
+																</xs:simpleType>
+															</xs:attribute>
+															<xs:attribute name="monthsNo" type="xs:int" use="required">
+																<xs:annotation>
+																	<xs:documentation xml:lang="ro">Număr de luni prescrise</xs:documentation>
+																</xs:annotation>
+															</xs:attribute>
+															<xs:attribute name="quantity" type="xs:int" use="required">
+																<xs:annotation>
+																	<xs:documentation xml:lang="ro">Număr de teste medicale eliberate</xs:documentation>
+																</xs:annotation>
+															</xs:attribute>
+															<xs:attribute name="testValue" type="xs:double" use="required">
+																<xs:annotation>
+																	<xs:documentation xml:lang="ro">Valoarea unui test medical</xs:documentation>
+																</xs:annotation>
+															</xs:attribute>
+															<xs:attribute name="copayedValue" type="xs:double" use="required">
+																<xs:annotation>
+																	<xs:documentation xml:lang="ro">Valoarea totală compensată a testelor medicale</xs:documentation>
+																</xs:annotation>
+															</xs:attribute>
+															<xs:attribute name="patientType" use="required">
+																<xs:annotation>
+																	<xs:documentation xml:lang="ro">Tip pacient</xs:documentation>
+																</xs:annotation>
+																<xs:simpleType>
+																	<xs:restriction base="xs:string">
+																		<xs:enumeration value="COPIL"/>
+																		<xs:enumeration value="ADULT"/>
+																	</xs:restriction>
+																</xs:simpleType>
+															</xs:attribute>
 															<xs:attribute name="drugInvoiceNo" type="xs:string" use="optional"/>
 															<xs:attribute name="drugInvoiceDate" type="xs:string" use="optional"/>
 															<xs:attribute name="personValue" type="xs:string" use="optional"/>
@@ -210,13 +210,13 @@
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
+													<xs:minLength value="1"/>
+													<xs:maxLength value="20"/>
 													<xs:pattern value="[0-9]*">
 														<xs:annotation>
 															<xs:documentation xml:lang="ro">Numarul retetei poate fi format numai din cifre</xs:documentation>
 														</xs:annotation>
 													</xs:pattern>
-													<xs:minLength value="1"/>
-													<xs:maxLength value="20"/>
 												</xs:restriction>
 											</xs:simpleType>
 										</xs:attribute>
@@ -266,6 +266,16 @@
 															<xs:documentation xml:lang="ro">MF - MM</xs:documentation>
 														</xs:annotation>
 													</xs:enumeration>
+													<xs:enumeration value="6">
+														<xs:annotation>
+															<xs:documentation xml:lang="ro">Alte1</xs:documentation>
+														</xs:annotation>
+													</xs:enumeration>
+													<xs:enumeration value="7">
+														<xs:annotation>
+															<xs:documentation xml:lang="ro">Alte2</xs:documentation>
+														</xs:annotation>
+													</xs:enumeration>												
 												</xs:restriction>
 											</xs:simpleType>
 										</xs:attribute>

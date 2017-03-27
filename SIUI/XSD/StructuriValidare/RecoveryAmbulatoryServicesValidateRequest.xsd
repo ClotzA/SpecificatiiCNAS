@@ -164,7 +164,7 @@
 																		</xs:attribute>
 																		<xs:attribute name="cardNo" use="optional">
 																			<xs:annotation>
-																				<xs:documentation>Numărul cardului electronic de asigurat al pacientului</xs:documentation>
+																				<xs:documentation xml:lang="ro">Numărul cardului electronic de asigurat al pacientului</xs:documentation>
 																			</xs:annotation>
 																			<xs:simpleType>
 																				<xs:restriction base="xs:string">

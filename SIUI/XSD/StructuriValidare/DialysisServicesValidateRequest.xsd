@@ -33,7 +33,7 @@
 																<xs:documentation xml:lang="ro">Date de identificare pentru persoană străină (dacă este cazul)</xs:documentation>
 															</xs:annotation>
 														</xs:element>
-														<xs:element name="session" maxOccurs="15">
+														<xs:element name="session" maxOccurs="35">
 															<xs:annotation>
 																<xs:documentation xml:lang="ro">Data la care s-a facut o sedinta de hemodializa.</xs:documentation>
 															</xs:annotation>
@@ -264,7 +264,7 @@
 																<xs:documentation xml:lang="ro">Date de identificare pentru persoană străină (dacă este cazul)</xs:documentation>
 															</xs:annotation>
 														</xs:element>
-														<xs:element name="session" maxOccurs="15">
+														<xs:element name="session" maxOccurs="35">
 															<xs:annotation>
 																<xs:documentation xml:lang="ro">Data la care s-a facut o sedinta de hemodializa.</xs:documentation>
 															</xs:annotation>
