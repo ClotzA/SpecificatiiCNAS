@@ -405,15 +405,15 @@
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="13">
-				  <xs:annotation>
+				<xs:annotation>
 					<xs:documentation xml:lang="ro">BILET DE TRIMITERE - MANAGEMENT DE CAZ</xs:documentation>
-				  </xs:annotation>
-             </xs:enumeration>
-			 <xs:enumeration value="14">
-				  <xs:annotation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="14">
+				<xs:annotation>
 					<xs:documentation xml:lang="ro">ANEXA 22C</xs:documentation>
-				  </xs:annotation>
-             </xs:enumeration>
+				</xs:annotation>
+			</xs:enumeration>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="feedbackState">
@@ -437,7 +437,7 @@
 				</xs:annotation>
 			</xs:enumeration>
 		</xs:restriction>
-	</xs:simpleType>	
+	</xs:simpleType>
 	<xs:complexType name="claimItemType">
 		<xs:annotation>
 			<xs:documentation xml:lang="ro">Tipul de date de bază folosit pentru trimiterea cererilor de validare</xs:documentation>
@@ -522,20 +522,20 @@
 					</xs:simpleType>
 				</xs:attribute>
 				<xs:attribute name="refferedByOrgUnitCode" use="optional">
-				<xs:annotation>
-					<xs:documentation xml:lang="en">
-						Insurance house that the referring medic has a contract with.
-					</xs:documentation>
-					<xs:documentation xml:lang="ro">
-						Codul casei judetene cu care are contract medicul care a emis biletul de trimitere.
-					</xs:documentation>
-				</xs:annotation>
-				<xs:simpleType>
-					<xs:restriction base="xs:string">
-						<xs:maxLength value="20"/>
-					</xs:restriction>
-				</xs:simpleType>
-				</xs:attribute>				
+					<xs:annotation>
+						<xs:documentation xml:lang="en">
+							Insurance house that the referring medic has a contract with.
+						</xs:documentation>
+						<xs:documentation xml:lang="ro">
+							Codul casei judetene cu care are contract medicul care a emis biletul de trimitere.
+						</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="20"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -577,25 +577,25 @@
 						<xs:documentation xml:lang="ro">Codul erorii (valoare din nomenclatorul de erori SIUI)</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
-                <xs:attribute name="errorType" use="optional">
-                    <xs:annotation>
-                        <xs:documentation xml:lang="ro">Tip de eroare in functie de severitate.</xs:documentation>
-                    </xs:annotation>
-                    <xs:simpleType>
-                        <xs:restriction base="xs:unsignedInt">
-                            <xs:enumeration value="0">
-                                <xs:annotation>
-                                    <xs:documentation xml:lang="ro">Averizare</xs:documentation>
-                                </xs:annotation>
-                            </xs:enumeration>
-                            <xs:enumeration value="1">
-                                <xs:annotation>
-                                    <xs:documentation xml:lang="ro">Eroare</xs:documentation>
-                                </xs:annotation>
-                            </xs:enumeration>
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:attribute>
+				<xs:attribute name="errorType" use="optional">
+					<xs:annotation>
+						<xs:documentation xml:lang="ro">Tip de eroare in functie de severitate.</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:unsignedInt">
+							<xs:enumeration value="0">
+								<xs:annotation>
+									<xs:documentation xml:lang="ro">Averizare</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+							<xs:enumeration value="1">
+								<xs:annotation>
+									<xs:documentation xml:lang="ro">Eroare</xs:documentation>
+								</xs:annotation>
+							</xs:enumeration>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>

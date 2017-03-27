@@ -233,6 +233,11 @@
         <xs:documentation xml:lang="ro">Numărul talonului</xs:documentation>
       </xs:annotation>
     </xs:attribute>
+    <xs:attribute name="firstTalonDate" type="xs:date" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="ro">Data de inceput a primului talon. Daca nu exista se considera data deciziei</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>	
     <xs:attribute name="resolutionState" use="optional">
       <xs:annotation>
         <xs:documentation xml:lang="ro">Starea deciziei</xs:documentation>

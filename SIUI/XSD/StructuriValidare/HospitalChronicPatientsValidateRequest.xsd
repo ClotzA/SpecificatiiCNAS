@@ -143,24 +143,39 @@
 															</xs:complexType>
 														</xs:element>
 													</xs:sequence>
-													<xs:attribute name="personIdentifier" type="xs:string" use="required">
+													<xs:attribute name="personIdentifier" use="required">
 														<xs:annotation>
 															<xs:documentation xml:lang="ro">Codul de identificare al persoanei staine.</xs:documentation>
 														</xs:annotation>
+			                                            <xs:simpleType>
+				                                           <xs:restriction base="xs:string">
+					                                           <xs:maxLength value="30" />
+				                                           </xs:restriction>
+			                                            </xs:simpleType>														
 													</xs:attribute>
-													<xs:attribute name="personFirstName" type="xs:string" use="optional">
+													<xs:attribute name="personFirstName" use="optional">
 														<xs:annotation>
 															<xs:documentation xml:lang="ro">
 																Prenumele persoanei straine.
 															</xs:documentation>
 														</xs:annotation>
+			                                            <xs:simpleType>
+				                                           <xs:restriction base="xs:string">
+					                                           <xs:maxLength value="100" />
+				                                           </xs:restriction>
+			                                            </xs:simpleType>
 													</xs:attribute>
-													<xs:attribute name="personLastName" type="xs:string" use="optional">
+													<xs:attribute name="personLastName" use="optional">
 														<xs:annotation>
 															<xs:documentation xml:lang="ro">
-																Numele persoanei strine.
+																Numele persoanei straine.
 															</xs:documentation>
 														</xs:annotation>
+			                                            <xs:simpleType>
+				                                           <xs:restriction base="xs:string">
+					                                           <xs:maxLength value="100" />
+				                                           </xs:restriction>
+			                                            </xs:simpleType>
 													</xs:attribute>
 													<xs:attribute name="birthDate" type="xs:date" use="optional">
 														<xs:annotation>
@@ -169,20 +184,30 @@
 															</xs:documentation>
 														</xs:annotation>
 													</xs:attribute>
-													<xs:attribute name="countryCode" type="xs:string" use="optional">
+													<xs:attribute name="countryCode" use="optional">
 														<xs:annotation>
 															<xs:documentation xml:lang="ro">
 																Codul tarii cetateniei persoanei straine.
 															</xs:documentation>
 														</xs:annotation>
+			                                            <xs:simpleType>
+				                                           <xs:restriction base="xs:string">
+					                                           <xs:maxLength value="20" />
+				                                           </xs:restriction>
+			                                            </xs:simpleType>
 													</xs:attribute>
-													<xs:attribute name="cardCode" type="xs:string" use="optional">
+													<xs:attribute name="cardCode" use="optional">
 														<xs:annotation>
 															<xs:documentation xml:lang="ro">
 																Codul cardului de asigurat al persoanei straine.
 																(In cazul in care persoana are card de asigurare european)
 															</xs:documentation>
 														</xs:annotation>
+			                                            <xs:simpleType>
+				                                           <xs:restriction base="xs:string">
+					                                           <xs:maxLength value="40" />
+				                                           </xs:restriction>
+			                                            </xs:simpleType>
 													</xs:attribute>
 													<xs:attribute name="cardExpireDate" type="xs:date" use="optional">
 														<xs:annotation>
@@ -192,29 +217,44 @@
 															</xs:documentation>
 														</xs:annotation>
 													</xs:attribute>
-													<xs:attribute name="emissiveOrgUnitCode" type="xs:string" use="optional">
+													<xs:attribute name="emissiveOrgUnitCode" use="optional">
 														<xs:annotation>
 															<xs:documentation xml:lang="ro">
 																Codul unitatii care a emis cardul de asigurare.
 																(In cazul in care persoana are card de asigurare european)
 															</xs:documentation>
 														</xs:annotation>
+											            <xs:simpleType>
+												           <xs:restriction base="xs:string">
+													           <xs:maxLength value="30"/>
+												           </xs:restriction>
+											            </xs:simpleType>
 													</xs:attribute>
-													<xs:attribute name="emissiveOrgUnitName" type="xs:string" use="optional">
+													<xs:attribute name="emissiveOrgUnitName" use="optional">
 														<xs:annotation>
 															<xs:documentation xml:lang="ro">
 																Numele unitatii care a emis cardul de asigurare.
 																(In cazul in care persoana are card de asigurare european)
 															</xs:documentation>
 														</xs:annotation>
+											            <xs:simpleType>
+												           <xs:restriction base="xs:string">
+													           <xs:maxLength value="100"/>
+												           </xs:restriction>
+											            </xs:simpleType>
 													</xs:attribute>
-													<xs:attribute name="emissiveOrgUnitAddress" type="xs:string" use="optional">
+													<xs:attribute name="emissiveOrgUnitAddress" use="optional">
 														<xs:annotation>
 															<xs:documentation xml:lang="ro">
 																Adresa unitatii care a emis cardul de asigurare.
 																(In cazul in care persoana are card de asigurare european)
 															</xs:documentation>
 														</xs:annotation>
+											            <xs:simpleType>
+												           <xs:restriction base="xs:string">
+													           <xs:maxLength value="150"/>
+												           </xs:restriction>
+											            </xs:simpleType>
 													</xs:attribute>
 													<xs:attribute name="caseId" use="required">
 														<xs:annotation>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- edited with XMLSPY v5 rel. 3 U (http://www.xmlspy.com) by TEAM (RENEGADE) -->
 <xs:schema targetNamespace="http://www.cnas.ro/siui/2.0" xmlns="http://www.cnas.ro/siui/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" id="HospitalCommonTypes">
 	<xs:simpleType name="personType">
 		<xs:annotation>
@@ -52,81 +51,61 @@
 	</xs:simpleType>
 	<xs:complexType name="PrescDrug">
 		<xs:annotation>
-			<xs:documentation xml:lang="ro">
- Medicament prescris pe reteta.
-			                        </xs:documentation>
+			<xs:documentation xml:lang="ro">Medicament prescris pe reteta.</xs:documentation>
 		</xs:annotation>
 		<xs:attribute name="no" type="xs:integer" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-			                              Numar de ordine pe reteta.
-			                            </xs:documentation>
+				<xs:documentation xml:lang="ro">Numar de ordine pe reteta.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="drugCode" type="xs:string" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-					                              Codul medicamentului. Acest atribut se preia din nomenclatorul Drugs.
-					                            </xs:documentation>
+				<xs:documentation xml:lang="ro">Codul medicamentului. Acest atribut se preia din nomenclatorul Drugs.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="activeSubstance" type="xs:string" use="required">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-				                              Codul substantei active. Acest atribut se preia din nomenclatorul ActiveSubstances.
-				                            </xs:documentation>
+				<xs:documentation xml:lang="ro">Codul substantei active. Acest atribut se preia din nomenclatorul ActiveSubstances.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="concentration" type="xs:string" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-				                              Codul concentratiei. Acest atribut se preia din nomenclatorul Concentrations.
-				                            </xs:documentation>
+				<xs:documentation xml:lang="ro">Codul concentratiei. Acest atribut se preia din nomenclatorul Concentrations.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="diseaseCategory" type="xs:string" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-				                              Codul categoriei de boala. Acest atribut se preia din nomenclatorul DiseaseCategories.
-				                            </xs:documentation>
+				<xs:documentation xml:lang="ro">Codul categoriei de boala. Acest atribut se preia din nomenclatorul DiseaseCategories.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="diseaseCode" type="xs:string" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-						                              Codul de boala. Acest atribut se preia din nomenclatorul ICD10.
-						                            </xs:documentation>
+				<xs:documentation xml:lang="ro">Codul de boala. Acest atribut se preia din nomenclatorul ICD10.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="pharmaceuticalForm" type="xs:string" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-				                              Codul formei farmaceutice. Acest atribut se preia din nomenclatorul PharmaceuticalForms.
-				                            </xs:documentation>
+				<xs:documentation xml:lang="ro">Codul formei farmaceutice. Acest atribut se preia din nomenclatorul PharmaceuticalForms.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="quantity" type="xs:double" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-						                              Cantitatea.
-						                            </xs:documentation>
+				<xs:documentation xml:lang="ro">Cantitatea.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="dose" type="xs:string" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-						                              Doza zilnica.
-						                            </xs:documentation>
+				<xs:documentation xml:lang="ro">Doza zilnica.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="diagnosticType" type="xs:string" use="required">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">
-				                              Codul tipului de diagnostic. Acest atribut poate avea urmatoarele valori:
-					                              1 -&gt; ACUT
-					                              2 -&gt; SUBACUT
-					                              3 -&gt; CRONIC
-					                            </xs:documentation>
+				    Codul tipului de diagnostic. Acest atribut poate avea urmatoarele valori:
+					    1 -&gt; ACUT
+					    2 -&gt; SUBACUT
+				        3 -&gt; CRONIC
+	             </xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
@@ -136,10 +115,7 @@
 		</xs:annotation>
 		<xs:attribute name="AppID" type="xs:string" use="required">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-						                        Identificator unic in aplicatia de raportare.
-						                        Acest atribut este folosit la identificarea randului raportat.
-						                      </xs:documentation>
+				<xs:documentation xml:lang="ro">Identificator unic in aplicatia de raportare.Acest atribut este folosit la identificarea randului raportat.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="stencilNo" type="stencilType" use="required">
@@ -254,9 +230,7 @@
 	</xs:complexType>
 	<xs:complexType name="Services">
 		<xs:annotation>
-			<xs:documentation xml:lang="ro">
- Recomandare de ingrijire la domiciliu.
-				                  </xs:documentation>
+			<xs:documentation xml:lang="ro">Recomandare de ingrijire la domiciliu.</xs:documentation>
 		</xs:annotation>
 		<xs:attribute name="servCode" type="xs:string" use="required">
 			<xs:annotation>
@@ -285,10 +259,7 @@
 		</xs:annotation>
 		<xs:attribute name="AppID" type="xs:string" use="required">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-						                  Identificator unic in aplicatia de raportare.
-						                  Acest atribut este folosit la identificarea randului raportat.
-						                </xs:documentation>
+				<xs:documentation xml:lang="ro">Identificator unic in aplicatia de raportare.Acest atribut este folosit la identificarea randului raportat.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="serialNo" type="xs:string" use="required">
@@ -362,31 +333,22 @@
 		</xs:annotation>
 		<xs:attribute name="AppID" type="xs:string" use="required">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-                     Identificator unic in aplicatia de raportare.
-                     Acest atribut este folosit la identificarea randului raportat.
-                   </xs:documentation>
+				<xs:documentation xml:lang="ro">Identificator unic in aplicatia de raportare.Acest atribut este folosit la identificarea randului raportat.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="serialNo" type="xs:string" use="required">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-                     Numarul recomandarii.
-                   </xs:documentation>
+				<xs:documentation xml:lang="ro">Numarul recomandarii.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="serialCode" type="xs:string" use="required">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-                     Seria recomandarii.
-                   </xs:documentation>
+				<xs:documentation xml:lang="ro">Seria recomandarii.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="recomDate" type="xs:date" use="required">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-                     Data recomandarii
-                   </xs:documentation>
+				<xs:documentation xml:lang="ro">Data recomandarii</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="deviceType" type="xs:string" use="optional">
@@ -395,7 +357,7 @@
                      Tipul de dispozitiv prescris. Acest atribut poate avea urmatoarele valori:
                      0 -&gt; DREPT
                      1 -&gt; STANG
-                   </xs:documentation>
+                </xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="prothesysType" type="xs:string" use="optional">
@@ -404,28 +366,22 @@
                      Tipul de proteza. Acest atribut poate avea urmatoarele valori:
                      0 -&gt; DEFINITIVA
                      1 -&gt; TEMPORARA
-                   </xs:documentation>
+                </xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="deviceCode" type="xs:string" use="required">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-                     Codul dispozitivului medical recomandat. Acest atribut este preluat din nomenclatorul MedicalDeviceTypes
-                   </xs:documentation>
+				<xs:documentation xml:lang="ro">Codul dispozitivului medical recomandat. Acest atribut este preluat din nomenclatorul MedicalDeviceTypes</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="repPhysician" type="xs:string" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-                     Parafa medicului care a prescris recomandarea.
-                   </xs:documentation>
+				<xs:documentation xml:lang="ro">Parafa medicului care a prescris recomandarea.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="repDiagnosticCode" type="xs:string" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-                     Codul diagnosticului pentru care a fost prescrisa recomandarea. Acest atribut este preluat din nomenclatorul ICD10S
-                   </xs:documentation>
+				<xs:documentation xml:lang="ro">Codul diagnosticului pentru care a fost prescrisa recomandarea. Acest atribut este preluat din nomenclatorul ICD10S</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="repPid" type="xs:string" use="optional">
@@ -470,30 +426,21 @@
 	</xs:complexType>
 	<xs:complexType name="MedicalNote">
 		<xs:annotation>
-			<xs:documentation xml:lang="ro">
-					 Bilet de trimitere prescris.
-			</xs:documentation>
+			<xs:documentation xml:lang="ro">Bilet de trimitere prescris.</xs:documentation>
 		</xs:annotation>
 		<xs:attribute name="AppID" type="xs:string" use="required">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-				                        Identificator unic in aplicatia de raportare.
-				                        Acest atribut este folosit la identificarea randului raportat.
-				                      </xs:documentation>
+				<xs:documentation xml:lang="ro">Identificator unic in aplicatia de raportare.Acest atribut este folosit la identificarea randului raportat.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="stencilNo" type="stencilType" use="required">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-					                        Parafa medicului care a prescris trimiterea.
-					                      </xs:documentation>
+				<xs:documentation xml:lang="ro">Parafa medicului care a prescris trimiterea.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="personPID" type="xs:string" use="required">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-					                        CNP-ul pacientului pentru care a fost prescrisa trimiterea.
-					                      </xs:documentation>
+				<xs:documentation xml:lang="ro">CNP-ul pacientului pentru care a fost prescrisa trimiterea.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="personCID" use="optional">
@@ -531,67 +478,51 @@
 		</xs:attribute>
 		<xs:attribute name="patientInsuranceHouse" type="xs:string" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-				                        Codul casei de asigurari a pacientului. Acest atribut este preluat din nomenclatorul OrgUnits.
-				                      </xs:documentation>
+				<xs:documentation xml:lang="ro">Codul casei de asigurari a pacientului. Acest atribut este preluat din nomenclatorul OrgUnits.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="serialNo" type="xs:string" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-				                        Numarul trimiterii.
-				                      </xs:documentation>
+				<xs:documentation xml:lang="ro">Numarul trimiterii.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="serialCode" type="xs:string" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-					                        Seria trimiterii
-					                      </xs:documentation>
+				<xs:documentation xml:lang="ro">Seria trimiterii</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="issueDate" type="xs:date" use="required">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-						                        Data emiterii trimiterii.
-						                      </xs:documentation>
+				<xs:documentation xml:lang="ro">Data emiterii trimiterii.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="merNo" type="xs:string" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-					                        Numarul fisei de internare.
-					                      </xs:documentation>
+				<xs:documentation xml:lang="ro">Numarul fisei de internare.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="merDate" type="xs:date" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-					                        Data fisei de internare.
-					                      </xs:documentation>
+				<xs:documentation xml:lang="ro">Data fisei de internare.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="ticketType" type="xs:string" use="required">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">
-				                        Tipul de trimitere. Acest atribut poate avea urmatoarele valori:
-				                        1 -&gt; CLINIC (DE SPECIALITATE)
-				                        2 -&gt; PARACLINIC (DE LABORATOR)
-				                      </xs:documentation>
+				    Tipul de trimitere. Acest atribut poate avea urmatoarele valori:
+				        1 -&gt; CLINIC (DE SPECIALITATE)
+				        2 -&gt; PARACLINIC (DE LABORATOR)
+				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="no" type="xs:integer" use="required">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-					                        nr
-					                      </xs:documentation>
+				<xs:documentation xml:lang="ro">nr</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="diagnostic" type="xs:string" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-					                        Codul diagnosticului pentru care a fost emisa trimiterea. Acest atribut este preluat din nomenclatorul ICD10S.
-					                      </xs:documentation>
+				<xs:documentation xml:lang="ro">Codul diagnosticului pentru care a fost emisa trimiterea. Acest atribut este preluat din nomenclatorul ICD10S.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="specialty" type="xs:string" use="optional">
@@ -603,90 +534,101 @@
 	</xs:complexType>
 	<xs:complexType name="ForeignPerson">
 		<xs:annotation>
-			<xs:documentation xml:lang="ro">
-  Persoana straina.
-                 </xs:documentation>
+			<xs:documentation xml:lang="ro">Persoana straina.</xs:documentation>
 		</xs:annotation>
-		<xs:attribute name="personIdentifier" type="xs:string" use="required">
+		<xs:attribute name="personIdentifier" use="required">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-                        Codul de identificare al persoanei staine.
-                      </xs:documentation>
+				<xs:documentation xml:lang="ro">Codul de identificare al persoanei staine.</xs:documentation>
 			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="30" />
+				</xs:restriction>
+			</xs:simpleType>
 		</xs:attribute>
-		<xs:attribute name="personFirstName" type="xs:string" use="optional">
+		<xs:attribute name="personFirstName" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-                        Prenumele persoanei straine.
-                      </xs:documentation>
+				<xs:documentation xml:lang="ro">Prenumele persoanei straine.</xs:documentation>
 			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="100" />
+				</xs:restriction>
+			</xs:simpleType>
 		</xs:attribute>
-		<xs:attribute name="personLastName" type="xs:string" use="optional">
+		<xs:attribute name="personLastName" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-                        Numele persoanei strine.
-                      </xs:documentation>
+				<xs:documentation xml:lang="ro">Numele persoanei straine.</xs:documentation>
 			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="100" />
+				</xs:restriction>
+			</xs:simpleType>
 		</xs:attribute>
 		<xs:attribute name="birthDate" type="xs:date" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-                        Data de nastere a persoanei straine.
-                      </xs:documentation>
+				<xs:documentation xml:lang="ro">Data de nastere a persoanei straine.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="countryCode" type="xs:string" use="optional">
+		<xs:attribute name="countryCode" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-	                        Codul tarii cetateniei persoanei straine.
-	                      </xs:documentation>
+				<xs:documentation xml:lang="ro">Codul tarii cetateniei persoanei straine.</xs:documentation>
 			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="20" />
+				</xs:restriction>
+			</xs:simpleType>
 		</xs:attribute>
-		<xs:attribute name="cardCode" type="xs:string" use="optional">
+		<xs:attribute name="cardCode" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-                        Codul cardului de asigurat al persoanei straine.
-                        (In cazul in care persoana are card de asigurare european)
-                      </xs:documentation>
+				<xs:documentation xml:lang="ro">Codul cardului de asigurat al persoanei straine.(In cazul in care persoana are card de asigurare european)</xs:documentation>
 			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="40" />
+				</xs:restriction>
+			</xs:simpleType>
 		</xs:attribute>
 		<xs:attribute name="cardExpireDate" type="xs:date" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-                        Data de expirare a cardului de asigurare.
-                        (In cazul in care persoana are card de asigurare european)
-                      </xs:documentation>
+				<xs:documentation xml:lang="ro">Data de expirare a cardului de asigurare.(In cazul in care persoana are card de asigurare european)</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="emissiveOrgUnitCode" type="xs:string" use="optional">
+		<xs:attribute name="emissiveOrgUnitCode" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-                       Codul unitatii care a emis cardul de asigurare.
-                       (In cazul in care persoana are card de asigurare european)
-                     </xs:documentation>
+				<xs:documentation xml:lang="ro">Codul unitatii care a emis cardul de asigurare.(In cazul in care persoana are card de asigurare european)</xs:documentation>
 			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="30" />
+				</xs:restriction>
+			</xs:simpleType>
 		</xs:attribute>
-		<xs:attribute name="emissiveOrgUnitName" type="xs:string" use="optional">
+		<xs:attribute name="emissiveOrgUnitName" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-                        Numele unitatii care a emis cardul de asigurare.
-                        (In cazul in care persoana are card de asigurare european)
-                      </xs:documentation>
+				<xs:documentation xml:lang="ro">Numele unitatii care a emis cardul de asigurare.(In cazul in care persoana are card de asigurare european)</xs:documentation>
 			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="100" />
+				</xs:restriction>
+			</xs:simpleType>
 		</xs:attribute>
-		<xs:attribute name="emissiveOrgUnitAddress" type="xs:string" use="optional">
+		<xs:attribute name="emissiveOrgUnitAddress" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-                        Adresa unitatii care a emis cardul de asigurare.
-                        (In cazul in care persoana are card de asigurare european)
-                      </xs:documentation>
+				<xs:documentation xml:lang="ro">Adresa unitatii care a emis cardul de asigurare.(In cazul in care persoana are card de asigurare european)</xs:documentation>
 			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="100" />
+				</xs:restriction>
+			</xs:simpleType>
 		</xs:attribute>
 		<xs:attribute name="caseId" use="required">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-                        ID-ul de caz asignat de SNSPMS.
-                      </xs:documentation>
+				<xs:documentation xml:lang="ro">ID-ul de caz asignat de SNSPMS.</xs:documentation>
 			</xs:annotation>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
@@ -880,7 +822,7 @@
 	                        4 -&gt; TRANSFER INTERSPITALICESC
 	                        5 -&gt; LA CERERE
 	                        9 -&gt; ALTE
-	                      </xs:documentation>
+	            </xs:documentation>
 			</xs:annotation>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
@@ -1034,9 +976,7 @@
 		</xs:attribute>
 		<xs:attribute name="sex" type="xs:string" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-	                  Sexul pacientului.
-	                </xs:documentation>
+				<xs:documentation xml:lang="ro">Sexul pacientului.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="insuranceType" use="optional">
@@ -1095,9 +1035,7 @@
 		</xs:attribute>
 		<xs:attribute name="citizenship" type="xs:string" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-	                  Codul cetateniei bolnavului. Acest atribut este preluat din nomenclatorul Citizenships.
-	                </xs:documentation>
+				<xs:documentation xml:lang="ro">Codul cetateniei bolnavului. Acest atribut este preluat din nomenclatorul Citizenships.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="categAsig" use="optional">
@@ -1201,30 +1139,22 @@
 		</xs:attribute>
 		<xs:attribute name="internmentDiagCode" type="xs:string" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-                  Codul diagnosticului la internare. Acest cod este preluat din nomenclatorul COM10S.
-                </xs:documentation>
+				<xs:documentation xml:lang="ro">Codul diagnosticului la internare. Acest cod este preluat din nomenclatorul COM10S.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="mainDiagCode" type="xs:string" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-                  Codul diagnosticului principal. Acest cod este preluat din nomenclatorul COM10S.
-                </xs:documentation>
+				<xs:documentation xml:lang="ro">Codul diagnosticului principal. Acest cod este preluat din nomenclatorul COM10S.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="at72hDiagCode" type="xs:string" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-	                  Codul diagnosticului la 72 de ore. Acest cod este preluat din nomenclatorul COM10S.
-	                </xs:documentation>
+				<xs:documentation xml:lang="ro">Codul diagnosticului la 72 de ore. Acest cod este preluat din nomenclatorul COM10S.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="surgeonStencilNo" type="stencilType" use="optional">
 			<xs:annotation>
-				<xs:documentation xml:lang="ro">
-	                  Parafa medicului principal.
-	                </xs:documentation>
+				<xs:documentation xml:lang="ro">Parafa medicului principal.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="releaseState" use="optional">
@@ -1252,7 +1182,7 @@
 		                  2 -&gt; EXTERNAT LA CERERE
 		                  3 -&gt; TRANSFER INTERSPITALICESC
 		                  4 -&gt; DECEDAT
-		                </xs:documentation>
+		        </xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="weightOnBirth" type="xs:double" use="optional">
@@ -1429,7 +1359,7 @@
 				<xs:restriction base="xs:string">
 					<xs:maxLength value="20"/>
 				</xs:restriction>
-			</xs:simpleType>						
+			</xs:simpleType>
 		</xs:attribute>
 		<xs:attribute name="authorizedPersonCid" use="optional">
 			<xs:annotation>
@@ -1540,7 +1470,7 @@
 	                        - C = clinic
 	                        - P = paraclinic
 	                        - A = ambulanta
-	                      </xs:documentation>
+	            </xs:documentation>
 			</xs:annotation>
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
