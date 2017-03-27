@@ -536,6 +536,16 @@
 		<xs:annotation>
 			<xs:documentation xml:lang="ro">Persoana straina.</xs:documentation>
 		</xs:annotation>
+		<xs:attribute name="AppID" use="optional">
+			<xs:annotation>
+				<xs:documentation xml:lang="ro">Identificatorul unic al înregistrării la nivelul aplicaţiei de raportare</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="20" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>		
 		<xs:attribute name="personIdentifier" use="required">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">Codul de identificare al persoanei staine.</xs:documentation>
@@ -964,20 +974,35 @@
 				<xs:documentation xml:lang="ro">Data de nastere a pacientului</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="firstName" type="xs:string" use="optional">
+		<xs:attribute name="firstName" use="optional">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">Prenumele bolnavului</xs:documentation>
 			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="100"/>
+				</xs:restriction>
+			</xs:simpleType>			
 		</xs:attribute>
-		<xs:attribute name="lastName" type="xs:string" use="optional">
+		<xs:attribute name="lastName" use="optional">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">Numele bolnavului</xs:documentation>
 			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="100"/>
+				</xs:restriction>
+			</xs:simpleType>			
 		</xs:attribute>
-		<xs:attribute name="sex" type="xs:string" use="optional">
+		<xs:attribute name="sex" use="optional">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">Sexul pacientului.</xs:documentation>
 			</xs:annotation>
+		    <xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>			
 		</xs:attribute>
 		<xs:attribute name="insuranceType" use="optional">
 			<xs:annotation>
@@ -1033,10 +1058,15 @@
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:attribute>
-		<xs:attribute name="citizenship" type="xs:string" use="optional">
+		<xs:attribute name="citizenship" use="optional">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">Codul cetateniei bolnavului. Acest atribut este preluat din nomenclatorul Citizenships.</xs:documentation>
 			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="50"/>
+				</xs:restriction>
+			</xs:simpleType>			
 		</xs:attribute>
 		<xs:attribute name="categAsig" use="optional">
 			<xs:annotation>
@@ -1137,20 +1167,35 @@
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:attribute>
-		<xs:attribute name="internmentDiagCode" type="xs:string" use="optional">
+		<xs:attribute name="internmentDiagCode" use="optional">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">Codul diagnosticului la internare. Acest cod este preluat din nomenclatorul COM10S.</xs:documentation>
 			</xs:annotation>
+		    <xs:simpleType>
+                <xs:restriction base="xs:string">
+				    <xs:maxLength value="20"/>
+				</xs:restriction>
+		    </xs:simpleType>
 		</xs:attribute>
-		<xs:attribute name="mainDiagCode" type="xs:string" use="optional">
+		<xs:attribute name="mainDiagCode" use="optional">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">Codul diagnosticului principal. Acest cod este preluat din nomenclatorul COM10S.</xs:documentation>
 			</xs:annotation>
+		    <xs:simpleType>
+			    <xs:restriction base="xs:string">
+			         <xs:maxLength value="20"/>
+			    </xs:restriction>
+			</xs:simpleType>
 		</xs:attribute>
-		<xs:attribute name="at72hDiagCode" type="xs:string" use="optional">
+		<xs:attribute name="at72hDiagCode" use="optional">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">Codul diagnosticului la 72 de ore. Acest cod este preluat din nomenclatorul COM10S.</xs:documentation>
 			</xs:annotation>
+		    <xs:simpleType>
+			    <xs:restriction base="xs:string">
+			         <xs:maxLength value="20"/>
+			    </xs:restriction>
+			</xs:simpleType>
 		</xs:attribute>
 		<xs:attribute name="surgeonStencilNo" type="stencilType" use="optional">
 			<xs:annotation>
@@ -1195,10 +1240,15 @@
 				<xs:documentation xml:lang="ro">Greutatea la externare(doar pentru nou nascuti).</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="codeCAS" type="xs:string" use="optional">
+		<xs:attribute name="codeCAS" use="optional">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">Codul casei judetene de asigurari de care apartine pacientul.</xs:documentation>
 			</xs:annotation>
+		    <xs:simpleType>
+			    <xs:restriction base="xs:string">
+			        <xs:maxLength value="20"/>
+			    </xs:restriction>
+			</xs:simpleType>
 		</xs:attribute>
 		<xs:attribute name="cid" use="optional">
 			<xs:annotation>

@@ -53,10 +53,10 @@
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
-            <xs:attribute name="appID" type="xs:long" use="required">
-              <xs:annotation>
-                <xs:documentation xml:lang="ro">Identificatorul unic al inregistrarii</xs:documentation>
-              </xs:annotation>
+            <xs:attribute name="appID" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation xml:lang="ro">Identificatorul unic al înregistrării</xs:documentation>
+                </xs:annotation>
             </xs:attribute>
             <xs:attribute name="isValid" type="xs:boolean" use="required">
               <xs:annotation>
@@ -80,10 +80,10 @@
                 </xs:annotation>
               </xs:element>
             </xs:sequence>
-            <xs:attribute name="appID" type="xs:long" use="required">
-              <xs:annotation>
-                <xs:documentation xml:lang="ro">Identificatorul unic al inregistrarii</xs:documentation>
-              </xs:annotation>
+            <xs:attribute name="appID" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation xml:lang="ro">Identificatorul unic al înregistrării</xs:documentation>
+                </xs:annotation>
             </xs:attribute>
             <xs:attribute name="isValid" type="xs:boolean" use="required">
               <xs:annotation>
@@ -109,10 +109,10 @@
                 </xs:annotation>
               </xs:element>
             </xs:sequence>
-            <xs:attribute name="appID" type="xs:long" use="required">
-              <xs:annotation>
-                <xs:documentation xml:lang="ro">Identificatorul unic al inregistrarii</xs:documentation>
-              </xs:annotation>
+            <xs:attribute name="appID" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation xml:lang="ro">Identificatorul unic al înregistrării</xs:documentation>
+                </xs:annotation>
             </xs:attribute>
             <xs:attribute name="isValid" type="xs:boolean" use="required">
               <xs:annotation>
@@ -136,10 +136,10 @@
                 </xs:annotation>
               </xs:element>
             </xs:sequence>
-            <xs:attribute name="appID" type="xs:long" use="required">
-              <xs:annotation>
-                <xs:documentation xml:lang="ro">Identificatorul unic al inregistrarii</xs:documentation>
-              </xs:annotation>
+            <xs:attribute name="appID" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation xml:lang="ro">Identificatorul unic al înregistrării</xs:documentation>
+                </xs:annotation>
             </xs:attribute>
             <xs:attribute name="isValid" type="xs:boolean" use="required">
               <xs:annotation>
@@ -163,10 +163,10 @@
                 </xs:annotation>
               </xs:element>
             </xs:sequence>
-            <xs:attribute name="appID" type="xs:long" use="required">
-              <xs:annotation>
-                <xs:documentation xml:lang="ro">Identificatorul unic al inregistrarii</xs:documentation>
-              </xs:annotation>
+            <xs:attribute name="appID" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation xml:lang="ro">Identificatorul unic al înregistrării</xs:documentation>
+                </xs:annotation>
             </xs:attribute>
             <xs:attribute name="isValid" type="xs:boolean" use="required">
               <xs:annotation>
@@ -190,10 +190,10 @@
                 </xs:annotation>
               </xs:element>
             </xs:sequence>
-            <xs:attribute name="appID" type="xs:long" use="required">
-              <xs:annotation>
-                <xs:documentation xml:lang="ro">Identificatorul unic al inregistrarii</xs:documentation>
-              </xs:annotation>
+            <xs:attribute name="appID" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation xml:lang="ro">Identificatorul unic al înregistrării</xs:documentation>
+                </xs:annotation>
             </xs:attribute>
             <xs:attribute name="isValid" type="xs:boolean" use="required">
               <xs:annotation>
@@ -217,10 +217,10 @@
                 </xs:annotation>
               </xs:element>
             </xs:sequence>
-            <xs:attribute name="appID" type="xs:long" use="required">
-              <xs:annotation>
-                <xs:documentation xml:lang="ro">Identificatorul unic al inregistrarii</xs:documentation>
-              </xs:annotation>
+            <xs:attribute name="appID" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation xml:lang="ro">Identificatorul unic al înregistrării</xs:documentation>
+                </xs:annotation>
             </xs:attribute>
             <xs:attribute name="isValid" type="xs:boolean" use="required">
               <xs:annotation>
@@ -233,9 +233,9 @@
           </xs:complexType>
         </xs:element>
       </xs:sequence>
-      <xs:attribute name="appId" type="xs:decimal" use="required">
+      <xs:attribute name="appId" type="xs:string" use="required">
         <xs:annotation>
-          <xs:documentation xml:lang="ro">Identificatorul unic al inregistrarii</xs:documentation>
+            <xs:documentation xml:lang="ro">Identificatorul unic al înregistrării</xs:documentation>
         </xs:annotation>
       </xs:attribute>
     </xs:complexType>

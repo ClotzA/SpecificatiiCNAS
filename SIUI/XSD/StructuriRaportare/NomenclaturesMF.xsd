@@ -2217,6 +2217,13 @@
 											</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
+									<xs:attribute name="hgIcd10" type="xs:string" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">
+												Precizează Codul de diagnostic pentru care medicamentul poate fi prescris/eliberat. Daca codul de diagnostic nu este precizat, atunci medicamentul se poate acorda fara nici o restrictie de cod de diagnostic.
+											</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
 									<xs:attribute name="overValue" type="xs:string" use="optional">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Precizează dacă medicamentul poate depăşi plafonul de valoare al listei, dar numai dacă este singur pe reţetă. Poate avea valorile 1 sau 0.</xs:documentation>
@@ -2559,6 +2566,13 @@
 											</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>									
+									<xs:attribute name="icd10" type="xs:string" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">
+												Precizează Codul de diagnostic pentru care substanta activa poate fi prescrisa. Daca codul de diagnostic nu este precizat, atunci substanta poate fi prescrisa fara nici o restrictie de cod de diagnostic.
+											</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
 									<xs:attribute name="validFrom" type="xs:date" use="required">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Data de inceput a valabilităţii</xs:documentation>

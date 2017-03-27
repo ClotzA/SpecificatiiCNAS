@@ -1640,6 +1640,13 @@
 											</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
+									<xs:attribute name="hgIcd10" type="xs:string" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">
+												Precizează Codul de diagnostic pentru care medicamentul poate fi prescris/eliberat. Daca codul de diagnostic nu este precizat, atunci medicamentul se poate acorda fara nici o restrictie de cod de diagnostic.
+											</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
 									<xs:attribute name="overValue" type="xs:string" use="optional">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Precizează dacă medicamentul poate depaşi plafonul de valoare al listei, dar numai dacă este singur pe reţetă. Poate avea valorile 1 sau 0.</xs:documentation>
@@ -3826,6 +3833,13 @@
 											</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>									
+									<xs:attribute name="icd10" type="xs:string" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">
+												Precizează Codul de diagnostic pentru care substanta activa poate fi prescrisa. Daca codul de diagnostic nu este precizat, atunci substanta poate fi prescrisa fara nici o restrictie de cod de diagnostic.
+											</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
 									<xs:attribute name="validFrom" type="xs:date" use="required">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Data de inceput a valabilităţii</xs:documentation>
@@ -4759,6 +4773,52 @@
 									<xs:attribute name="validTo" type="xs:date" use="optional">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">Data de sfârşit a valabilităţii tipului de articol</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CardExceptions" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation xml:lang="ro">Catalogul cu excepţii de la utilizarea cardului naţional de asigurări sociale de sănătate.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CardException" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation xml:lang="ro">Definiţia unei excepţii</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:attribute name="code" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Codul excepţiei</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="20"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="description" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Denumirea excepţiei</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:maxLength value="500"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="validFrom" type="xs:date" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Data de început a valabilităţii excepţiei</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="validTo" type="xs:date" use="optional">
+										<xs:annotation>
+											<xs:documentation xml:lang="ro">Data de sfârşit a valabilităţii excepţiei</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
 								</xs:complexType>

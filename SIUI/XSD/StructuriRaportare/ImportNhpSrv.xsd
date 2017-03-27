@@ -172,10 +172,15 @@
 											<xs:documentation xml:lang="ro">Valoarea totală a serviciilor efectuate</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
-									<xs:attribute name="appID" type="xs:unsignedLong" use="required">
+									<xs:attribute name="appID" use="required">
 										<xs:annotation>
-											<xs:documentation xml:lang="ro">Identificatorul unic al înregistrării</xs:documentation>
+											 <xs:documentation xml:lang="ro">Identificatorul unic al înregistrării</xs:documentation>
 										</xs:annotation>
+	                                    <xs:simpleType>
+					                        <xs:restriction base="xs:string">
+						                        <xs:maxLength value="20"/>
+				                            </xs:restriction>
+			                            </xs:simpleType>												   
 									</xs:attribute>
 				                    <xs:attribute name="personType" use="optional">
 					                  <xs:annotation>
