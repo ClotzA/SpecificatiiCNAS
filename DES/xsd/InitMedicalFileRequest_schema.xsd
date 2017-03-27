@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="initMedicalFileRequest" type="initMedicalFileRequest"/>
+
+  <xs:complexType name="personData">
+    <xs:sequence>
+      <xs:element name="birthDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="cid" type="xs:string" minOccurs="0"/>
+      <xs:element name="firstName" type="xs:string" minOccurs="0"/>
+      <xs:element name="lastName" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="requestPerson">
+    <xs:sequence>
+      <xs:element name="icExpiration" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="icNumber" type="xs:string" minOccurs="0"/>
+      <xs:element name="icSeries" type="xs:string" minOccurs="0"/>
+      <xs:element name="personData" type="personData" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="physicianData">
+    <xs:sequence>
+      <xs:element name="fullName" type="xs:string" minOccurs="0"/>
+      <xs:element name="stencilNo" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="initMedicalFileRequest">
+    <xs:sequence>
+      <xs:element name="physician" type="physicianData" minOccurs="0"/>
+      <xs:element name="relationType" type="relationType" minOccurs="0"/>
+      <xs:element name="requestPerson" type="requestPerson" minOccurs="0"/>
+      <xs:element name="subject" type="personData" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="relationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CHILD"/>
+      <xs:enumeration value="CARER"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+

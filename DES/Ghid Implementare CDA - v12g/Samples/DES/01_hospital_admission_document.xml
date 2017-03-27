@@ -1,0 +1,123 @@
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" moodCode="EVN" xmlns="urn:hl7-org:v3">
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+  <templateId root="2.16.840.1.113883.3.3368.7.1" />
+  <id root="2.16.840.1.113883.3.3368" extension="85c98225-4cd1-4ea6-ad29-71bc82b9268a" />
+  <code code="67852-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Prezentare la internare" />
+  <title>Fisa consultatie</title>
+  <effectiveTime value="20161206" />
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode" displayName="Normal" />
+  <languageCode code="ro" />
+  <versionNumber value="1" />
+  <recordTarget typeCode="RCT" contextControlCode="OP">
+    <patientRole classCode="PAT">
+      <id root="CID" extension="40101517305418591549" />
+      <addr>
+        <city>Dunavăţu de Jos</city>
+        <county>TULCEA</county>
+      </addr>
+      <patient classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <given>DES</given>
+          <family>PACIENT</family>
+        </name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.3.3368.40" codeSystemName="AdministrativeGender" displayName="Masculin" />
+        <birthTime value="19930411" />
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author typeCode="AUT" contextControlCode="OP">
+    <time value="20161214" />
+    <assignedAuthor classCode="ASSIGNED">
+      <id root="Parafa" extension="C36900" />
+      <code code="BOLI INFECTIOASE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="BOLI INFECTIOASE" />
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <given> 121196035772</given>
+          <family>121196035772</family>
+        </name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <custodian typeCode="CST">
+    <assignedCustodian classCode="ASSIGNED">
+      <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+        <id root="CUI" extension="4203490" />
+        <name>Spital Testare DEV</name>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <legalAuthenticator typeCode="LA" contextControlCode="OP">
+    <time value="20161214" />
+    <signatureCode code="S" />
+    <assignedEntity classCode="ASSIGNED">
+      <id root="Parafa" extension="C36900" />
+      <code code="4203490" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Spital Testare DEV" />
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <given> 121196035772</given>
+          <family>121196035772</family>
+        </name>
+      </assignedPerson>
+    </assignedEntity>
+  </legalAuthenticator>
+  <componentOf>
+    <encompassingEncounter classCode="ENC" moodCode="EVN">
+      <id root="Serie" extension="4203490" />
+      <id root="Numar" extension="195" />
+      <effectiveTime>
+        <low value="20161206" />
+      </effectiveTime>
+      <encounterParticipant typeCode="ATND">
+        <assignedEntity classCode="ASSIGNED">
+          <templateId root="2.16.840.1.113883.3.3368.10.56" />
+          <id root="Parafa" extension="C36900" />
+          <code code="BOLI INFECTIOASE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="BOLI INFECTIOASE" />
+          <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+            <name>
+              <given> 121196035772</given>
+              <family>121196035772</family>
+            </name>
+          </assignedPerson>
+          <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+            <templateId root="2.16.840.1.113883.3.3368.10.97" />
+            <id root="CUI" extension="4203490" />
+            <name>Spital Testare DEV</name>
+          </representedOrganization>
+        </assignedEntity>
+      </encounterParticipant>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody classCode="DOCBODY" moodCode="EVN">
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.3.3368.10.176" />
+          <code code="46241-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic de internare" />
+          <title>Diagnostic la internare</title>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.1" />
+              <code code="46241-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic de internare" />
+              <value xsi:type="CD" code="I10" codeSystem="2.16.840.1.113883.3.3368.6.18" codeSystemName="ICD10AM" displayName="Hipertensiunea esentiala (primara)" />
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.3.3368.10.8" />
+          <code code="67852-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Prezentare la internare" />
+          <title>Prezentare la internare</title>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.9" />
+              <code code="67852-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Prezentare la internare" />
+              <priorityCode code="11" codeSystem="2.16.840.1.113883.3.3368.6.20" codeSystemName="AdmissionTypes" displayName="Boli cu potential endemoepidemic care necesita izolare" />
+            </act>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
+

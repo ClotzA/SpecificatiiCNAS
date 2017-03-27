@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:_ns0="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.3.3368.8.5"/>
+  <id root="2.16.840.1.113883.3.3368" extension="93c40152-9f4e-458b-b289-255d1da224bd"/>
+  <code code="11503-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Istoric evenimente medicale"/>
+  <title>Istoric evenimente medicale</title>
+  <effectiveTime value="20140403"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode" displayName="Normal"/>
+  <languageCode code="ro"/>
+  <recordTarget>
+    <patientRole>
+      <id root="CID" extension="40173983121904028968"/>
+      <patient>
+        <name><given>CORNEL</given><family>TEST DES</family></name>
+        <birthTime value="19811230"/>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20140327"/>
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.3.3368"/>
+      <assignedAuthoringDevice>
+        <softwareName>Dosarul Electronic de Sănătate</softwareName>
+      </assignedAuthoringDevice>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.113883.3.3368"/>
+        <name>Casa NaÅ£ionalÄƒ de AsigurÄƒri de SÄƒnÄƒtate</name>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.11.196"/>
+          <code code="67852-2" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Internari"/>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.11.185"/>
+              <code code="67852-2" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Internari"/>
+              <effectiveTime>
+                <low value="20140327"/>
+              </effectiveTime>
+              <entryRelationship typeCode="XCRPT">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.11.5"/>
+                  <code code="context" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Informatie de context"/>
+                  <text>Sectiunea Internari din internarea din data de 27/03/2014</text>
+                  <effectiveTime value="20140327"/>
+                  <value xsi:type="CD" code="67852-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Prezentare la internare">
+                    <qualifier>
+                      <value code="67852-2" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Internari"/>
+                    </qualifier>
+                  </value>
+                  <participant typeCode="ATND">
+                    <templateId root="2.16.840.1.113883.3.3368.11.7"/>
+                    <participantRole>
+                      <id root="Parafa" extension="489943"/>
+                      <playingEntity>
+                        <code code="OTORINOLARINGOLOGIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="OTORINOLARINGOLOGIE"/>
+                        <name><family>1 NumeFam 1 Prenume</family><given>1 Prenume</given></name>
+                      </playingEntity>
+                      <scopingEntity>
+                        <id root="CUI" extension="4183164"/>
+                        <desc>Spitalul nostru de TEST</desc>
+                      </scopingEntity>
+                    </participantRole>
+                  </participant>
+                  <reference typeCode="XCRPT">
+                    <templateId root="2.16.840.1.113883.3.3368.11.6"/>
+                    <externalDocument>
+                      <id root="2.16.840.1.113883.3.3368" extension="5c94efbd-8410-4585-b7a7-7c715cd3d7d3"/>
+                    </externalDocument>
+                  </reference>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <act classCode="ACT" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.11.190"/>
+                  <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic"/>
+                  <entryRelationship typeCode="COMP">
+                    <organizer classCode="CLUSTER" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.3.3368.11.189"/>
+                      <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic"/>
+                      <statusCode code="completed"/>
+                      <component>
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.3.3368.11.188"/>
+                          <templateId root="2.16.840.1.113883.3.3368.10.143"/>
+                          <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic"/>
+                          <value xsi:type="CD" code="9_13_I08.3" codeSystem="2.16.840.1.113883.3.3368.6.18" codeSystemName="ICD10AM" displayName="Afectiuni combinate ale valvei mitrale, aortice si tricuspide&quot;,-1,0,0,0,0,"/>
+                          <entryRelationship typeCode="XCRPT">
+                            <observation classCode="OBS" moodCode="EVN">
+                              <templateId root="2.16.840.1.113883.3.3368.11.5"/>
+                              <code code="context" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Informatie de context"/>
+                              <text>Sectiunea Diagnostic de internare din internarea din data de 27/03/2014</text>
+                              <effectiveTime value="20140327"/>
+                              <value xsi:type="CD" code="67852-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Prezentare la internare">
+                                <qualifier>
+                                  <value code="46241-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic de internare"/>
+                                </qualifier>
+                              </value>
+                              <participant typeCode="ATND">
+                                <templateId root="2.16.840.1.113883.3.3368.11.7"/>
+                                <participantRole>
+                                  <id root="Parafa" extension="489943"/>
+                                  <playingEntity>
+                                    <code code="OTORINOLARINGOLOGIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="OTORINOLARINGOLOGIE"/>
+                                    <name><family>1 NumeFam 1 Prenume</family><given>1 Prenume</given></name>
+                                  </playingEntity>
+                                  <scopingEntity>
+                                    <id root="CUI" extension="4183164"/>
+                                    <desc>Spitalul nostru de TEST</desc>
+                                  </scopingEntity>
+                                </participantRole>
+                              </participant>
+                              <reference typeCode="XCRPT">
+                                <templateId root="2.16.840.1.113883.3.3368.11.6"/>
+                                <externalDocument>
+                                  <id root="2.16.840.1.113883.3.3368" extension="5c94efbd-8410-4585-b7a7-7c715cd3d7d3"/>
+                                </externalDocument>
+                              </reference>
+                            </observation>
+                          </entryRelationship>
+                        </observation>
+                      </component>
+                    </organizer>
+                  </entryRelationship>
+                </act>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.195"/>
+                  <code code="34134-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Specialitate medicala"/>
+                  <value xsi:type="CD" code="OTORINOLARINGOLOGIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="OTORINOLARINGOLOGIE"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.11.185"/>
+              <code code="67852-2" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Internari"/>
+              <effectiveTime>
+                <low value="20140403"/>
+              </effectiveTime>
+              <entryRelationship typeCode="XCRPT">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.11.5"/>
+                  <code code="context" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Informatie de context"/>
+                  <text>Sectiunea Internari din internarea din data de 03/04/2014</text>
+                  <effectiveTime value="20140403"/>
+                  <value xsi:type="CD" code="67852-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Prezentare la internare">
+                    <qualifier>
+                      <value code="67852-2" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Internari"/>
+                    </qualifier>
+                  </value>
+                  <participant typeCode="ATND">
+                    <templateId root="2.16.840.1.113883.3.3368.11.7"/>
+                    <participantRole>
+                      <id root="Parafa" extension="489943"/>
+                      <playingEntity>
+                        <code code="OTORINOLARINGOLOGIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="OTORINOLARINGOLOGIE"/>
+                        <name><family>1 NumeFam 1 Prenume</family><given>1 Prenume</given></name>
+                      </playingEntity>
+                      <scopingEntity>
+                        <id root="CUI" extension="4183164"/>
+                        <desc>Spitalul nostru de TEST</desc>
+                      </scopingEntity>
+                    </participantRole>
+                  </participant>
+                  <reference typeCode="XCRPT">
+                    <templateId root="2.16.840.1.113883.3.3368.11.6"/>
+                    <externalDocument>
+                      <id root="2.16.840.1.113883.3.3368" extension="5eae0325-b478-4bff-b68b-c70dd4baa480"/>
+                    </externalDocument>
+                  </reference>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <act classCode="ACT" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.11.190"/>
+                  <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic"/>
+                  <entryRelationship typeCode="COMP">
+                    <organizer classCode="CLUSTER" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.3.3368.11.189"/>
+                      <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic"/>
+                      <statusCode code="completed"/>
+                      <component>
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.3.3368.11.188"/>
+                          <templateId root="2.16.840.1.113883.3.3368.10.143"/>
+                          <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic"/>
+                          <value xsi:type="CD" code="9_13_I08.3" codeSystem="2.16.840.1.113883.3.3368.6.18" codeSystemName="ICD10AM" displayName="Afectiuni combinate ale valvei mitrale, aortice si tricuspide&quot;,-1,0,0,0,0,"/>
+                          <entryRelationship typeCode="XCRPT">
+                            <observation classCode="OBS" moodCode="EVN">
+                              <templateId root="2.16.840.1.113883.3.3368.11.5"/>
+                              <code code="context" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Informatie de context"/>
+                              <text>Sectiunea Diagnostic de internare din internarea din data de 03/04/2014</text>
+                              <effectiveTime value="20140403"/>
+                              <value xsi:type="CD" code="67852-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Prezentare la internare">
+                                <qualifier>
+                                  <value code="46241-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic de internare"/>
+                                </qualifier>
+                              </value>
+                              <participant typeCode="ATND">
+                                <templateId root="2.16.840.1.113883.3.3368.11.7"/>
+                                <participantRole>
+                                  <id root="Parafa" extension="489943"/>
+                                  <playingEntity>
+                                    <code code="OTORINOLARINGOLOGIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="OTORINOLARINGOLOGIE"/>
+                                    <name><family>1 NumeFam 1 Prenume</family><given>1 Prenume</given></name>
+                                  </playingEntity>
+                                  <scopingEntity>
+                                    <id root="CUI" extension="4183164"/>
+                                    <desc>Spitalul nostru de TEST</desc>
+                                  </scopingEntity>
+                                </participantRole>
+                              </participant>
+                              <reference typeCode="XCRPT">
+                                <templateId root="2.16.840.1.113883.3.3368.11.6"/>
+                                <externalDocument>
+                                  <id root="2.16.840.1.113883.3.3368" extension="5eae0325-b478-4bff-b68b-c70dd4baa480"/>
+                                </externalDocument>
+                              </reference>
+                            </observation>
+                          </entryRelationship>
+                        </observation>
+                      </component>
+                    </organizer>
+                  </entryRelationship>
+                </act>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.195"/>
+                  <code code="34134-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Specialitate medicala"/>
+                  <value xsi:type="CD" code="OTORINOLARINGOLOGIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="OTORINOLARINGOLOGIE"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

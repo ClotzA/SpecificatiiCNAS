@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="ClinicalDocument" targetNamespace="core.des.uti.ro" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:tns="core.des.uti.ro" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="core.des.uti.ro" schemaLocation="ClinicalDocument_schema1.xsd"/>
+    </xsd:schema>
+  </types>
+  <message name="getRelevantReferralsResponse">
+    <part name="result" element="tns:getRelevantReferralsResponse">
+    </part>
+  </message>
+  <message name="getMedicalFileOlderDocuments">
+    <part name="parameters" element="tns:getMedicalFileOlderDocuments">
+    </part>
+    <part name="desClientSoftwareAuthentication" element="tns:desClientSoftwareAuthentication">
+    </part>
+  </message>
+  <message name="getClinicalDocumentSResponse">
+    <part name="result" element="tns:getClinicalDocumentSResponse">
+    </part>
+  </message>
+  <message name="getPhysicianClinicalDocuments">
+    <part name="parameters" element="tns:getPhysicianClinicalDocuments">
+    </part>
+    <part name="desClientSoftwareAuthentication" element="tns:desClientSoftwareAuthentication">
+    </part>
+  </message>
+  <message name="getPhysicianClinicalDocumentsResponse">
+    <part name="result" element="tns:getPhysicianClinicalDocumentsResponse">
+    </part>
+  </message>
+  <message name="getRelevantReferrals">
+    <part name="parameters" element="tns:getRelevantReferrals">
+    </part>
+    <part name="desClientSoftwareAuthentication" element="tns:desClientSoftwareAuthentication">
+    </part>
+  </message>
+  <message name="getClinicalDocumentS">
+    <part name="parameters" element="tns:getClinicalDocumentS">
+    </part>
+    <part name="desClientSoftwareAuthentication" element="tns:desClientSoftwareAuthentication">
+    </part>
+  </message>
+  <message name="getMedicalFileOlderDocumentsResponse">
+    <part name="result" element="tns:getMedicalFileOlderDocumentsResponse">
+    </part>
+  </message>
+  <message name="DesRuntimeException">
+    <part name="fault" element="tns:DesRuntimeException">
+    </part>
+  </message>
+  <message name="DesException">
+    <part name="fault" element="tns:DesException">
+    </part>
+  </message>
+  <portType name="ClinicalDocument">
+    <operation name="getClinicalDocumentS" parameterOrder="parameters desClientSoftwareAuthentication">
+      <input message="tns:getClinicalDocumentS" wsam:Action="core.des.uti.ro/ClinicalDocument/getClinicalDocumentSRequest">
+    </input>
+      <output message="tns:getClinicalDocumentSResponse" wsam:Action="core.des.uti.ro/ClinicalDocument/getClinicalDocumentSResponse">
+    </output>
+      <fault name="DesRuntimeException" message="tns:DesRuntimeException" wsam:Action="core.des.uti.ro/ClinicalDocument/getClinicalDocumentS/Fault/DesRuntimeException">
+    </fault>
+      <fault name="DesException" message="tns:DesException" wsam:Action="core.des.uti.ro/ClinicalDocument/getClinicalDocumentS/Fault/DesException">
+    </fault>
+    </operation>
+    <operation name="getPhysicianClinicalDocuments" parameterOrder="parameters desClientSoftwareAuthentication">
+      <input message="tns:getPhysicianClinicalDocuments" wsam:Action="core.des.uti.ro/ClinicalDocument/getPhysicianClinicalDocumentsRequest">
+    </input>
+      <output message="tns:getPhysicianClinicalDocumentsResponse" wsam:Action="core.des.uti.ro/ClinicalDocument/getPhysicianClinicalDocumentsResponse">
+    </output>
+      <fault name="DesRuntimeException" message="tns:DesRuntimeException" wsam:Action="core.des.uti.ro/ClinicalDocument/getPhysicianClinicalDocuments/Fault/DesRuntimeException">
+    </fault>
+      <fault name="DesException" message="tns:DesException" wsam:Action="core.des.uti.ro/ClinicalDocument/getPhysicianClinicalDocuments/Fault/DesException">
+    </fault>
+    </operation>
+    <operation name="getRelevantReferrals" parameterOrder="parameters desClientSoftwareAuthentication">
+      <input message="tns:getRelevantReferrals" wsam:Action="core.des.uti.ro/ClinicalDocument/getRelevantReferralsRequest">
+    </input>
+      <output message="tns:getRelevantReferralsResponse" wsam:Action="core.des.uti.ro/ClinicalDocument/getRelevantReferralsResponse">
+    </output>
+      <fault name="DesRuntimeException" message="tns:DesRuntimeException" wsam:Action="core.des.uti.ro/ClinicalDocument/getRelevantReferrals/Fault/DesRuntimeException">
+    </fault>
+      <fault name="DesException" message="tns:DesException" wsam:Action="core.des.uti.ro/ClinicalDocument/getRelevantReferrals/Fault/DesException">
+    </fault>
+    </operation>
+    <operation name="getMedicalFileOlderDocuments" parameterOrder="parameters desClientSoftwareAuthentication">
+      <input message="tns:getMedicalFileOlderDocuments" wsam:Action="core.des.uti.ro/ClinicalDocument/getMedicalFileOlderDocumentsRequest">
+    </input>
+      <output message="tns:getMedicalFileOlderDocumentsResponse" wsam:Action="core.des.uti.ro/ClinicalDocument/getMedicalFileOlderDocumentsResponse">
+    </output>
+      <fault name="DesRuntimeException" message="tns:DesRuntimeException" wsam:Action="core.des.uti.ro/ClinicalDocument/getMedicalFileOlderDocuments/Fault/DesRuntimeException">
+    </fault>
+      <fault name="DesException" message="tns:DesException" wsam:Action="core.des.uti.ro/ClinicalDocument/getMedicalFileOlderDocuments/Fault/DesException">
+    </fault>
+    </operation>
+  </portType>
+  <binding name="ClinicalDocumentPortBinding" type="tns:ClinicalDocument">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="getClinicalDocumentS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body parts="parameters" use="literal"/>
+        <soap:header message="tns:getClinicalDocumentS" part="desClientSoftwareAuthentication" use="literal">
+        </soap:header>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="DesRuntimeException">
+        <soap:fault name="DesRuntimeException" use="literal"/>
+      </fault>
+      <fault name="DesException">
+        <soap:fault name="DesException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getPhysicianClinicalDocuments">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body parts="parameters" use="literal"/>
+        <soap:header message="tns:getPhysicianClinicalDocuments" part="desClientSoftwareAuthentication" use="literal">
+        </soap:header>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="DesRuntimeException">
+        <soap:fault name="DesRuntimeException" use="literal"/>
+      </fault>
+      <fault name="DesException">
+        <soap:fault name="DesException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getRelevantReferrals">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body parts="parameters" use="literal"/>
+        <soap:header message="tns:getRelevantReferrals" part="desClientSoftwareAuthentication" use="literal">
+        </soap:header>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="DesRuntimeException">
+        <soap:fault name="DesRuntimeException" use="literal"/>
+      </fault>
+      <fault name="DesException">
+        <soap:fault name="DesException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getMedicalFileOlderDocuments">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body parts="parameters" use="literal"/>
+        <soap:header message="tns:getMedicalFileOlderDocuments" part="desClientSoftwareAuthentication" use="literal">
+        </soap:header>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="DesRuntimeException">
+        <soap:fault name="DesRuntimeException" use="literal"/>
+      </fault>
+      <fault name="DesException">
+        <soap:fault name="DesException" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="ClinicalDocument">
+    <port name="ClinicalDocumentPort" binding="tns:ClinicalDocumentPortBinding">
+      <soap:address location="http://172.30.16.29:9080/desws/ClinicalDocument"/>
+    </port>
+  </service>
+</definitions>

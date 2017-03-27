@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="ManageMedicalFile" targetNamespace="core.des.uti.ro" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:tns="core.des.uti.ro" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="core.des.uti.ro" schemaLocation="ManageMedicalFile_schema1.xsd"/>
+    </xsd:schema>
+  </types>
+  <message name="initializeMedicalFileSResponse">
+    <part name="result" element="tns:initializeMedicalFileSResponse">
+    </part>
+  </message>
+  <message name="DesRuntimeException">
+    <part name="fault" element="tns:DesRuntimeException">
+    </part>
+  </message>
+  <message name="DesException">
+    <part name="fault" element="tns:DesException">
+    </part>
+  </message>
+  <message name="initializeMedicalFileS">
+    <part name="parameters" element="tns:initializeMedicalFileS">
+    </part>
+    <part name="desClientSoftwareAuthentication" element="tns:desClientSoftwareAuthentication">
+    </part>
+  </message>
+  <portType name="ManageMedicalFile">
+    <operation name="initializeMedicalFileS" parameterOrder="parameters desClientSoftwareAuthentication">
+      <input message="tns:initializeMedicalFileS" wsam:Action="core.des.uti.ro/ManageMedicalFile/initializeMedicalFileSRequest">
+    </input>
+      <output message="tns:initializeMedicalFileSResponse" wsam:Action="core.des.uti.ro/ManageMedicalFile/initializeMedicalFileSResponse">
+    </output>
+      <fault name="DesRuntimeException" message="tns:DesRuntimeException" wsam:Action="core.des.uti.ro/ManageMedicalFile/initializeMedicalFileS/Fault/DesRuntimeException">
+    </fault>
+      <fault name="DesException" message="tns:DesException" wsam:Action="core.des.uti.ro/ManageMedicalFile/initializeMedicalFileS/Fault/DesException">
+    </fault>
+    </operation>
+  </portType>
+  <binding name="ManageMedicalFilePortBinding" type="tns:ManageMedicalFile">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="initializeMedicalFileS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body parts="parameters" use="literal"/>
+        <soap:header message="tns:initializeMedicalFileS" part="desClientSoftwareAuthentication" use="literal">
+        </soap:header>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="DesRuntimeException">
+        <soap:fault name="DesRuntimeException" use="literal"/>
+      </fault>
+      <fault name="DesException">
+        <soap:fault name="DesException" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="ManageMedicalFile">
+    <port name="ManageMedicalFilePort" binding="tns:ManageMedicalFilePortBinding">
+      <soap:address location="http://172.17.30.134:9083/desws/ManageMedicalFile"/>
+    </port>
+  </service>
+</definitions>

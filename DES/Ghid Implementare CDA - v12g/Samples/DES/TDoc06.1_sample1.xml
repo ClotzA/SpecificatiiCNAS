@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.3.3368.7.12"/>
+  <id root="2.16.840.1.113883.3.3368" extension="7946c535-e283-43b5-9050-713a1f3a61be"/>
+  <code code="29551-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reteta"/>
+  <title>Reteta</title>
+  <effectiveTime value="20130808"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode" displayName="Normal"/>
+  <languageCode code="ro"/>
+  <setId root="2.16.840.1.113883.3.3368" extension="e25ad733-79b8-4dc6-980d-b9c4ab91a49d"/>
+  <versionNumber value="2"/>
+  <recordTarget>
+    <patientRole>
+      <id root="CID" extension="222222222222222"/>
+      <addr><city>Breaza</city><county>PRAHOVA</county></addr>
+      <patient>
+        <name><given>George</given><family>Albean</family></name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.3.3368.40" codeSystemName="AdministrativeGender" displayName="Masculin"/>
+        <birthTime value="19320924"/>
+        <guardian>
+          <guardianPerson>
+            <name><family>Popescu</family><given>Ion</given></name>
+          </guardianPerson>
+        </guardian>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20130907"/>
+    <assignedAuthor>
+      <id root="Parafa" extension="11246"/>
+      <code code="CARDIOLOGIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Cardiologie"/>
+      <assignedPerson>
+        <name><given>Ion</given><family>Popescu</family></name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <dataEnterer>
+    <time value="20130907"/>
+    <assignedEntity>
+      <id root="Parafa" extension="645212"/>
+      <code code="CARDIOLOGIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Cardiologie"/>
+      <assignedPerson>
+        <name><given>Tudor</given><family>Petrescu</family></name>
+      </assignedPerson>
+    </assignedEntity>
+  </dataEnterer>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="CUI" extension="46545"/>
+        <name>Spitalul Judetean Mures</name>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <legalAuthenticator>
+    <time value="20130907"/>
+    <signatureCode code="S"/>
+    <assignedEntity>
+      <templateId root="2.16.840.1.113883.3.3368.10.56"/>
+      <id root="Parafa" extension="555555"/>
+      <code code="CARDIOLOGIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Cardiologie"/>
+      <assignedPerson>
+        <name><given>Ion</given><family>Popescu</family></name>
+      </assignedPerson>
+      <representedOrganization>
+        <templateId root="2.16.840.1.113883.3.3368.10.97"/>
+        <id root="CUI" extension="17652413"/>
+        <name>Spitalul Universitar de Urgenta Bucuresti</name>
+      </representedOrganization>
+    </assignedEntity>
+  </legalAuthenticator>
+  <authenticator>
+    <time value="20130907"/>
+    <signatureCode code="S"/>
+    <assignedEntity>
+      <templateId root="2.16.840.1.113883.3.3368.10.56"/>
+      <id root="Parafa" extension="555555"/>
+      <code code="CARDIOLOGIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Cardiologie"/>
+      <assignedPerson>
+        <name><given>Ion</given><family>Popescu</family></name>
+      </assignedPerson>
+      <representedOrganization>
+        <templateId root="2.16.840.1.113883.3.3368.10.97"/>
+        <id root="CUI" extension="17652413"/>
+        <name>Spitalul Universitar de Urgenta Bucuresti</name>
+      </representedOrganization>
+    </assignedEntity>
+  </authenticator>
+  <relatedDocument typeCode="RPLC">
+    <parentDocument>
+      <id root="2.16.840.1.113883.3.3368" extension="189ca9e8-a383-4f51-a814-418834eac763"/>
+      <code code="29551-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reteta"/>
+    </parentDocument>
+  </relatedDocument>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.181"/>
+          <code code="29305-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medicamente prescrise"/>
+          <entry>
+            <act classCode="ACT" moodCode="RQO">
+              <templateId root="2.16.840.1.113883.3.3368.10.183"/>
+              <id root="Serie" extension="ABCDE"/>
+              <id root="Numar" extension="123456"/>
+              <code code="29305-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medicamente prescrise"/>
+              <effectiveTime>
+                <low value="20130812"/>
+                <width value="10.0" unit="z"/>
+              </effectiveTime>
+              <participant typeCode="ATND">
+                <templateId root="2.16.840.1.113883.3.3368.10.85"/>
+                <participantRole>
+                  <templateId root="2.16.840.1.113883.3.3368.10.86"/>
+                  <id root="Parafa" extension="434323"/>
+                  <playingEntity>
+                    <templateId root="2.16.840.1.113883.3.3368.10.82"/>
+                    <name><given>Tudor</given><family>Petrescu</family></name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="COMP">
+                <substanceAdministration classCode="SBADM" moodCode="RQO">
+                  <templateId root="2.16.840.1.113883.3.3368.10.184"/>
+                  <templateId root="2.16.840.1.113883.3.3368.10.136"/>
+                  <text>1cps/12h</text>
+                  <effectiveTime xsi:type="IVL_TS" value="20130812"/>
+                  <consumable>
+                    <templateId root="2.16.840.1.113883.3.3368.10.128"/>
+                    <manufacturedProduct>
+                      <manufacturedLabeledDrug>
+                        <code code="W00042003" codeSystem="2.16.840.1.113883.3.3368.6.5" codeSystemName="Drugs" displayName="ACICLOVIR 200 mg"/>
+                      </manufacturedLabeledDrug>
+                    </manufacturedProduct>
+                  </consumable>
+                  <participant typeCode="PRF">
+                    <templateId root="2.16.840.1.113883.3.3368.10.138"/>
+                    <participantRole>
+                      <id root="CUI" extension="1245678"/>
+                      <playingEntity>
+                        <desc>Farmacie Berceni</desc>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.3.3368.10.180"/>
+                      <code code="18818-3" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Cantitate eliberata"/>
+                      <effectiveTime>
+                        <width value="10.0" unit="z"/>
+                      </effectiveTime>
+                      <value xsi:type="PQ" value="10.0" unit="unitati"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.3.3368.10.143"/>
+                      <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic"/>
+                      <text>descriere diagnostic</text>
+                      <value xsi:type="CD" code="245" codeSystem="2.16.840.1.113883.3.3368.6.1" codeSystemName="Diag999" displayName="Diabet zaharat fara precizare"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.3.3368.10.141"/>
+                      <code code="18818-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Cantitate prescrisa"/>
+                      <effectiveTime>
+                        <width value="8.0" unit="z"/>
+                      </effectiveTime>
+                      <value xsi:type="PQ" value="10.0" unit="unitati"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.3.3368.10.122"/>
+                      <code code="55106-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Substanta activa"/>
+                      <value xsi:type="CD" code="ACICLOVIRUM" codeSystem="2.16.840.1.113883.3.3368.6.11" codeSystemName="ActiveSubstances" displayName="ACICLOVIRUM"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.3.3368.10.142"/>
+                      <code code="18818-2" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Concentratie"/>
+                      <value xsi:type="CD" code="1.5g" codeSystem="2.16.840.1.113883.3.3368.6.13" codeSystemName="Concentrations" displayName="1.5g"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.3.3368.10.137"/>
+                      <code code="52809-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Forma farmaceutica"/>
+                      <value xsi:type="CD" code="COMPR." codeSystem="2.16.840.1.113883.3.3368.6.12" codeSystemName="PharmaceuticalForms" displayName="Comprimate"/>
+                    </observation>
+                  </entryRelationship>
+                </substanceAdministration>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.140"/>
+                  <code code="29305-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Tip prescriere"/>
+                  <value xsi:type="CD" code="S" codeSystem="2.16.840.1.113883.3.3368.6.10" codeSystemName="PrescriptionTypes" displayName="Reteta stupefiante tip TABEL II"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <encounter classCode="ENC" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.139"/>
+                  <id root="NrRegCons" extension="12345"/>
+                  <effectiveTime value="20130901"/>
+                </encounter>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

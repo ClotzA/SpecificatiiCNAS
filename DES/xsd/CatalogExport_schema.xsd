@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="codeSystem" type="catalogExport"/>
+
+  <xs:element name="codeSystemMetadata" type="catalogExportMetadata"/>
+
+  <xs:element name="value" type="catalogExportValue"/>
+
+  <xs:complexType name="catalogExportMetadata">
+    <xs:sequence>
+      <xs:element name="codeSystem" type="xs:string"/>
+      <xs:element name="codeSystemName" type="xs:string"/>
+      <xs:element name="displayName" type="xs:string"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="exportDate" type="xs:string"/>
+      <xs:element name="lastModifyDate" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="catalogExport">
+    <xs:sequence>
+      <xs:element ref="codeSystemMetadata" minOccurs="0"/>
+      <xs:element name="values" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="value" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="catalogExportValue">
+    <xs:sequence/>
+    <xs:attribute name="code" type="xs:string" use="required"/>
+    <xs:attribute name="description" type="xs:string" use="required"/>
+    <xs:attribute name="validFrom" type="xs:string"/>
+    <xs:attribute name="validTo" type="xs:string"/>
+  </xs:complexType>
+</xs:schema>
+

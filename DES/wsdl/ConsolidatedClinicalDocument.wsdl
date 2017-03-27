@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="ConsolidatedClinicalDocument" targetNamespace="core.des.uti.ro" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:tns="core.des.uti.ro" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="core.des.uti.ro" schemaLocation="ConsolidatedClinicalDocument_schema1.xsd"/>
+    </xsd:schema>
+  </types>
+  <message name="getConsolidatedAntecedentsS">
+    <part name="parameters" element="tns:getConsolidatedAntecedentsS">
+    </part>
+    <part name="desClientSoftwareAuthentication" element="tns:desClientSoftwareAuthentication">
+    </part>
+  </message>
+  <message name="getConsolidatedSummaryS">
+    <part name="parameters" element="tns:getConsolidatedSummaryS">
+    </part>
+    <part name="desClientSoftwareAuthentication" element="tns:desClientSoftwareAuthentication">
+    </part>
+  </message>
+  <message name="getConsolidatedEventsHistorySResponse">
+    <part name="result" element="tns:getConsolidatedEventsHistorySResponse">
+    </part>
+  </message>
+  <message name="getConsolidatedEventsHistoryS">
+    <part name="parameters" element="tns:getConsolidatedEventsHistoryS">
+    </part>
+    <part name="desClientSoftwareAuthentication" element="tns:desClientSoftwareAuthentication">
+    </part>
+  </message>
+  <message name="getConsolidatedPatientIdentitySResponse">
+    <part name="result" element="tns:getConsolidatedPatientIdentitySResponse">
+    </part>
+  </message>
+  <message name="getConsolidatedPatientIdentityS">
+    <part name="parameters" element="tns:getConsolidatedPatientIdentityS">
+    </part>
+    <part name="desClientSoftwareAuthentication" element="tns:desClientSoftwareAuthentication">
+    </part>
+  </message>
+  <message name="getConsolidatedMedicalHistoryS">
+    <part name="parameters" element="tns:getConsolidatedMedicalHistoryS">
+    </part>
+    <part name="desClientSoftwareAuthentication" element="tns:desClientSoftwareAuthentication">
+    </part>
+  </message>
+  <message name="getConsolidatedMedicalHistorySResponse">
+    <part name="result" element="tns:getConsolidatedMedicalHistorySResponse">
+    </part>
+  </message>
+  <message name="getConsolidatedSummarySResponse">
+    <part name="result" element="tns:getConsolidatedSummarySResponse">
+    </part>
+  </message>
+  <message name="getConsolidatedAntecedentsSResponse">
+    <part name="result" element="tns:getConsolidatedAntecedentsSResponse">
+    </part>
+  </message>
+  <message name="DesRuntimeException">
+    <part name="fault" element="tns:DesRuntimeException">
+    </part>
+  </message>
+  <message name="DesException">
+    <part name="fault" element="tns:DesException">
+    </part>
+  </message>
+  <portType name="ConsolidatedClinicalDocument">
+    <operation name="getConsolidatedAntecedentsS" parameterOrder="parameters desClientSoftwareAuthentication">
+      <input message="tns:getConsolidatedAntecedentsS" wsam:Action="core.des.uti.ro/ConsolidatedClinicalDocument/getConsolidatedAntecedentsSRequest">
+    </input>
+      <output message="tns:getConsolidatedAntecedentsSResponse" wsam:Action="core.des.uti.ro/ConsolidatedClinicalDocument/getConsolidatedAntecedentsSResponse">
+    </output>
+      <fault name="DesRuntimeException" message="tns:DesRuntimeException" wsam:Action="core.des.uti.ro/ConsolidatedClinicalDocument/getConsolidatedAntecedentsS/Fault/DesRuntimeException">
+    </fault>
+      <fault name="DesException" message="tns:DesException" wsam:Action="core.des.uti.ro/ConsolidatedClinicalDocument/getConsolidatedAntecedentsS/Fault/DesException">
+    </fault>
+    </operation>
+    <operation name="getConsolidatedEventsHistoryS" parameterOrder="parameters desClientSoftwareAuthentication">
+      <input message="tns:getConsolidatedEventsHistoryS" wsam:Action="core.des.uti.ro/ConsolidatedClinicalDocument/getConsolidatedEventsHistorySRequest">
+    </input>
+      <output message="tns:getConsolidatedEventsHistorySResponse" wsam:Action="core.des.uti.ro/ConsolidatedClinicalDocument/getConsolidatedEventsHistorySResponse">
+    </output>
+      <fault name="DesRuntimeException" message="tns:DesRuntimeException" wsam:Action="core.des.uti.ro/ConsolidatedClinicalDocument/getConsolidatedEventsHistoryS/Fault/DesRuntimeException">
+    </fault>
+      <fault name="DesException" message="tns:DesException" wsam:Action="core.des.uti.ro/ConsolidatedClinicalDocument/getConsolidatedEventsHistoryS/Fault/DesException">
+    </fault>
+    </operation>
+    <operation name="getConsolidatedMedicalHistoryS" parameterOrder="parameters desClientSoftwareAuthentication">
+      <input message="tns:getConsolidatedMedicalHistoryS" wsam:Action="core.des.uti.ro/ConsolidatedClinicalDocument/getConsolidatedMedicalHistorySRequest">
+    </input>
+      <output message="tns:getConsolidatedMedicalHistorySResponse" wsam:Action="core.des.uti.ro/ConsolidatedClinicalDocument/getConsolidatedMedicalHistorySResponse">
+    </output>
+      <fault name="DesRuntimeException" message="tns:DesRuntimeException" wsam:Action="core.des.uti.ro/ConsolidatedClinicalDocument/getConsolidatedMedicalHistoryS/Fault/DesRuntimeException">
+    </fault>
+      <fault name="DesException" message="tns:DesException" wsam:Action="core.des.uti.ro/ConsolidatedClinicalDocument/getConsolidatedMedicalHistoryS/Fault/DesException">
+    </fault>
+    </operation>
+    <operation name="getConsolidatedPatientIdentityS" parameterOrder="parameters desClientSoftwareAuthentication">
+      <input message="tns:getConsolidatedPatientIdentityS" wsam:Action="core.des.uti.ro/ConsolidatedClinicalDocument/getConsolidatedPatientIdentitySRequest">
+    </input>
+      <output message="tns:getConsolidatedPatientIdentitySResponse" wsam:Action="core.des.uti.ro/ConsolidatedClinicalDocument/getConsolidatedPatientIdentitySResponse">
+    </output>
+      <fault name="DesRuntimeException" message="tns:DesRuntimeException" wsam:Action="core.des.uti.ro/ConsolidatedClinicalDocument/getConsolidatedPatientIdentityS/Fault/DesRuntimeException">
+    </fault>
+      <fault name="DesException" message="tns:DesException" wsam:Action="core.des.uti.ro/ConsolidatedClinicalDocument/getConsolidatedPatientIdentityS/Fault/DesException">
+    </fault>
+    </operation>
+    <operation name="getConsolidatedSummaryS" parameterOrder="parameters desClientSoftwareAuthentication">
+      <input message="tns:getConsolidatedSummaryS" wsam:Action="core.des.uti.ro/ConsolidatedClinicalDocument/getConsolidatedSummarySRequest">
+    </input>
+      <output message="tns:getConsolidatedSummarySResponse" wsam:Action="core.des.uti.ro/ConsolidatedClinicalDocument/getConsolidatedSummarySResponse">
+    </output>
+      <fault name="DesRuntimeException" message="tns:DesRuntimeException" wsam:Action="core.des.uti.ro/ConsolidatedClinicalDocument/getConsolidatedSummaryS/Fault/DesRuntimeException">
+    </fault>
+      <fault name="DesException" message="tns:DesException" wsam:Action="core.des.uti.ro/ConsolidatedClinicalDocument/getConsolidatedSummaryS/Fault/DesException">
+    </fault>
+    </operation>
+  </portType>
+  <binding name="ConsolidatedClinicalDocumentPortBinding" type="tns:ConsolidatedClinicalDocument">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="getConsolidatedAntecedentsS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body parts="parameters" use="literal"/>
+        <soap:header message="tns:getConsolidatedAntecedentsS" part="desClientSoftwareAuthentication" use="literal">
+        </soap:header>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="DesRuntimeException">
+        <soap:fault name="DesRuntimeException" use="literal"/>
+      </fault>
+      <fault name="DesException">
+        <soap:fault name="DesException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getConsolidatedEventsHistoryS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body parts="parameters" use="literal"/>
+        <soap:header message="tns:getConsolidatedEventsHistoryS" part="desClientSoftwareAuthentication" use="literal">
+        </soap:header>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="DesRuntimeException">
+        <soap:fault name="DesRuntimeException" use="literal"/>
+      </fault>
+      <fault name="DesException">
+        <soap:fault name="DesException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getConsolidatedMedicalHistoryS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body parts="parameters" use="literal"/>
+        <soap:header message="tns:getConsolidatedMedicalHistoryS" part="desClientSoftwareAuthentication" use="literal">
+        </soap:header>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="DesRuntimeException">
+        <soap:fault name="DesRuntimeException" use="literal"/>
+      </fault>
+      <fault name="DesException">
+        <soap:fault name="DesException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getConsolidatedPatientIdentityS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body parts="parameters" use="literal"/>
+        <soap:header message="tns:getConsolidatedPatientIdentityS" part="desClientSoftwareAuthentication" use="literal">
+        </soap:header>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="DesRuntimeException">
+        <soap:fault name="DesRuntimeException" use="literal"/>
+      </fault>
+      <fault name="DesException">
+        <soap:fault name="DesException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getConsolidatedSummaryS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body parts="parameters" use="literal"/>
+        <soap:header message="tns:getConsolidatedSummaryS" part="desClientSoftwareAuthentication" use="literal">
+        </soap:header>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="DesRuntimeException">
+        <soap:fault name="DesRuntimeException" use="literal"/>
+      </fault>
+      <fault name="DesException">
+        <soap:fault name="DesException" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="ConsolidatedClinicalDocument">
+    <port name="ConsolidatedClinicalDocumentPort" binding="tns:ConsolidatedClinicalDocumentPortBinding">
+      <soap:address location="http://172.30.16.29:9080/desws/ConsolidatedClinicalDocument"/>
+    </port>
+  </service>
+</definitions>

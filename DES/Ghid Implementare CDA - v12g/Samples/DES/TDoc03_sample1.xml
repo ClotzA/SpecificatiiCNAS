@@ -1,0 +1,1106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.3.3368.7.2"/>
+  <id root="2.16.840.1.113883.3.3368" extension="7946c535-e283-43b5-9050-713a1f3a61be"/>
+  <code code="34108-2" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Spitalizare de zi - prezentare vizita"/>
+  <title>Fisa de Spitalizare de Zi - Prezentare Vizita</title>
+  <effectiveTime value="20130808"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode" displayName="Normal"/>
+  <languageCode code="ro"/>
+  <setId root="2.16.840.1.113883.3.3368" extension="e25ad733-79b8-4dc6-980d-b9c4ab91a49d"/>
+  <versionNumber value="2"/>
+  <recordTarget>
+    <patientRole>
+      <id root="CID" extension="222222222222222"/>
+      <addr><city>Breaza</city><county>PRAHOVA</county></addr>
+      <patient>
+        <name><given>George</given><family>Albean</family></name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.3.3368.40" codeSystemName="AdministrativeGender" displayName="Masculin"/>
+        <birthTime value="19320924"/>
+        <guardian>
+          <guardianPerson>
+            <name><family>Popescu</family><given>Ion</given></name>
+          </guardianPerson>
+        </guardian>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20130907"/>
+    <assignedAuthor>
+      <id root="Parafa" extension="11246"/>
+      <code code="CARDIOLOGIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Cardiologie"/>
+      <assignedPerson>
+        <name><given>Ion</given><family>Popescu</family></name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <dataEnterer>
+    <time value="20130907"/>
+    <assignedEntity>
+      <id root="Parafa" extension="645212"/>
+      <code code="CARDIOLOGIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Cardiologie"/>
+      <assignedPerson>
+        <name><given>Tudor</given><family>Petrescu</family></name>
+      </assignedPerson>
+    </assignedEntity>
+  </dataEnterer>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="CUI" extension="46545"/>
+        <name>Spitalul Judetean Mures</name>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <legalAuthenticator>
+    <time value="20130907"/>
+    <signatureCode code="S"/>
+    <assignedEntity>
+      <templateId root="2.16.840.1.113883.3.3368.10.56"/>
+      <id root="Parafa" extension="555555"/>
+      <code code="CARDIOLOGIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Cardiologie"/>
+      <assignedPerson>
+        <name><given>Ion</given><family>Popescu</family></name>
+      </assignedPerson>
+      <representedOrganization>
+        <templateId root="2.16.840.1.113883.3.3368.10.97"/>
+        <id root="CUI" extension="17652413"/>
+        <name>Spitalul Universitar de Urgenta Bucuresti</name>
+      </representedOrganization>
+    </assignedEntity>
+  </legalAuthenticator>
+  <authenticator>
+    <time value="20130907"/>
+    <signatureCode code="S"/>
+    <assignedEntity>
+      <templateId root="2.16.840.1.113883.3.3368.10.56"/>
+      <id root="Parafa" extension="555555"/>
+      <code code="CARDIOLOGIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Cardiologie"/>
+      <assignedPerson>
+        <name><given>Ion</given><family>Popescu</family></name>
+      </assignedPerson>
+      <representedOrganization>
+        <templateId root="2.16.840.1.113883.3.3368.10.97"/>
+        <id root="CUI" extension="17652413"/>
+        <name>Spitalul Universitar de Urgenta Bucuresti</name>
+      </representedOrganization>
+    </assignedEntity>
+  </authenticator>
+  <relatedDocument typeCode="RPLC">
+    <parentDocument>
+      <id root="2.16.840.1.113883.3.3368" extension="189ca9e8-a383-4f51-a814-418834eac763"/>
+      <code code="34108-2" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Spitalizare de zi - prezentare vizita"/>
+    </parentDocument>
+  </relatedDocument>
+  <componentOf>
+    <encompassingEncounter>
+      <id root="Serie" extension="AAAA"/>
+      <id root="Numar" extension="123123"/>
+      <effectiveTime>
+        <low value="201308081152"/>
+        <high value="201308081832"/>
+      </effectiveTime>
+      <encounterParticipant typeCode="ATND">
+        <assignedEntity>
+          <templateId root="2.16.840.1.113883.3.3368.10.56"/>
+          <id root="Parafa" extension="555555"/>
+          <code code="CARDIOLOGIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Cardiologie"/>
+          <assignedPerson>
+            <name><given>Ion</given><family>Popescu</family></name>
+          </assignedPerson>
+          <representedOrganization>
+            <templateId root="2.16.840.1.113883.3.3368.10.97"/>
+            <id root="CUI" extension="17652413"/>
+            <name>Spitalul Universitar de Urgenta Bucuresti</name>
+          </representedOrganization>
+        </assignedEntity>
+      </encounterParticipant>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.190"/>
+          <code code="57133-6" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Trimitere clinica primita"/>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.31"/>
+              <templateId root="2.16.840.1.113883.3.3368.10.24"/>
+              <id root="Serie" extension="AAADH"/>
+              <id root="Numar" extension="1126241"/>
+              <code code="57133-3" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Trimitere clinica"/>
+              <text>Necesita investigatii suplimentare</text>
+              <effectiveTime value="20130901"/>
+              <entryRelationship typeCode="COMP">
+                <organizer classCode="BATTERY" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.35"/>
+                  <statusCode code="completed"/>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.3.3368.10.29"/>
+                      <code code="54531-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic cunoscut"/>
+                      <text>descriere diagnostic</text>
+                      <value xsi:type="CD" code="245" codeSystem="2.16.840.1.113883.3.3368.6.1" codeSystemName="Diag999" displayName="Diabet zaharat fara precizare"/>
+                    </observation>
+                  </component>
+                </organizer>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <encounter classCode="ENC" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.27"/>
+                  <id root="NrRegCons" extension="1453"/>
+                  <effectiveTime value="20130901"/>
+                  <participant typeCode="REFT">
+                    <templateId root="2.16.840.1.113883.3.3368.10.28"/>
+                    <participantRole>
+                      <id root="Parafa" extension="565341"/>
+                      <code code="MEDICINA%20DE%20FAMILIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Medicina de familie"/>
+                      <playingEntity>
+                        <name><given>Marius</given><family>Dobrescu</family></name>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                </encounter>
+              </entryRelationship>
+              <entryRelationship typeCode="RSON">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.30"/>
+                  <code code="44833-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic prezumtiv"/>
+                  <text>descriere diagnostic</text>
+                  <value xsi:type="CD" code="245" codeSystem="2.16.840.1.113883.3.3368.6.1" codeSystemName="Diag999" displayName="Diabet zaharat fara precizare"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.195"/>
+                  <code code="34134-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Specialitate medicala"/>
+                  <value xsi:type="CD" code="CARDIOLOGIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Cardiologie"/>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.116"/>
+          <templateId root="2.16.840.1.113883.3.3368.10.5"/>
+          <code code="29308-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Dignostice pentru internare de zi"/>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.1"/>
+              <code code="46241-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic de internare"/>
+              <text>descriere diagnostic</text>
+              <value xsi:type="CD" code="4_52_E10.9" codeSystem="2.16.840.1.113883.3.3368.6.18" codeSystemName="ICD10AM" displayName="Diabet mellitus tip 1 fara complicatii"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.6"/>
+              <code code="11535-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic de externare"/>
+              <text>descriere diagnostic</text>
+              <value xsi:type="CD" code="4_52_E10.9" codeSystem="2.16.840.1.113883.3.3368.6.18" codeSystemName="ICD10AM" displayName="Diabet mellitus tip 1 fara complicatii"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.7"/>
+              <code code="8651-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic secundar de externare"/>
+              <text>descriere diagnostic</text>
+              <value xsi:type="CD" code="4_52_E10.9" codeSystem="2.16.840.1.113883.3.3368.6.18" codeSystemName="ICD10AM" displayName="Diabet mellitus tip 1 fara complicatii"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.117"/>
+          <code code="11346-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Detalii vizite"/>
+          <entry>
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.118"/>
+              <id root="nrVizita" extension="6"/>
+              <effectiveTime value="20130901"/>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.151"/>
+          <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Proceduri medicale efectuate"/>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.159"/>
+              <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Proceduri medicale efectuate"/>
+              <performer>
+                <templateId root="2.16.840.1.113883.3.3368.10.169"/>
+                <assignedEntity>
+                  <templateId root="2.16.840.1.113883.3.3368.10.170"/>
+                  <id root="Parafa" extension="434323"/>
+                  <assignedPerson>
+                    <name><given>Ion</given><family>Popescu</family></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <entryRelationship typeCode="COMP">
+                <procedure classCode="PROC" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.153"/>
+                  <code code="11500-00" codeSystem="2.16.840.1.113883.3.3368.6.17" codeSystemName="MedicalProcedures" displayName="Bronhospirometrie">
+                    <qualifier>
+                      <value code="PCP" codeSystem="2.16.840.1.113883.3.3368.6.41" codeSystemName="MedicalProcedureTypes" displayName="Proceduri chirurgicale principale"/>
+                    </qualifier>
+                  </code>
+                  <text>rezultat procedura</text>
+                  <effectiveTime value="20130901"/>
+                </procedure>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.160"/>
+          <code code="29300-3" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Servicii clinice"/>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.161"/>
+              <code code="29300-3" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Servicii clinice"/>
+              <performer>
+                <templateId root="2.16.840.1.113883.3.3368.10.169"/>
+                <assignedEntity>
+                  <templateId root="2.16.840.1.113883.3.3368.10.170"/>
+                  <id root="Parafa" extension="434323"/>
+                  <assignedPerson>
+                    <name><given>Ion</given><family>Popescu</family></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.162"/>
+                  <code code="29300-2" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Serviciu clinic"/>
+                  <effectiveTime value="20130901"/>
+                  <value xsi:type="CD" code="P.2" codeSystem="2.16.840.1.113883.3.3368.6.7" codeSystemName="ClinicalServices" displayName="Admin intrav de medicam"/>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.3.3368.10.163"/>
+                      <code code="11313-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Rezultat"/>
+                      <text>rezultat serviciu efectuat</text>
+                      <value xsi:type="ED">valori normale, de referinta</value>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.164"/>
+          <code code="22032-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Servicii paraclinice"/>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.165"/>
+              <code code="22032-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Servicii paraclinice"/>
+              <performer>
+                <templateId root="2.16.840.1.113883.3.3368.10.169"/>
+                <assignedEntity>
+                  <templateId root="2.16.840.1.113883.3.3368.10.170"/>
+                  <id root="Parafa" extension="434323"/>
+                  <assignedPerson>
+                    <name><given>Ion</given><family>Popescu</family></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.166"/>
+                  <code code="22032-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Servicii paraclinice"/>
+                  <effectiveTime value="20130901"/>
+                  <value xsi:type="CD" code="2.8212" codeSystem="2.16.840.1.113883.3.3368.6.8" codeSystemName="LaboratoryServices" displayName="Determinare grup sanguin Rh"/>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.3.3368.10.163"/>
+                      <code code="11313-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Rezultat"/>
+                      <text>rezultat serviciu efectuat</text>
+                      <value xsi:type="ED">valori normale, de referinta</value>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.75"/>
+          <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Imunizari"/>
+          <entry>
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.70"/>
+              <text>1 flacon</text>
+              <effectiveTime xsi:type="IVL_TS" value="20130901"/>
+              <consumable>
+                <templateId root="2.16.840.1.113883.3.3368.10.71"/>
+                <manufacturedProduct>
+                  <templateId root="2.16.840.1.113883.3.3368.10.73"/>
+                  <manufacturedMaterial>
+                    <templateId root="2.16.840.1.113883.3.3368.10.72"/>
+                    <code code="BCG" codeSystem="2.16.840.1.113883.3.3368.6.29" codeSystemName="Immunizations" displayName="BCG"/>
+                    <name>Vaccin BCG</name>
+                    <lotNumberText>124567</lotNumberText>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <participant typeCode="ATND">
+                <templateId root="2.16.840.1.113883.3.3368.10.85"/>
+                <participantRole>
+                  <templateId root="2.16.840.1.113883.3.3368.10.86"/>
+                  <id root="Parafa" extension="434323"/>
+                  <playingEntity>
+                    <templateId root="2.16.840.1.113883.3.3368.10.82"/>
+                    <name><given>Tudor</given><family>Petrescu</family></name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.48"/>
+                  <code code="30525-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Varsta"/>
+                  <value xsi:type="PQ" value="3.0" unit="ln"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.78"/>
+                  <code code="59779-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Calendar national de imunizari"/>
+                  <text>calendar national de imunizari</text>
+                </observation>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.125"/>
+          <code code="29303-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medicamente administrate"/>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.126"/>
+              <templateId root="2.16.840.1.113883.3.3368.10.120"/>
+              <code code="29303-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medicamente administrate"/>
+              <participant typeCode="ATND">
+                <templateId root="2.16.840.1.113883.3.3368.10.85"/>
+                <participantRole>
+                  <templateId root="2.16.840.1.113883.3.3368.10.86"/>
+                  <id root="Parafa" extension="434323"/>
+                  <playingEntity>
+                    <templateId root="2.16.840.1.113883.3.3368.10.82"/>
+                    <name><given>Tudor</given><family>Petrescu</family></name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="COMP">
+                <substanceAdministration classCode="SBADM" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.127"/>
+                  <templateId root="2.16.840.1.113883.3.3368.10.136"/>
+                  <text>1cps/12h</text>
+                  <effectiveTime xsi:type="IVL_TS" value="20130901"/>
+                  <consumable>
+                    <templateId root="2.16.840.1.113883.3.3368.10.128"/>
+                    <manufacturedProduct>
+                      <manufacturedLabeledDrug>
+                        <code code="W00042003" codeSystem="2.16.840.1.113883.3.3368.6.5" codeSystemName="Drugs" displayName="ACICLOVIR 200 mg"/>
+                      </manufacturedLabeledDrug>
+                    </manufacturedProduct>
+                  </consumable>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.3.3368.10.143"/>
+                      <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic"/>
+                      <text>descriere diagnostic</text>
+                      <value xsi:type="CD" code="4_52_E10.9" codeSystem="2.16.840.1.113883.3.3368.6.18" codeSystemName="ICD10AM" displayName="Diabet mellitus tip 1 fara complicatii"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.3.3368.10.141"/>
+                      <code code="18818-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Cantitate prescrisa"/>
+                      <value xsi:type="PQ" value="10.0" unit="unitati"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.3.3368.10.122"/>
+                      <code code="55106-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Substanta activa"/>
+                      <value xsi:type="CD" code="ACICLOVIRUM" codeSystem="2.16.840.1.113883.3.3368.6.11" codeSystemName="ActiveSubstances" displayName="ACICLOVIRUM"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.3.3368.10.142"/>
+                      <code code="18818-2" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Concentratie"/>
+                      <value xsi:type="CD" code="1.5g" codeSystem="2.16.840.1.113883.3.3368.6.13" codeSystemName="Concentrations" displayName="1.5g"/>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.3.3368.10.137"/>
+                      <code code="52809-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Forma farmaceutica"/>
+                      <value xsi:type="CD" code="COMPR." codeSystem="2.16.840.1.113883.3.3368.6.12" codeSystemName="PharmaceuticalForms" displayName="Comprimate"/>
+                    </observation>
+                  </entryRelationship>
+                </substanceAdministration>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.144"/>
+          <code code="35510-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Tratament medicamentos acordat in cadrul unor studii clinice"/>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.145"/>
+              <code code="35510-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Tratament medicamentos acordat in cadrul unor studii clinice"/>
+              <text>323 Studiu clinic privind efectele suplimentului nutritional X</text>
+              <effectiveTime>
+                <low value="20130901"/>
+              </effectiveTime>
+              <participant typeCode="ATND">
+                <templateId root="2.16.840.1.113883.3.3368.10.148"/>
+                <participantRole>
+                  <templateId root="2.16.840.1.113883.3.3368.10.149"/>
+                  <templateId root="2.16.840.1.113883.3.3368.10.86"/>
+                  <id root="Parafa" extension="434323"/>
+                  <playingEntity>
+                    <templateId root="2.16.840.1.113883.3.3368.10.82"/>
+                    <name><given>Tudor</given><family>Petrescu</family></name>
+                  </playingEntity>
+                  <scopingEntity>
+                    <templateId root="2.16.840.1.113883.3.3368.10.150"/>
+                    <id root="CUI" extension="1245678"/>
+                    <desc>Spitalul Judetean Mures</desc>
+                  </scopingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.146"/>
+                  <code code="35527-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medicament aflat in studiu"/>
+                  <text>Medicamentul X 1/Zi inainte de masa</text>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.3.3368.10.147"/>
+                      <code code="35517-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic in cadrul unui studiu clinic"/>
+                      <text>descriere diagnostic</text>
+                      <value xsi:type="CD" code="4_52_E10.9" codeSystem="2.16.840.1.113883.3.3368.6.18" codeSystemName="ICD10AM" displayName="Diabet mellitus tip 1 fara complicatii"/>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.63"/>
+          <code code="54531-2" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Boli cronice"/>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.46"/>
+              <code code="54531-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Boala cronica"/>
+              <text>detalii diagnostic</text>
+              <effectiveTime>
+                <low value="20130812"/>
+              </effectiveTime>
+              <value xsi:type="CD" code="4_52_E10.9" codeSystem="2.16.840.1.113883.3.3368.6.18" codeSystemName="ICD10AM" displayName="Diabet mellitus tip 1 fara complicatii"/>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.58"/>
+                  <code code="45952-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Program national de sanatate"/>
+                  <text>motiv excludere</text>
+                  <effectiveTime>
+                    <low value="20130930"/>
+                    <high value="20150930"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="2" codeSystem="2.16.840.1.113883.3.3368.6.6" codeSystemName="NationalHealthProgrammes" displayName="Programul national de boli cardiovasculare"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.51"/>
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Alergii"/>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.53"/>
+              <code code="52473-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Alergii"/>
+              <effectiveTime>
+                <low value="20130901"/>
+              </effectiveTime>
+              <value xsi:type="CD" code="10_177_J30.1" codeSystem="2.16.840.1.113883.3.3368.6.18" codeSystemName="ICD10AM" displayName="Rinita alergica datorita polenului"/>
+              <entryRelationship typeCode="MFST">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.50"/>
+                  <code code="52473-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Reactie alergica"/>
+                  <text>descriere reactie alergica</text>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.48"/>
+                  <code code="30525-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Varsta"/>
+                  <value xsi:type="PQ" value="25.0" unit="an"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.53"/>
+              <code code="52473-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Alergii"/>
+              <text>intoleranta la lactoza</text>
+              <effectiveTime>
+                <low value="20130901"/>
+              </effectiveTime>
+              <entryRelationship typeCode="MFST">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.50"/>
+                  <code code="52473-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Reactie alergica"/>
+                  <text>descriere reactie alergica</text>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.205"/>
+          <code code="29305-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medicamente prescrise"/>
+          <entry>
+            <act classCode="ACT" moodCode="RQO">
+              <templateId root="2.16.840.1.113883.3.3368.10.206"/>
+              <id root="Serie" extension="ABCDE"/>
+              <id root="Numar" extension="123456"/>
+              <code code="29305-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medicamente prescrise"/>
+              <effectiveTime value="20130812"/>
+              <participant typeCode="ATND">
+                <templateId root="2.16.840.1.113883.3.3368.10.85"/>
+                <participantRole>
+                  <templateId root="2.16.840.1.113883.3.3368.10.86"/>
+                  <id root="Parafa" extension="434323"/>
+                  <playingEntity>
+                    <templateId root="2.16.840.1.113883.3.3368.10.82"/>
+                    <name><given>Tudor</given><family>Petrescu</family></name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.197"/>
+          <code code="57132-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Trimitere clinica emisa"/>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.198"/>
+              <templateId root="2.16.840.1.113883.3.3368.10.196"/>
+              <id root="Serie" extension="AAADH"/>
+              <id root="Numar" extension="1126241"/>
+              <code code="57132-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Trimitere clinica emisa"/>
+              <effectiveTime value="20130901"/>
+              <participant typeCode="REFT">
+                <templateId root="2.16.840.1.113883.3.3368.10.28"/>
+                <participantRole>
+                  <id root="Parafa" extension="565341"/>
+                  <code code="MEDICINA%20DE%20FAMILIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Medicina de familie"/>
+                  <playingEntity>
+                    <name><given>Marius</given><family>Dobrescu</family></name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.195"/>
+                  <code code="34134-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Specialitate medicala"/>
+                  <value xsi:type="CD" code="CARDIOLOGIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Cardiologie"/>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.199"/>
+          <code code="57132-2" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Trimitere paraclinica emisa"/>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.200"/>
+              <templateId root="2.16.840.1.113883.3.3368.10.196"/>
+              <id root="Serie" extension="AAADH"/>
+              <id root="Numar" extension="1126241"/>
+              <code code="57132-2" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Trimitere paraclinica emisa"/>
+              <effectiveTime value="20130901"/>
+              <participant typeCode="REFT">
+                <templateId root="2.16.840.1.113883.3.3368.10.28"/>
+                <participantRole>
+                  <id root="Parafa" extension="565341"/>
+                  <code code="MEDICINA%20DE%20FAMILIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Medicina de familie"/>
+                  <playingEntity>
+                    <name><given>Marius</given><family>Dobrescu</family></name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.201"/>
+          <code code="57132-3" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Recomandare pentru ingrijiri la domiciliu emisa"/>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.202"/>
+              <templateId root="2.16.840.1.113883.3.3368.10.196"/>
+              <id root="Serie" extension="AAADH"/>
+              <id root="Numar" extension="1126241"/>
+              <code code="57132-3" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Recomandare pentru ingrijiri la domiciliu emisa"/>
+              <effectiveTime value="20130901"/>
+              <participant typeCode="REFT">
+                <templateId root="2.16.840.1.113883.3.3368.10.28"/>
+                <participantRole>
+                  <id root="Parafa" extension="565341"/>
+                  <code code="MEDICINA%20DE%20FAMILIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Medicina de familie"/>
+                  <playingEntity>
+                    <name><given>Marius</given><family>Dobrescu</family></name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.203"/>
+          <code code="57132-4" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Recomandare pentru dispozitive medicale emisa"/>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.204"/>
+              <templateId root="2.16.840.1.113883.3.3368.10.196"/>
+              <id root="Serie" extension="AAADH"/>
+              <id root="Numar" extension="1126241"/>
+              <code code="57132-4" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Recomandare pentru dispozitive medicale emisa"/>
+              <effectiveTime value="20130901"/>
+              <participant typeCode="REFT">
+                <templateId root="2.16.840.1.113883.3.3368.10.28"/>
+                <participantRole>
+                  <id root="Parafa" extension="565341"/>
+                  <code code="MEDICINA%20DE%20FAMILIE" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Medicina de familie"/>
+                  <playingEntity>
+                    <name><given>Marius</given><family>Dobrescu</family></name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.111"/>
+          <code code="18842-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Bilet de externare"/>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.158"/>
+              <code code="18842-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Bilet de externare"/>
+              <participant typeCode="DIS">
+                <templateId root="2.16.840.1.113883.3.3368.10.108"/>
+                <participantRole>
+                  <templateId root="2.16.840.1.113883.3.3368.10.109"/>
+                  <id root="Parafa" extension="645212"/>
+                  <playingEntity>
+                    <templateId root="2.16.840.1.113883.3.3368.10.82"/>
+                    <name><given>Tudor</given><family>Petrescu</family></name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.112"/>
+                  <code code="18842-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Bilet de externare"/>
+                  <text>bilet externare - detalii</text>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.104"/>
+                  <code code="8653-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Recomandari la externare"/>
+                  <text>se recomanda urmarea tratamentului</text>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.114"/>
+          <code code="51852-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Scrisoare medicala"/>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.113"/>
+              <code code="51852-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Scrisoare medicala"/>
+              <participant typeCode="DIS">
+                <templateId root="2.16.840.1.113883.3.3368.10.108"/>
+                <participantRole>
+                  <templateId root="2.16.840.1.113883.3.3368.10.109"/>
+                  <id root="Parafa" extension="645212"/>
+                  <playingEntity>
+                    <templateId root="2.16.840.1.113883.3.3368.10.82"/>
+                    <name><given>Tudor</given><family>Petrescu</family></name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.107"/>
+                  <code code="51852-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Scrisoare medicala"/>
+                  <text>scrisoare medicala externare - detalii</text>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.104"/>
+                  <code code="8653-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Recomandari la externare"/>
+                  <text>se recomanda urmarea tratamentului</text>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.11"/>
+          <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Antecedente heredo-colaterale"/>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.14"/>
+              <code code="54114-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patologia membrului de familie"/>
+              <text>Diabet zaharat</text>
+              <subject>
+                <templateId root="2.16.840.1.113883.3.3368.10.15"/>
+                <relatedSubject>
+                  <code code="NMTH" codeSystem="2.16.840.1.113883.3.3368.6.25" codeSystemName="FamilyMemberRelationType" displayName="Mama naturala"/>
+                </relatedSubject>
+              </subject>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.13"/>
+              <code code="54112-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cauza decesului membrului de familie"/>
+              <text>Infarct miocardic</text>
+              <subject>
+                <templateId root="2.16.840.1.113883.3.3368.10.15"/>
+                <relatedSubject>
+                  <code code="NMTH" codeSystem="2.16.840.1.113883.3.3368.6.25" codeSystemName="FamilyMemberRelationType" displayName="Mama naturala"/>
+                </relatedSubject>
+              </subject>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.185"/>
+              <code code="32435-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Boli ereditare"/>
+              <text>Diabet zaharat</text>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.100"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Mod de viata"/>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.103"/>
+              <code code="64209-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Conditii de munca"/>
+              <text>efort fizic pe perioade indelungate, expunere la noxe 2h pe zi</text>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.68"/>
+              <code code="61134-4" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Mediu familial"/>
+              <text>parinti fumatori, caine, pisica</text>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.65"/>
+              <code code="61144-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Dieta"/>
+              <text>informatii despre dieta</text>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.98"/>
+              <code code="28341-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Mod de viata cu privire la odihna"/>
+              <text>8 ore de somn intre 23 si 7</text>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.81"/>
+              <code code="66286-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Exercitii fizice"/>
+              <text>alergare usoara de 3/4 ori pe saptamana</text>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.64"/>
+              <code code="43829-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Consum de cafea"/>
+              <text>nu consuma cafea</text>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.99"/>
+              <code code="72166-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Consum de tutun"/>
+              <text>nu este fumator</text>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.49"/>
+              <code code="11331-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Consum de alcool"/>
+              <text>1 pahar de vin pe zi</text>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.67"/>
+              <code code="11342-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Consum de droguri"/>
+              <text>nu a consumat droguri</text>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.80"/>
+          <code code="11348-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Antecedente personale patologice"/>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.66"/>
+              <code code="54140-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Istoric boli"/>
+              <text>bolile cronice ale pacientului: rinita cronica, etc</text>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.69"/>
+              <code code="10172-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Boli hematologice"/>
+              <text>Tulburari hematologice ale perioadei perinatale</text>
+              <value xsi:type="BL" value="true"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.101"/>
+              <code code="56838-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Boli transmisibile"/>
+              <text>Hepatita virala</text>
+              <value xsi:type="BL" value="true"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.88"/>
+              <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Proceduri medicale efectuate"/>
+              <text>Hemodializa, Dozimetria computerizata bazata pe CT, simpla</text>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.89"/>
+              <code code="52051-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Proteze, dispozitive interne"/>
+              <text>protezare: proteza de sold</text>
+              <value xsi:type="BL" value="true"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.102"/>
+              <code code="68849-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Istoric transplanturi"/>
+              <text>istoric transplanturi: transplant renal</text>
+              <value xsi:type="BL" value="true"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.55"/>
+              <code code="39040-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Fistula arterio-venoasa"/>
+              <value xsi:type="BL" value="true"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.74"/>
+              <code code="41291-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Imunizari"/>
+              <text>vaccinarea antihepatita B, vaccinarea antituberculoza, vaccinarea antipoliomielita, vaccinarea antirujeolica</text>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.62"/>
+              <code code="54531-2" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Boli cronice"/>
+              <text>bolile cronice ale pacientului: rinita cronica, etc</text>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.92"/>
+              <code code="10155-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Alergii raportate"/>
+              <text>descriere alergii pacient: polen, fan, etc</text>
+              <value xsi:type="BL" value="true"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.45"/>
+          <code code="34117-3" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Antecedente personale fiziologice (adult femei)"/>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.84"/>
+              <code code="57074-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Evolutia nasterii"/>
+              <text>nastere asistata prin cezariana fara complicatii</text>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.22"/>
+              <code code="11612-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Avorturi"/>
+              <text>avort la varsta de 24 de ani, fara complicatii</text>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.83"/>
+              <code code="10162-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Evolutie sarcini"/>
+              <text>evolutie normala, fara complicatii</text>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.77"/>
+              <code code="42802-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Menopauza"/>
+              <text>menopauza la varsta de 49 ani</text>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.76"/>
+              <code code="42798-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Prima menstruatie"/>
+              <text>menarha la 15 ani</text>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.61"/>
+          <code code="68817-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Antecedente personale fiziologice (copil)"/>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.59"/>
+              <code code="57075-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Detalii nastere"/>
+              <text>nastere prin cezariana</text>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.54"/>
+              <code code="9274-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Scor Apgar"/>
+              <value xsi:type="INT" value="10"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.60"/>
+              <code code="8339-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Greutate la nastere"/>
+              <value xsi:type="PQ" value="3500.0" unit="g"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.79"/>
+              <code code="42552-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Alimentatie dupa nastere"/>
+              <text>alaptat natural pana la varsta de 6 luni</text>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.10.192"/>
+          <code code="29300-5" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Servicii spitalicesti"/>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.10.193"/>
+              <code code="29300-5" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Servicii spitalicesti"/>
+              <performer>
+                <templateId root="2.16.840.1.113883.3.3368.10.169"/>
+                <assignedEntity>
+                  <templateId root="2.16.840.1.113883.3.3368.10.170"/>
+                  <id root="Parafa" extension="434323"/>
+                  <assignedPerson>
+                    <name><given>Ion</given><family>Popescu</family></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.10.194"/>
+                  <code code="29300-5" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Servicii spitalicesti"/>
+                  <effectiveTime value="20130901"/>
+                  <value xsi:type="CD" code="SPT_62" codeSystem="2.16.840.1.113883.3.3368.6.42" codeSystemName="HospitalServices" displayName="Corectie fren"/>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.3.3368.10.163"/>
+                      <code code="11313-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Rezultat"/>
+                      <text>rezultat serviciu efectuat</text>
+                      <value xsi:type="ED">valori normale, de referinta</value>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

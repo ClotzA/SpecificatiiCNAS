@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.3.3368.8.2"/>
+  <id root="2.16.840.1.113883.3.3368" extension="bd6222dc-a519-49dc-a141-781615d9d200"/>
+  <code code="52460-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Date de identificare pacient"/>
+  <title>Date de identificare pacient</title>
+  <effectiveTime value="20130901"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode" displayName="Normal"/>
+  <languageCode code="ro"/>
+  <recordTarget>
+    <patientRole>
+      <id root="CID" extension="222222222222222"/>
+      <addr><city>Breaza</city><county>PRAHOVA</county></addr>
+      <patient>
+        <name><given>George</given><family>Albean</family></name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.3.3368.40" codeSystemName="AdministrativeGender" displayName="Masculin"/>
+        <birthTime value="19320924"/>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20130907"/>
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.3.3368"/>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.113883.3.3368"/>
+        <name>DES</name>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.11.42"/>
+          <code code="64297-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Certificat de deces"/>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.11.43"/>
+              <code code="31211-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Data decesului"/>
+              <effectiveTime value="20130901"/>
+              <entryRelationship typeCode="XCRPT">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.11.5"/>
+                  <code code="context" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Informatie de context"/>
+                  <text>alte informatii relevante</text>
+                  <effectiveTime value="20130901"/>
+                  <value xsi:type="CD" code="siui" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="SIUI"/>
+                  <participant typeCode="ATND">
+                    <templateId root="2.16.840.1.113883.3.3368.11.7"/>
+                    <participantRole>
+                      <id root="Parafa" extension="123456"/>
+                      <playingEntity>
+                        <code code="MEDICINA%20GENERALA" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Medicina generala"/>
+                        <name><family>Petrescu</family><given>Tudor</given></name>
+                      </playingEntity>
+                      <scopingEntity>
+                        <id root="CUI" extension="163543"/>
+                        <desc>Spitalul Universitar de Urgenta Militar Central</desc>
+                      </scopingEntity>
+                    </participantRole>
+                  </participant>
+                  <reference typeCode="XCRPT">
+                    <templateId root="2.16.840.1.113883.3.3368.11.6"/>
+                    <externalDocument>
+                      <id root="2.16.840.1.113883.3.3368" extension="bd6222dc-a519-49dc-a141-781615d9d200"/>
+                    </externalDocument>
+                  </reference>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.11.44"/>
+          <code code="64291-1" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Informatii despre asigurarea medicala"/>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.11.45"/>
+              <code code="64291-2" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Casa de asigurari"/>
+              <value xsi:type="CD" code="CAS-B" codeSystem="2.16.840.1.113883.3.3368.6.35" codeSystemName="InsuranceHouses" displayName="CAS M Bucuresti"/>
+              <entryRelationship typeCode="XCRPT">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.11.5"/>
+                  <code code="context" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Informatie de context"/>
+                  <text>alte informatii relevante</text>
+                  <effectiveTime value="20130901"/>
+                  <value xsi:type="CD" code="siui" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="SIUI"/>
+                  <participant typeCode="ATND">
+                    <templateId root="2.16.840.1.113883.3.3368.11.7"/>
+                    <participantRole>
+                      <id root="Parafa" extension="123456"/>
+                      <playingEntity>
+                        <code code="MEDICINA%20GENERALA" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Medicina generala"/>
+                        <name><family>Petrescu</family><given>Tudor</given></name>
+                      </playingEntity>
+                      <scopingEntity>
+                        <id root="CUI" extension="163543"/>
+                        <desc>Spitalul Universitar de Urgenta Militar Central</desc>
+                      </scopingEntity>
+                    </participantRole>
+                  </participant>
+                  <reference typeCode="XCRPT">
+                    <templateId root="2.16.840.1.113883.3.3368.11.6"/>
+                    <externalDocument>
+                      <id root="2.16.840.1.113883.3.3368" extension="bd6222dc-a519-49dc-a141-781615d9d200"/>
+                    </externalDocument>
+                  </reference>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.3.3368.11.39"/>
+          <code code="882-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Grupa sanguina"/>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.11.40"/>
+              <code code="883-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Grupa AB0"/>
+              <value xsi:type="CD" code="A" codeSystem="2.16.840.1.113883.3.3368.6.33" codeSystemName="BloodABO" displayName="A"/>
+              <entryRelationship typeCode="XCRPT">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.11.5"/>
+                  <code code="context" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Informatie de context"/>
+                  <text>alte informatii relevante</text>
+                  <effectiveTime value="20130901"/>
+                  <value xsi:type="CD" code="siui" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="SIUI"/>
+                  <participant typeCode="ATND">
+                    <templateId root="2.16.840.1.113883.3.3368.11.7"/>
+                    <participantRole>
+                      <id root="Parafa" extension="123456"/>
+                      <playingEntity>
+                        <code code="MEDICINA%20GENERALA" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Medicina generala"/>
+                        <name><family>Petrescu</family><given>Tudor</given></name>
+                      </playingEntity>
+                      <scopingEntity>
+                        <id root="CUI" extension="163543"/>
+                        <desc>Spitalul Universitar de Urgenta Militar Central</desc>
+                      </scopingEntity>
+                    </participantRole>
+                  </participant>
+                  <reference typeCode="XCRPT">
+                    <templateId root="2.16.840.1.113883.3.3368.11.6"/>
+                    <externalDocument>
+                      <id root="2.16.840.1.113883.3.3368" extension="bd6222dc-a519-49dc-a141-781615d9d200"/>
+                    </externalDocument>
+                  </reference>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.3368.11.41"/>
+              <code code="10331-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Tip Rh"/>
+              <value xsi:type="CD" code="Pozitiv" codeSystem="2.16.840.1.113883.3.3368.6.34" codeSystemName="BloodRh" displayName="Pozitiv"/>
+              <entryRelationship typeCode="XCRPT">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.3368.11.5"/>
+                  <code code="context" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="Informatie de context"/>
+                  <text>alte informatii relevante</text>
+                  <effectiveTime value="20130901"/>
+                  <value xsi:type="CD" code="siui" codeSystem="2.16.840.1.113883.3.3368.6.26" codeSystemName="OtherSectionCodes" displayName="SIUI"/>
+                  <participant typeCode="ATND">
+                    <templateId root="2.16.840.1.113883.3.3368.11.7"/>
+                    <participantRole>
+                      <id root="Parafa" extension="123456"/>
+                      <playingEntity>
+                        <code code="MEDICINA%20GENERALA" codeSystem="2.16.840.1.113883.3.3368.6.9" codeSystemName="MedicalSpecialities" displayName="Medicina generala"/>
+                        <name><family>Petrescu</family><given>Tudor</given></name>
+                      </playingEntity>
+                      <scopingEntity>
+                        <id root="CUI" extension="163543"/>
+                        <desc>Spitalul Universitar de Urgenta Militar Central</desc>
+                      </scopingEntity>
+                    </participantRole>
+                  </participant>
+                  <reference typeCode="XCRPT">
+                    <templateId root="2.16.840.1.113883.3.3368.11.6"/>
+                    <externalDocument>
+                      <id root="2.16.840.1.113883.3.3368" extension="bd6222dc-a519-49dc-a141-781615d9d200"/>
+                    </externalDocument>
+                  </reference>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

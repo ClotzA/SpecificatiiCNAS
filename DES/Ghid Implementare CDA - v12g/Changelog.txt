@@ -1,0 +1,156 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Iteratia 12g - 15.07.2014
+		MedicationQuantityObservation (medicamente administrate si prescrise)
+		- adaugat asociere 0..1 effectiveTime - durata tratament medicamente prescrise
+		- adaugare ocl validare format effectiveTime.width - durata tratament pentru medicamente prescrise
+		MedicationPrescriptionSubstanceAdministration
+		- adaugare OCL verificare completare data eliberarii (effectiveTime) atunci cand se inregistreaza cantitate medicamente eliberate
+		DispensedQuantityObservation
+		- adaugare asociere 0..1 effectiveTime - durata tratament medicamente eliberate
+		- adaugare ocl validare format effectiveTime.width - durata tratament pentru medicamente eliberate
+		MedicationPrescriptionAct
+		- modificare OCL verificare completare camp effectiveTime.width (durata tratament) doar daca data retetei (MedicationPrescriptionAct.effectiveTime.low) este sub o anumita valoare (parametru)
+		- adaugare OCL verificare completare camp effectiveTime pentru medicamentele prescrise doar daca data retetei (MedicationPrescriptionAct.effectiveTime.low) este peste o anumita valoare (parametru)
+		- adaugare OCL verificare completare camp effectiveTime pentru medicamentele eliberate doar daca data retetei (MedicationPrescriptionAct.effectiveTime.low) este peste o anumita valoare (parametru)
+		DiseaseOutObservation
+		- adaugare camp text 0..1
+		RelatedDocumentsOutAct
+		- modificare cardinalitate RelatedDocumentsOutAct.receivedClinicalReferralOutAct din 0..1 in 0..*
+		AllergyObservation
+		- corectare OCL completare alergen codificat sau necodificat (.text sau .value)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Iteratia 12f - 02.04.2014
+	Modificare cardinalitate : HospitalAdmissionDetailsOutObservation. 0..1 DischargeRecommendationsObservation in 0..2
+		- A fost modificata constrangerea din 0..1 in 0..2
+	BloodTypeOutSection: trebuie sa se poata completa fara entry-uri, pentru a putea avea cel putin o sectiune in structuredBody
+		- A fost eliminata constrangerea custom BloodTypeOutSectionClinicalStatementsConstraint
+
+Iteratia 12e - 20.03.2014
+	Pentru Consultatii (specialist/MF) si Internari/Externari Id-ul de tip Serie trebuie sa aiba extension nenul,
+		daca nu este cunoscut se recomanda completarea cu "UNK"
+		- elementul id pentru serie trebuie sa aiba extension nenul si non-empty
+		- A fost modificata descreirea campului id pentru cele 4 documente pentru a adauga recomandarea de completare 
+			cu valoarea "UNK" atunci cand seria nu este cunoscuta
+	Specialitatea aferenta SourcePhysicianParticipant [Participant2: templateId 2.16.840.1.113883.3.3368.10.28] 
+		devine optionala (0..1) (SourcePhysicianParticipant.participantRole.code)
+		- A fost modificata cardinalitatea pentru SourcePhysicianParticipant.participantRole.code in 0..1 (corectat descriere + constrangere)
+	In mai multe clase de tipul SubstanceAdministration (DESDOC si DMR) nu apare in tabelul de specificatii atributul @classCode
+		- in clasa de baza DESDOC:MedicationSubstanceAdministration a fost adaugat atributul @classCode="SBADM"
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------		
+Iteratia 12d - 13.03.2014
+	Pb71 tabel sursa nomenclator
+		- A fost modificat modul de generare al listei de vocabulare in ghid. Acum la sfarsitul ghidului apar doua tabele: una pentru Sisteme de codificare si alta pentru Seturi de valori. 
+	Modificare code pentru Medicamente – DMR - OUT pentru a elimina confuzia priving consolidarea doar din medicamentele prescrise: de modificat code (@code="29305-0" Medicamente prescrise) in  @code="57828-6" Retete
+		- MedicationPrescriptionOutAct - a fost modfiicat code
+		- IssuedMedicationPrescriptionOutAct - nu mai este derivat din desdoc:IssuedMedicationPrescriptionAct, ci a fost definit in DMR pentru a putea schimba codul, independent de desdoc.
+	Modificare cardinalitate HospitalAdmissionDetailsOutObservation.MedicalSpecialityObservation din 1..1 in 0..1
+		- A fost modificata cardinalitatea
+	Descrierile pentru oras si judet apar inversate in desdoc:RecordTarget
+		- Au fost corectate descrierile.
+	De modificat in samples tipul procedurii "Bronhospirometrie": din non-chirurgicala in chirurgicala principala.
+		- A fost modificat in sample-uri desdoc si dmr.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------		
+Iteratia 12c - 06.03.2014
+	Descrierea sectiunii MedicalServicesOutSection trebuie sa mentioneze si serviciile spitalicesti
+		- A fost modificata descriera sectiunii MedicalServicesOutSection (din cadrul MedicalHistoryOutDocument):
+			din "Sectiune Servicii clinice si paraclinice" in "Sectiune Servicii clinice, paraclinice si spitalicesti"
+		
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------		
+Iteratia 12b - 05.03.2014
+	Modificari pe AmbulatoryMedicationAdministeredAct, HospitalMedicationAdministeredAct - au fost completate descrierile pe code si manufacturedLabeledDrug.
+
+
+Iteratia 12 - 04.03.2014
+
+	Eliminare din ghid InsuranceInformationSection (Utilizari 0)
+		- Sectiunea a fost eliminata din model
+		
+	ClinicalDocument.languageCode - de adaugat valueset pentru HumanLanguage ( 2.16.840.1.113883.1.11.11526, cs 2.16.840.1.113883.6.121) care 
+		sa contina codul "ro". De modificat in ghid sa scrie "ro" cu litere mici si nu cu litere mari.
+		- In desdoc-vocab au fost adaugate:
+			- CodeSystem "HumanLanguage" (Full Name: Tags for the Identification of Languages) 2.16.840.1.113883.6.121
+			- ValueSet "HumanLanguage" 2.16.840.1.113883.1.11.11526: contine o singura valoare "ro"
+		- An DESClinicalDocument si DMRClinicalDocument a fost pus vocabularul HumanLanguage pe campurile "languageCode"
+		- A fost modificata  descrierea campului "languageCode" pentru a indica "ro" in loc de "RO"
+		- A fost adaugat campul languageCode la generarea sample-urilor
+		
+	DisplayName devine mandatory in toate tipurile de data CD/CS/CE, etc
+		- Din pachetul hl7.datatypes a fost pusa constrangere pe CD/CE/CV astfel incat atributele "code", "displayName" si "codeSystem" sa fie obligatorii.
+		- Tipul de date CS nu permite atribut "displayName" (conform cu XSD HL7 datatypes)
+	
+	Unit pentru "DispensedQuantityObservation" cat si pentru MedicationQuantityObservation va avea valoare fixa "unitati"
+		- Au fost modificate constrangerile pentru a valida completarea cu valoarea "unitati", au fost corectate sample-urile si descrierea campului in ghid..
+		
+	Forma comerciala (MedicationConsumable) sa fie optionala in toate clasele in care este referita (acum este 1..1)
+		- Au fost adaugate/modificate constrangerile de pe AmbulatoryMedicationAdministeredAct, HospitalMedicationAdministeredAct si MedicationPrescriptionAct astfel incat sa permita:
+			- completarea elementului "code" alegand valoare din nomenclator "Drugs". In acest caz nu este permisa completarea atributului nullFlavor de pe manufacturedLabeledDrug
+			sau
+			- completarea atributului nullFlavor="UNK" pe manufacturedLabeledDrug. In acest caz nu este permisa completarea elementului "code".
+		- Au fost corectate descrierile celor trei constrangeri.
+		
+	De modificat comment "Valoare cantitate" -> "Cantitate"
+		- A fost corectat in MedicationQuantityObservation si DispensedQuantityObservation (descrierea campului value).
+		
+	Modificare comment "Va contine peroiada (durata in zile) in care serviciul este recomandat in "Durata ciclu"
+		- A fost corectat in ServiceCycleObservation (effectiveTime)
+	
+	De adaugat OCL pentru ca medicamentele din reteta sa fie alese din Drugs: De adaugat restrictie pentru selectie din Drugs, De actualizat sample ca sa nu mai apara Canamed, De pastrat vocabular Canamed
+		- Adaugat constrangere de value set Drugs in MedicationPrescriptionAct
+		- In sample-uri a fost inlocuit Canamed cu Drugs
+	
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------		
+Iteratia 11b - 12.02.2014
+	Rectificare valoare code pentru DiseaseOutObservation
+		- A fost modificat code (@code="29308-4" Diagnostic (Sistem de codificare: 2.16.840.1.113883.6.1 LOINC))
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Iteratia 11 - 27.01.2014
+	Adaugare validare OCL data internare <= data externare (daca exista) – toate documentele
+		- In HospitalDischargeObservation a fost adaugata constrangerea HospitalDischargeObservationEffectiveTimeValueInterval care verifica daca
+			data externarii (HospitalDischargeObservation.effectiveTime/@value) este mai mare decat
+			data internarii (InpatientDischargeDocument.componentOf.encompassingEncounter.effectiveTime.low/@value)
+		- In OutpatientDischargeDocument a fost adaugata constrangerea OutpatientDischargeDocumentComponentOfEncompassingEncounterEffectiveTimeInterval	care verifica daca
+			data inchiderii fisei (EffectiveTime.high/@value) daca este completata, este mai mare decat
+			data deschiderii fisei (EffectiveTime.low/@value)
+	
+	De modificat cardinalitate code (specialitate medicala a doctorului care trimite ) pentru
+	SourcePhysicianParticipant [Participant2: templateId 2.16.840.1.113883.3.3368.10.28] din 0..1 in 1..1 (necesar pentru procesare in core)
+		- A fost modificata constrangerea SourcePhysicianParticipantSourcePhysicianParticipantRoleCode pentru a impune cardinalitate 1..1 pe code.
+
+	De eliminat string-ul formatului de data „YYYYmmDDHHMM" 
+	deoarece este case sensitive, cu interpretare diferita intre .NET si Java – in Java „mm” inseamnna minute, rezultand an-minute-zi- etc 
+		- In cadrul descrierii constrangerilor pentru campuri de tip effectiveTime au fost eliminate textele de forma "YYYYmmDDHHMM"
+			si s-a facut referire la formatul definit in sectiunea Tipuri de date.
+		- La sectiunea Tipuri de date a fost modificata descrierea formatului pentru date calendaristice (conform discutiilor de pe email)
+
+	LegalAutheticator - sa nu mai fie obligatoriu pe template-ul de reteta
+		- In DESClinicalDocument a fost modificata cardinalitatea pentru legalAuthenticator din 1..1 in 0..1
+		- Au fost adaugate urmatoarele constrangeri custom pentru a impune cardinalitate 1..1 pentru legalAuthenticator in celelalte documente:
+			ClinicalReferralDocumentLegalAuthenticator, ConsultationDocumentLegalAuthenticator, HomeCareReferralDocumentLegalAuthenticator,
+			HospitalAdmissionDocumentLegalAuthenticator, InpatientDischargeDocumentLegalAuthenticator, LaboratoryReferralDocumentLegalAuthenticator,
+			MedicalDevicesReferralDocumentLegalAuthenticator, OutpatientDischargeDocumentLegalAuthenticator, PrimaryCareConsultationDocumentLegalAuthenticator
+
+	HIGH ClinicalServicesMF trebuie sa fie folosit in PrimaryCareConsultationDocument
+		- In ClinicalServiceObservation au fost adaugate urmatoarele constrangeri custom:
+			- ClinicalServiceObservationValueCodeMF - in cazul in care clinicalDocument.code = '68834-1' (PrimaryCareConsultationDocument) se foloseste ClinicalServicesMF
+			- ClinicalServiceObservationValueCode - in cazul in care clinicalDocument.code = '11488-4' (ConsultationDocument) sau '34108-2' (OutpatientDischargeDocument)
+				sau '46458-1' (InpatientDischargeDocument), se foloseste vocabularul ClinicalServices
+			- Pentru DMR:ClinicalServiceOutObservation, care deriva din ClinicalServiceObservation, se pot folosi ambele vocabulare.
+	
+	Lipsa OCL verificarea cardinalitate 1..1 pentru assignedAuthor !!se refera la assignedPerson din AssignedAuthor		
+		- In DESClinicalDocument a fost adaugata constrangerea custom DESClinicalDocumentAuthorAssignedAuthorAssignedPerson pentru a impune cardinalitate 1..1
+		
+	Format scurt birthTime  - de explicitat in ghid faptul ca valorile corecte sunt de forma yyyymmdd + OCL
+		- Rezolvat prin modificarea descrierilor pentru constrangeri custom (effectiveTime) si a descrierii din sectiunea Tipuri de date
+	
+	Pastrare caracter mandatory pentru ora si minut doar pentru timp deces		
+		- Toate datele calendaristice au componenta de data calendarsitica obligatorie si componenta de timp (ora + minut) optionala cu urmatoarea exceptie:
+		- DeceasedObservation.effectiveTime/@value - are componenta de timp obligatorie
+		
+	Eliminare caracter mandatory pentru OutpatientDischargeDocument,_Data si ora inchiderii fisei = effectiveTime.high
+		- In OutpatientDischargeDocument a fost modificata constrangerea OutpatientDischargeDocumentComponentOfEncompassingEncounterEffectiveTimeLowHigh a.i:
+			- Data deschiderii fisei (effectiveTime.low.value) este obligatorie
+			- Data inchiderii fisei (effectiveTime.high.value) este optionala
+
