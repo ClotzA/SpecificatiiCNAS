@@ -67,7 +67,7 @@
 											</xs:attribute>
 											<xs:attribute name="diseaseCode" use="optional">
 												<xs:annotation>
-													<xs:documentation xml:lang="ro">Codul de boală pentru care sa prescris medicamentul.</xs:documentation>
+													<xs:documentation xml:lang="ro">Codul de boală pentru care s-a prescris medicamentul.</xs:documentation>
 												</xs:annotation>
 												<xs:simpleType>
 													<xs:restriction base="xs:string">
@@ -77,7 +77,7 @@
 											</xs:attribute>
 											<xs:attribute name="diseaseCategory" use="optional">
 												<xs:annotation>
-													<xs:documentation xml:lang="ro">Categoria bolii pentru care sa prescris medicamentul.</xs:documentation>
+													<xs:documentation xml:lang="ro">Categoria bolii pentru care s-a prescris medicamentul.</xs:documentation>
 												</xs:annotation>
 												<xs:simpleType>
 													<xs:restriction base="xs:string">
@@ -178,7 +178,7 @@
 								</xs:attribute>
 								<xs:attribute name="patientInsuranceHouse" use="optional">
 									<xs:annotation>
-										<xs:documentation xml:lang="ro">Codul casei de asigurări cu care sa încheiat contractul de compensare medicamente.</xs:documentation>
+										<xs:documentation xml:lang="ro">Codul casei de asigurări cu care s-a încheiat contractul de compensare medicamente.</xs:documentation>
 									</xs:annotation>
 									<xs:simpleType>
 										<xs:restriction base="xs:string">

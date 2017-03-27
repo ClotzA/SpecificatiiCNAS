@@ -175,7 +175,7 @@
 									</xs:attribute>
 									<xs:attribute name="diagnostic" use="optional">
 										<xs:annotation>
-											<xs:documentation xml:lang="ro">Diagnosticul bolii pentru care sa făcut serviciu paraclinic.</xs:documentation>
+											<xs:documentation xml:lang="ro">Diagnosticul bolii pentru care s-a făcut serviciu paraclinic.</xs:documentation>
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
@@ -200,7 +200,7 @@
 									</xs:attribute>
 									<xs:attribute name="refferedBySerialNo" use="optional">
 										<xs:annotation>
-											<xs:documentation xml:lang="ro">Numărul biletului de trimitere în baza căruia sa efectuat serviciu paraclinic.</xs:documentation>
+											<xs:documentation xml:lang="ro">Numărul biletului de trimitere în baza căruia s-a efectuat serviciu paraclinic.</xs:documentation>
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">

@@ -189,7 +189,7 @@
 									</xs:attribute>
 									<xs:attribute name="orgUnitCode" use="required">
 										<xs:annotation>
-											<xs:documentation xml:lang="ro">Codul casei de asigurări medicale cu care sa încheiat contractul.</xs:documentation>
+											<xs:documentation xml:lang="ro">Codul casei de asigurări medicale cu care s-a încheiat contractul.</xs:documentation>
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
@@ -299,7 +299,7 @@
 									</xs:attribute>
 									<xs:attribute name="validTo" type="xs:date" use="optional">
 										<xs:annotation>
-											<xs:documentation xml:lang="ro">Data la care sa încheiat contractul de muncă al angajatului cu furnizorul de servicii.</xs:documentation>
+											<xs:documentation xml:lang="ro">Data la care s-a încheiat contractul de muncă al angajatului cu furnizorul de servicii.</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
 									<xs:attribute name="stencilNo" use="optional">
@@ -442,7 +442,7 @@
 			</xs:attribute>
 			<xs:attribute name="uic" use="required">
 				<xs:annotation>
-					<xs:documentation xml:lang="ro">Data la care sa făcut înregistrarea juridică a furnizorului de servicii.</xs:documentation>
+					<xs:documentation xml:lang="ro">Data la care s-a făcut înregistrarea juridică a furnizorului de servicii.</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
@@ -452,7 +452,7 @@
 			</xs:attribute>
 			<xs:attribute name="uicDate" type="xs:date" use="optional">
 				<xs:annotation>
-					<xs:documentation xml:lang="ro">Data la care sa făcut înregistrarea juridică a furnizorului de servicii.</xs:documentation>
+					<xs:documentation xml:lang="ro">Data la care s-a făcut înregistrarea juridică a furnizorului de servicii.</xs:documentation>
 				</xs:annotation>
 			</xs:attribute>
 			<xs:attribute name="regNo" use="optional">

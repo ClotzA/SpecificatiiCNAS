@@ -169,7 +169,7 @@
 										</xs:attribute>
 										<xs:attribute name="merDate" type="xs:date" use="optional">
 											<xs:annotation>
-												<xs:documentation xml:lang="ro">Data la care sa facut înregistrarea în registru</xs:documentation>
+												<xs:documentation xml:lang="ro">Data la care s-a făcut înregistrarea în registru</xs:documentation>
 											</xs:annotation>
 										</xs:attribute>
 										<xs:attribute name="initialDiagnostic" use="required">

@@ -1796,7 +1796,7 @@
 									</xs:attribute>
 									<xs:attribute name="serviceType" use="optional">
 										<xs:annotation>
-											<xs:documentation xml:lang="ro">Flag care indica daca serviciu paraclinic este radiologie sau analiza (au fost gandite valorile 1 si 2 pentru ca pe viitor sa se poata adauta si o alta valoare, daca este cazul)</xs:documentation>
+											<xs:documentation xml:lang="ro">Flag care indica daca serviciu paraclinic este radiologie sau analiza (au fost gandite valorile 1 si 2 pentru ca pe viitor să se poata adauta si o alta valoare, daca este cazul)</xs:documentation>
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
@@ -2256,7 +2256,7 @@
 									</xs:attribute>
 									<xs:attribute name="forInsuredPersons" type="xs:boolean" use="optional">
 										<xs:annotation>
-											<xs:documentation xml:lang="ro">Flag care indica daca pt acest criteriu de internare mai este necesar ca pacientul sa fie asigurat.</xs:documentation>
+											<xs:documentation xml:lang="ro">Flag care indica daca pt acest criteriu de internare mai este necesar ca pacientul să fie asigurat.</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
 								</xs:complexType>
@@ -4116,7 +4116,7 @@
 									</xs:attribute>
 									<xs:attribute name="competency" type="xs:string" use="optional">
 										<xs:annotation>
-											<xs:documentation xml:lang="ro">Cod care indica daca serviciu respectiv trebuie sa fie facut de un medic radiolog sau medic ortodontist.</xs:documentation>
+											<xs:documentation xml:lang="ro">Cod care indica daca serviciu respectiv trebuie să fie facut de un medic radiolog sau medic ortodontist.</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
 									<xs:attribute name="treatmentType" type="xs:unsignedByte" use="optional">

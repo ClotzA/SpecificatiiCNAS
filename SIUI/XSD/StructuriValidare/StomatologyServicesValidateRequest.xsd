@@ -124,7 +124,7 @@
 										</xs:attribute>
 										<xs:attribute name="serviceDate" type="xs:dateTime" use="required">
 											<xs:annotation>
-												<xs:documentation xml:lang="ro">Data la care sa efectuat serviciu</xs:documentation>
+												<xs:documentation xml:lang="ro">Data la care s-a efectuat serviciu</xs:documentation>
 											</xs:annotation>
 										</xs:attribute>
 										<xs:attribute name="merNo" type="xs:string" use="optional">
@@ -149,7 +149,7 @@
 										</xs:attribute>
 										<xs:attribute name="mirror" type="xs:string" use="optional">
 											<xs:annotation>
-												<xs:documentation xml:lang="ro">Codul dintelui pentru care sa efectuat serviciu (în caz în care serviciu se face pe un dinte)</xs:documentation>
+												<xs:documentation xml:lang="ro">Codul dintelui pentru care s-a efectuat serviciu (în caz în care serviciu se face pe un dinte)</xs:documentation>
 											</xs:annotation>
 										</xs:attribute>
 										<xs:attribute name="toothFaces" type="xs:string" use="optional">

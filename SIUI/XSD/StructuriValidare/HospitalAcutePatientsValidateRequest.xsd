@@ -304,6 +304,28 @@
 														</xs:simpleType>
 													</xs:attribute>
 													<xs:attribute name="internmentCriteriaCode" type="xs:string" use="required"/>
+													<xs:attribute name="phone" use="optional">
+														<xs:annotation>
+															<xs:appinfo><xml:spec edit="added" /></xs:appinfo>
+															<xs:documentation xml:lang="ro">Telefon/mobil</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:maxLength value="100"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:attribute>	
+													<xs:attribute name="email" use="optional">
+														<xs:annotation>
+															<xs:appinfo><xml:spec edit="added" /></xs:appinfo>
+															<xs:documentation xml:lang="ro">Adresa de e-mail</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:maxLength value="250"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:attribute>	
 												</xs:extension>
 											</xs:complexContent>
 										</xs:complexType>
@@ -792,6 +814,28 @@
 															</xs:restriction>
 														</xs:simpleType>
 													</xs:attribute>
+													<xs:attribute name="phone" use="optional">
+														<xs:annotation>
+															<xs:appinfo><xml:spec edit="added" /></xs:appinfo>
+															<xs:documentation xml:lang="ro">Telefon/mobil</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:maxLength value="100"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:attribute>	
+													<xs:attribute name="email" use="optional">
+														<xs:annotation>
+															<xs:appinfo><xml:spec edit="added" /></xs:appinfo>
+															<xs:documentation xml:lang="ro">Adresa de e-mail</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:maxLength value="250"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:attribute>	
 												</xs:extension>
 											</xs:complexContent>
 										</xs:complexType>

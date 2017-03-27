@@ -150,7 +150,7 @@
 									</xs:attribute>
 									<xs:attribute name="orgUnitCode" use="required">
 										<xs:annotation>
-											<xs:documentation xml:lang="ro">codul casei de asigurări cu care sa încheiat contractul.</xs:documentation>
+											<xs:documentation xml:lang="ro">codul casei de asigurări cu care s-a încheiat contractul.</xs:documentation>
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
@@ -172,7 +172,7 @@
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">
 												Codul aplicaţiei. Pentru cazul în care furnizorul de servicii desfăşoară mai multe servicii medicale,
-												pentru a face distincţie între ele sa introdus acest cod
+												pentru a face distincţie între ele s-a introdus acest cod
 											</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
@@ -430,7 +430,7 @@
 			</xs:attribute>
 			<xs:attribute name="uic" use="required">
 				<xs:annotation>
-					<xs:documentation xml:lang="ro">Data la care sa făcut înregistrarea juridică a furnizorului de servicii.</xs:documentation>
+					<xs:documentation xml:lang="ro">Data la care s-a făcut înregistrarea juridică a furnizorului de servicii.</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
@@ -440,7 +440,7 @@
 			</xs:attribute>
 			<xs:attribute name="uicDate" type="xs:date" use="optional">
 				<xs:annotation>
-					<xs:documentation xml:lang="ro">Data la care sa făcut înregistrarea juridică a furnizorului de servicii.</xs:documentation>
+					<xs:documentation xml:lang="ro">Data la care s-a făcut înregistrarea juridică a furnizorului de servicii.</xs:documentation>
 				</xs:annotation>
 			</xs:attribute>
 			<xs:attribute name="regNo" use="optional">

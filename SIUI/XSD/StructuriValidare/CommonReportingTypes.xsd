@@ -694,7 +694,7 @@
 				</xs:attribute>
 				<xs:attribute name="reportDate" type="xs:date" use="required">
 					<xs:annotation>
-						<xs:documentation xml:lang="ro">Data pentru care se realizează raportare (toate înregistrările trebuie sa se încadreze la această dată)</xs:documentation>
+						<xs:documentation xml:lang="ro">Data pentru care se realizează raportare (toate înregistrările trebuie să se încadreze la această dată)</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
 				<xs:attribute name="reportType" use="required">
@@ -728,12 +728,12 @@
 				</xs:attribute>
 				<xs:attribute name="reportMonth" type="monthType" use="required">
 					<xs:annotation>
-						<xs:documentation xml:lang="ro">Luna pentru care se realizează raportare (toate înregistrările trebuie sa se încadreze în luna/anul precizate)</xs:documentation>
+						<xs:documentation xml:lang="ro">Luna pentru care se realizează raportare (toate înregistrările trebuie să se încadreze în luna/anul precizate)</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
 				<xs:attribute name="reportYear" type="yearType" use="required">
 					<xs:annotation>
-						<xs:documentation xml:lang="ro">Anul pentru care se realizează raportare (toate înregistrările trebuie sa se încadreze în luna/anul precizate)</xs:documentation>
+						<xs:documentation xml:lang="ro">Anul pentru care se realizează raportare (toate înregistrările trebuie să se încadreze în luna/anul precizate)</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
 				<xs:attribute name="correction" type="xs:boolean" use="optional">

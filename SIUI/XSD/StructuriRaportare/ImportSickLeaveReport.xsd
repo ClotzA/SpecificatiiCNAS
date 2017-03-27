@@ -399,7 +399,7 @@
 			</xs:attribute>
 			<xs:attribute name="reportMonth" use="required">
 				<xs:annotation>
-					<xs:documentation xml:lang="ro">Luna pentru care se realizează raportare (toate înregistrările trebuie sa se încadreze în luna/anul precizate)</xs:documentation>
+					<xs:documentation xml:lang="ro">Luna pentru care se realizează raportare (toate înregistrările trebuie să se încadreze în luna/anul precizate)</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="xs:int">
@@ -410,7 +410,7 @@
 			</xs:attribute>
 			<xs:attribute name="reportYear" use="required">
 				<xs:annotation>
-					<xs:documentation xml:lang="ro">Anul pentru care se realizează raportare (toate înregistrările trebuie sa se încadreze în luna/anul precizate)</xs:documentation>
+					<xs:documentation xml:lang="ro">Anul pentru care se realizează raportare (toate înregistrările trebuie să se încadreze în luna/anul precizate)</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="xs:int">

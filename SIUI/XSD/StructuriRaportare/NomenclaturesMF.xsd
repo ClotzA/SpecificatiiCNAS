@@ -2856,7 +2856,7 @@
 									</xs:attribute>
 									<xs:attribute name="serviceType" use="optional">
 										<xs:annotation>
-											<xs:documentation xml:lang="ro">Flag care indica daca serviciu paraclinic este radiologie sau analiza (au fost gandite valorile 1 si 2 pentru ca pe viitor sa se poata adauta si o alta valoare, daca este cazul)</xs:documentation>
+											<xs:documentation xml:lang="ro">Flag care indica daca serviciu paraclinic este radiologie sau analiza (au fost gandite valorile 1 si 2 pentru ca pe viitor să se poata adauta si o alta valoare, daca este cazul)</xs:documentation>
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">

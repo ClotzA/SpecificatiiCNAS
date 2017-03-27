@@ -536,8 +536,9 @@
 		<xs:annotation>
 			<xs:documentation xml:lang="ro">Persoana straina.</xs:documentation>
 		</xs:annotation>
-		<xs:attribute name="AppID" use="optional">
+		<xs:attribute name="AppID" use="required">
 			<xs:annotation>
+				<xs:appinfo><xml:spec edit="changed" /></xs:appinfo>
 				<xs:documentation xml:lang="ro">Identificatorul unic al înregistrării la nivelul aplicaţiei de raportare</xs:documentation>
 			</xs:annotation>
 			<xs:simpleType>
@@ -845,6 +846,28 @@
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:attribute>
+		<xs:attribute name="phone" use="optional">
+			<xs:annotation>
+				<xs:appinfo><xml:spec edit="added" /></xs:appinfo>
+				<xs:documentation xml:lang="ro">Telefon/mobil</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="100"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="email" use="optional">
+			<xs:annotation>
+				<xs:appinfo><xml:spec edit="added" /></xs:appinfo>
+				<xs:documentation xml:lang="ro">Adresa de e-mail</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="250"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
 	</xs:complexType>
 	<xs:complexType name="ForeignProcedure">
 		<xs:annotation>
@@ -891,7 +914,17 @@
 		<xs:annotation>
 			<xs:documentation xml:lang="ro">Persoane care se incadreaza la situatii exceptionale</xs:documentation>
 		</xs:annotation>
-		<xs:attribute name="AppID" type="xs:string" use="required"/>
+		<xs:attribute name="AppID" use="required">
+			<xs:annotation>
+				<xs:appinfo><xml:spec edit="changed" /></xs:appinfo>
+				<xs:documentation xml:lang="ro">Identificatorul unic al înregistrării la nivelul aplicaţiei de raportare</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="20" />
+				</xs:restriction>
+			</xs:simpleType>
+        </xs:attribute>
 		<xs:attribute name="pid" use="required">
 			<xs:annotation>
 				<xs:documentation xml:lang="ro">CNP-ul persoanei.</xs:documentation>
@@ -1435,6 +1468,28 @@
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:length value="20"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="phone" use="optional">
+			<xs:annotation>
+				<xs:appinfo><xml:spec edit="added" /></xs:appinfo>
+				<xs:documentation xml:lang="ro">Telefon/mobil</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="100"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="email" use="optional">
+			<xs:annotation>
+				<xs:appinfo><xml:spec edit="added" /></xs:appinfo>
+				<xs:documentation xml:lang="ro">Adresa de e-mail</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="250"/>
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:attribute>

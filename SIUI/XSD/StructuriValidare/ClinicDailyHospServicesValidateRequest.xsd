@@ -123,7 +123,7 @@
 										</xs:attribute>
 										<xs:attribute name="dailyServiceDate" type="xs:date" use="required">
 											<xs:annotation>
-												<xs:documentation xml:lang="ro">Data la care sa efectuat serviciu spitalicesc.</xs:documentation>
+												<xs:documentation xml:lang="ro">Data la care s-a efectuat serviciu spitalicesc.</xs:documentation>
 											</xs:annotation>
 										</xs:attribute>
 										<xs:attribute name="dailyServiceNote" use="optional">
