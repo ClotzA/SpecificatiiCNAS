@@ -1993,10 +1993,12 @@
 									</xs:attribute>
 									<xs:attribute name="needApproval" type="xs:string" use="optional">
 										<xs:annotation>
+											<xs:appinfo><xml:spec edit="changed" /></xs:appinfo>
 											<xs:documentation xml:lang="ro">
 												Precizează dacă medicamentul poate fi prescris numai cu aprobare specială. Poate lua urmatoarele valori:
 												M = Ministerul Sănătăţii,
 												P = Ministerul Sănătăţii Publice,
+												S = MSS (Medic de Specialitate),
 												N = C.N.A.S.,
 												J = C.J.A.S.,
 												A = A.N.T. (Agentia Nationala a Transplantului),
@@ -2282,7 +2284,7 @@
 									</xs:attribute>
 									<xs:attribute name="serviceType" use="optional">
 										<xs:annotation>
-											<xs:documentation xml:lang="ro">Flag care indica daca serviciu paraclinic este radiologie sau analiza (au fost gandite valorile 1 si 2 pentru ca pe viitor să se poata adauta si o alta valoare, daca este cazul)</xs:documentation>
+											<xs:documentation xml:lang="ro">Flag care indica daca serviciu paraclinic este radiologie sau analiza (au fost gandite valorile 1 si 2 pentru ca pe viitor sa se poata adauta si o alta valoare, daca este cazul)</xs:documentation>
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">

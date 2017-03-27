@@ -2235,10 +2235,12 @@
 									</xs:attribute>
 									<xs:attribute name="needApproval" type="xs:string" use="optional">
 										<xs:annotation>
+											<xs:appinfo><xml:spec edit="changed" /></xs:appinfo>
 											<xs:documentation xml:lang="ro">
 												Precizează dacă medicamentul poate fi prescris numai cu aprobare specială. Poate lua urmatoarele valori:
 												M = Ministerul Sănătăţii,
 												P = Ministerul Sănătăţii Publice,
+												S = MSS (Medic de Specialitate),
 												N = C.N.A.S.,
 												J = C.J.A.S.,
 												A = A.N.T. (Agentia Nationala a Transplantului),
@@ -2342,12 +2344,14 @@
 									<xs:attribute name="needApproval" type="xs:string" use="required">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">
-												Precizează dacă medicamentul poate fi prescris numai cu aprobare speciala. Poate lua urmatoarele valori:
-												M = Ministerul Sanatatii,
+												Precizează dacă medicamentul poate fi prescris numai cu aprobare specială. Poate lua urmatoarele valori:
+												M = Ministerul Sănătăţii,
+												P = Ministerul Sănătăţii Publice,
+												S = MSS (Medic de Specialitate),
 												N = C.N.A.S.,
 												J = C.J.A.S.,
 												A = A.N.T. (Agentia Nationala a Transplantului),
-												0 = Fara aprobare
+												0 = Fără aprobare
 											</xs:documentation>
 										</xs:annotation>
 									</xs:attribute>
@@ -2360,7 +2364,7 @@
 												0 = Fără contract
 											</xs:documentation>
 										</xs:annotation>
-									</xs:attribute>									
+									</xs:attribute>
 									<xs:attribute name="icd10" type="xs:string" use="optional">
 										<xs:annotation>
 											<xs:documentation xml:lang="ro">
