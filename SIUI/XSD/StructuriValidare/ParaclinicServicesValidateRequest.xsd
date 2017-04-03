@@ -276,7 +276,13 @@
 											<xs:appinfo><xml:spec edit="added" /></xs:appinfo>
 											<xs:documentation xml:lang="ro">Indică faptul că recoltarea s-a realizat la furnizor (true = implicit) sau a fost primita de la alt furnizor. Absenta atributului are semnificatia true.</xs:documentation>
 										</xs:annotation>
-									</xs:attribute>
+										</xs:attribute>
+										<xs:attribute name="prevention" type="xs:boolean" use="optional">
+										<xs:annotation>
+											<xs:appinfo><xml:spec edit="added" /></xs:appinfo>
+											<xs:documentation xml:lang="ro">Investigatie paraclinica recomandata de medicul de familie ca urmare a unei consultatii preventive</xs:documentation>
+										</xs:annotation>
+										</xs:attribute>
 									</xs:extension>
 								</xs:complexContent>
 							</xs:complexType>
